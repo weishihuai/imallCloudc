@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+
+	<parent>
+		<groupId>com.imall</groupId>
+		<artifactId>commons-parent-cloudc-1.0</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.imall</groupId>
+	<artifactId>iportal-core-cloudc-1.0</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>iportal-core</name>
+	<url>http://maven.apache.org</url>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>commons-base-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>commons-dicts-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>commons-redis-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!--elasticsearch-->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.carrotsearch</groupId>
+			<artifactId>hppc</artifactId>
+			<version>${hppc.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.twitter</groupId>
+			<artifactId>jsr166e</artifactId>
+			<version>${jsr166e.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tdunning</groupId>
+			<artifactId>t-digest</artifactId>
+			<version>${digest.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch.plugin</groupId>
+			<artifactId>reindex-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch.plugin</groupId>
+			<artifactId>percolator-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>transport</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch.plugin</groupId>
+			<artifactId>lang-mustache-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch.plugin</groupId>
+			<artifactId>transport-netty3-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch.plugin</groupId>
+			<artifactId>transport-netty4-client</artifactId>
+			<version>${elasticsearch.version}</version>
+		</dependency>
+		<!--elasticsearch-->
+
+		<!-- web项目编译时需要，部署到tomcat中就不需要了 -->
+<!--
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>-->
+		<!-- web项目编译时需要，部署到tomcat中就不需要了 -->
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>iportal</id>
+			<name>iportal release</name>
+			<url>http://192.168.1.202:8020/nexus/content/repositories/iportal-snapshot/</url>
+		</repository>
+		<snapshotRepository>
+			<id>iportal</id>
+			<name>iportal snapshot</name>
+			<url>http://192.168.1.202:8020/nexus/content/repositories/iportal-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
