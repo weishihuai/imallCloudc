@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+       default-autowire="byName" default-lazy-init="false">
+
+    <!-- injvm模式 start -->
+    <!--<bean id="sessionServiceRpcPrxImpl" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+        <property name="serviceUrl" value="${client.remote.service.url}"/>
+        <property name="serviceInterface" value="com.imall.iportal.core.rpc.proxy.SessionServiceRpcPrx"/>
+    </bean>-->
+    <!-- injvm模式 end-->
+
+
+    <bean id="sysUserFilter" class="com.imall.iportal.shiro.filter.SysUserFilter"/>
+
+    <!-- 缓存管理器 使用Ehcache实现 -->
+    <bean id="ehCacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:shiro/ehcache.xml"/>
+    </bean>
+
+    <!-- 会话ID生成器 -->
+    <bean id="sessionIdGenerator" class="org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator"/>
+
+    <!-- 会话Cookie模板 -->
+    <bean id="sessionIdCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <constructor-arg value="sid"/>
+        <property name="httpOnly" value="true"/>
+        <property name="maxAge" value="-1"/> <!--maxAge为负数，则表示该Cookie仅在本浏览器窗口以及本窗口打开的子窗口内有效，关闭窗口后该Cookie即失效。maxAge为负数的Cookie，为临时性Cookie，不会被持久化，不会被写到Cookie文件中。Cookie信息保存在浏览器内存中，因此关闭浏览器该Cookie就消失了。Cookie默认的maxAge值为-1。-->
+        <property name="path" value="/"/>
+        <property name="domain" value="${sso.cookie.domain}"/>
+    </bean>
+
+    <bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <constructor-arg value="rememberMe"/>
+        <property name="httpOnly" value="true"/>
+        <property name="maxAge" value="2592000"/><!-- 30天 -->
+        <property name="path" value="/"/>
+        <property name="domain" value="${sso.cookie.domain}"/>
+    </bean>
+
+    <bean id="ssoTicketCookie" class="javax.servlet.http.Cookie">
+        <constructor-arg value="ticket"/>
+        <constructor-arg value=""/>
+        <property name="httpOnly" value="true"/>
+        <property name="maxAge" value="7200"/> <!-- 默认两小时 maxAge为负数，则表示该Cookie仅在本浏览器窗口以及本窗口打开的子窗口内有效，关闭窗口后该Cookie即失效。maxAge为负数的Cookie，为临时性Cookie，不会被持久化，不会被写到Cookie文件中。Cookie信息保存在浏览器内存中，因此关闭浏览器该Cookie就消失了。Cookie默认的maxAge值为-1。-->
+        <property name="path" value="/"/>
+        <property name="domain" value="${sso.cookie.domain}"/>
+    </bean>
+
+
+    <!-- rememberMe管理器 -->
+    <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+        <!-- rememberMe cookie加密的密钥 建议每个项目都不一样 默认AES算法 密钥长度（128 256 512 位）-->
+        <property name="cipherKey"
+                  value="#{T(org.apache.shiro.codec.Base64).decode('4AvVhmFLUs0KTA3Kprsdag==')}"/>
+        <property name="cookie" ref="rememberMeCookie"/>
+    </bean>
+
+    <!-- 会话DAO -->
+    <bean id="sessionDAO" class="com.imall.iportal.shiro.client.ClientSessionDAO">
+        <property name="sessionIdGenerator" ref="sessionIdGenerator"/>
+        <property name="appKey" value="${sso.client.appKey}"/>
+    </bean>
+
+    <!-- 会话验证调度器 -->
+    <bean id="sessionValidationScheduler" class="com.imall.iportal.shiro.quartz.MyQuartzSessionValidationScheduler" destroy-method="destroy">
+        <property name="sessionValidationInterval" value="1800000"/>
+        <property name="sessionManager" ref="shiroSessionManager"/>
+    </bean>
+
+    <bean id="shiroSessionFactory" class="org.apache.shiro.session.mgt.SimpleSessionFactory" />
+
+    <!-- 会话管理器 -->
+    <bean id="shiroSessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        <property name="globalSessionTimeout" value="1800000"/>
+        <property name="deleteInvalidSessions" value="true"/>
+        <property name="sessionValidationSchedulerEnabled" value="true"/>
+        <property name="sessionValidationScheduler" ref="sessionValidationScheduler"/>
+        <property name="sessionDAO" ref="sessionDAO"/>
+        <property name="sessionIdCookieEnabled" value="true"/>
+        <property name="sessionIdCookie" ref="sessionIdCookie"/>
+        <property name="sessionFactory" ref="shiroSessionFactory" />
+    </bean>
+
+    <!-- 安全管理器 -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager" depends-on="ssoRealm">
+        <property name="realms">
+            <list>
+                <ref bean="ssoRealm" />
+                <ref bean="remoteRealm" />
+            </list>
+        </property>
+        <property name="sessionManager" ref="shiroSessionManager"/>
+        <property name="cacheManager" ref="ehCacheManager"/>
+        <property name="rememberMeManager" ref="rememberMeManager"/>
+    </bean>
+
+    <!-- 相当于调用SecurityUtils.setSecurityManager(securityManager) -->
+    <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="staticMethod" value="org.apache.shiro.SecurityUtils.setSecurityManager"/>
+        <property name="arguments" ref="securityManager"/>
+    </bean>
+
+    <!-- Shiro生命周期处理器-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <!--  sso client start-->
+    <!-- Realm实现 -->
+    <bean id="ssoRealm" class="com.imall.iportal.sso.client.SsoRealm">
+        <property name="cachingEnabled" value="true"/>
+        <property name="authenticationCachingEnabled" value="true"/>
+        <property name="authenticationCacheName" value="authenticationCache"/>
+        <property name="authorizationCachingEnabled" value="true"/>
+        <property name="authorizationCacheName" value="authorizationCache"/>
+
+        <property name="appKey" value="${sso.client.appKey}"/>
+        <property name="appSecret" value="${sso.client.appSecret}"/>
+        <property name="redirectUrl" value="${sso.client.redirectUrl}"/> <!--client host-->
+    </bean>
+
+    <bean id="remoteRealm" class="com.imall.iportal.shiro.client.ClientRealm">
+        <property name="cachingEnabled" value="false"/>
+        <property name="appKey" value="${sso.client.appKey}"/>
+    </bean>
+
+
+    <!-- 基于sso表单的身份验证过滤器 -->
+    <bean id="ssoAuthenticationFilter" class="com.imall.iportal.sso.client.SsoAuthenticationFilter">
+        <property name="ssoTicketCookie" ref="ssoTicketCookie"/>
+        <property name="authcTicketParam" value="ticket"/>
+        <property name="appKey" value="${sso.client.appKey}"/>
+        <property name="appSecret" value="${sso.client.appSecret}"/>
+        <property name="redirectUrl" value="${sso.client.redirectUrl}"/> <!--client host-->
+        <property name="failureUrl" value="/ssoFailure.html"/>
+    </bean>
+
+    <bean id="clientAuthenticationFilter" class="com.imall.iportal.shiro.client.ClientAuthenticationFilter"/>
+
+    <bean id="ssoUserFilter" class="com.imall.iportal.sso.client.SsoUserFilter">
+        <property name="appKey" value="${sso.client.appKey}"/>
+        <property name="appSecret" value="${sso.client.appSecret}"/>
+        <property name="redirectUrl" value="${sso.client.redirectUrl}"/> <!--client host-->
+    </bean>
+
+    <!-- /sso/authorize/login=authc-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="${sso.server.authorizeUrl}?a_key=${sso.client.appKey}&amp;r_url=${sso.client.redirectUrl}"/>
+        <property name="successUrl" value="/"/>
+        <property name="filters">
+            <util:map>
+                <entry key="sso2Authc" value-ref="ssoAuthenticationFilter"/>
+                <entry key="authc" value-ref="clientAuthenticationFilter"/>
+                <entry key="sysUser" value-ref="sysUserFilter"/>
+                <entry key="ssoUser" value-ref="ssoUserFilter"/>
+            </util:map>
+        </property>
+        <property name="filterChainDefinitions">
+            <value>
+                /=anon
+                /index.jsp=authc
+                /ssoFailure.html=anon
+                /static/dist/*.js*=ssoUser
+                /static/**=anon
+                /upload/**=anon
+                /sso-login=sso2Authc
+                /logout=logout
+                /*.json*=ssoUser,sysUser
+                /**=ssoUser,sysUser
+            </value>
+        </property>
+    </bean>
+
+    <!--  sso client end-->
+
+</beans>

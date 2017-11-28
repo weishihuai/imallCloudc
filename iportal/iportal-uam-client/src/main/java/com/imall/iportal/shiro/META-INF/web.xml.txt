@@ -1,0 +1,20 @@
+  <!-- 在web.xml添加如下内容 -->
+     <!-- The filter-name matches name of a 'shiroFilter' bean inside bean inside com\imall\iportal\shiro\META-INF\beans.xml -->
+            <filter>
+                    <filter-name>shiroFilter</filter-name>
+                    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+                    <async-supported>true</async-supported>
+                    <init-param>
+                            <param-name>targetFilterLifecycle</param-name>
+                            <param-value>true</param-value>
+                    </init-param>
+            </filter>
+
+            <!-- Make sure any request you want accessible to Shiro is filtered. /* catches all -->
+            <!-- requests.  Usually this filter mapping is defined first (before all others) to -->
+            <!-- ensure that Shiro works in subsequent filters in the filter chain:             -->
+            <filter-mapping>
+                    <filter-name>shiroFilter</filter-name>
+                    <url-pattern>/*</url-pattern>
+            </filter-mapping>
+            <!-- shiro end-->
