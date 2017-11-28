@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <description>跟当前项目相关配置，跟平台和部署无关</description>
+
+    <!-- entity 中自动注入createby、lastmodifyby字段值策略-->
+    <bean id="auditorAware" class="com.imall.commons.base.web.DefaultUserAuditorAwareImpl"></bean>
+
+    <jpa:auditing set-dates="true" auditor-aware-ref="auditorAware"/>
+
+    <!-- 使用annotation 自动注册bean,并检查@Required,@Autowired的属性已被注入 -->
+    <!--<context:component-scan base-package="com.imall.commons.base.service.impl">-->
+        <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+        <!--<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>-->
+    <!--</context:component-scan>-->
+
+    <!-- 开启AOP监听 只对当前配置文件有效 -->
+    <aop:aspectj-autoproxy expose-proxy="true" proxy-target-class="true"/>
+
+    <bean class="com.imall.commons.base.util.holder.SpringContextHolder"></bean>
+
+    <bean class="com.imall.iportal.core.elasticsearch.ESUtils">
+        <constructor-arg name="clusterName" value="#{ systemProperties['app.es.clusterName'] == null ? '${app.es.clusterName}': systemProperties['app.es.clusterName'] }"/>
+        <constructor-arg name="esHosts" value="#{ systemProperties['app.es.esHosts'] == null ? '${app.es.esHosts}': systemProperties['app.es.esHosts'] }"/>
+        <constructor-arg name="esHostsPort" value="#{ systemProperties['app.es.esHostsPort'] == null ? '${app.es.esHostsPort}': systemProperties['app.es.esHostsPort'] }"/>
+    </bean>
+
+    <bean class="com.imall.commons.base.idfs.FileSystemEngine">
+        <property name="uploadPath" value="#{ systemProperties['app.web.localUploadPath'] == null ? '${app.web.localUploadPath}': systemProperties['app.web.localUploadPath'] }"/>
+        <property name="fileWebUrl" value="#{ systemProperties['app.web.fileWebUrl'] == null ? '${app.web.fileWebUrl}': systemProperties['app.web.fileWebUrl'] }"/>
+        <property name="fileKeyGenerator">
+            <bean class="com.imall.commons.base.idfs.keygen.OrgFileKeyGenerator"/>
+        </property>
+    </bean>
+
+    <bean class="com.imall.commons.base.util.FTPClientTemplate">
+        <property name="hostList" value="#{ systemProperties['app.fileUpload.ftp.hosts'] == null ? '${app.fileUpload.ftp.hosts}': systemProperties['app.fileUpload.ftp.hosts'] }"/>
+        <property name="imgRemoteSyncDirectory" value="#{ systemProperties['img.remote.sync.directory'] == null ? '${img.remote.sync.directory}': systemProperties['img.remote.sync.directory'] }"/>
+        <property name="ftpPort" value="#{ systemProperties['app.fileUpload.ftp.port'] == null ? '${app.fileUpload.ftp.port}': systemProperties['aapp.fileUpload.ftp.port'] }"/>
+        <property name="ftpUsername" value="#{ systemProperties['app.fileUpload.ftp.username'] == null ? '${app.fileUpload.ftp.username}': systemProperties['app.fileUpload.ftp.username'] }"/>
+        <property name="ftpPassword" value="#{ systemProperties['app.fileUpload.ftp.password'] == null ? '${app.fileUpload.ftp.password}': systemProperties['app.fileUpload.ftp.password'] }"/>
+    </bean>
+
+    <!-- component-scan自动搜索@Component , @Controller , @Service , @Repository等标注的类 -->
+
+    <context:component-scan base-package="com.imall.**.service"/>
+    <context:component-scan base-package="com.imall.**.interceptor"/>
+    <context:component-scan base-package="com.imall.**.validate"/>
+    <context:component-scan base-package="com.imall.**.dao"/>
+    <context:component-scan base-package="com.imall.**.dao.commons"/>
+    <context:component-scan base-package="com.imall.**.events.handler"/>
+    <context:component-scan base-package="com.imall.**.commons"/>
+    <context:component-scan base-package="com.imall.**.aop"/>
+    <context:component-scan base-package="com.imall.**.elasticsearch.provider"/>
+    <context:component-scan base-package="com.imall.iportal.core.main.log"/>
+
+    <bean class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor" />
+
+    <bean id="scheduler" lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" />
+
+</beans>

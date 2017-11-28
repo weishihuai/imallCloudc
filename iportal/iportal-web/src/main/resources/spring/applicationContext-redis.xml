@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:cache="http://www.springframework.org/schema/cache"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-4.2.xsd
+                        http://www.springframework.org/schema/cache
+                        http://www.springframework.org/schema/cache/spring-cache-4.2.xsd">
+
+
+<!--	<context:property-placeholder
+			location="classpath:properties/redis_config.properties" />-->
+
+	<context:component-scan base-package="com.imall.**.redis"/>
+	<context:component-scan base-package="com.imall.**.entity"/>
+	<context:component-scan base-package="com.imall.**.processor"/>
+
+	<!--<task:executor id="executor" pool-size="${app.thread.executor.pool:1}" />-->	<!-- 处理@Async的  -->
+	<!--<task:scheduler id="scheduler" pool-size="${app.thread.scheduler.pool:12}" />-->	<!-- 处理@Scheduled的  -->
+	<!--<task:annotation-driven executor="executor" scheduler="scheduler" />-->
+
+	<!-- Key生成策略配置 -->
+	<bean id="defaultKeyGenerator" class="com.imall.commons.redis.keygenerator.DefaultKeyGenerator"/>
+
+	<!-- 启用缓存注解功能，这个是必须的，否则注解不会生效，另外，该注解一定要声明在spring主配置文件中才会生效 -->
+	<cache:annotation-driven cache-manager="redisCacheManager" key-generator="defaultKeyGenerator" />
+
+	<bean id="redisCacheManager" class="org.springframework.cache.support.SimpleCacheManager" >
+		<property name="caches">
+			<set>
+				<bean class="com.imall.commons.redis.RedisCache">
+					<property name="redisTemplate" ref="redisTemplate" />
+					<property name="name" value="commonCache"/>
+					<property name="timeout" value="${redis.cache.timeout}" />
+				</bean>
+			</set>
+		</property>
+	</bean>
+
+	<!-- Redis 配置 -->
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="${redis.pool.maxTotal}" /><!--设置最大连接数-->
+		<property name="maxWaitMillis" value="${redis.pool.maxWaitMillis}" /><!--设置最大阻塞时间，记住是毫秒数milliseconds-->
+		<property name="maxIdle" value="${redis.pool.maxIdle}" /><!--设置空闲连接-->
+		<property name="testOnBorrow" value="${redis.pool.testOnBorrow}" /><!--在borrow一个jedis实例时，是否提前进行validate操作；如果为true，则得到的jedis实例均是可用的-->
+	</bean>
+
+	<bean id="sentinelConfiguration" class="org.springframework.data.redis.connection.RedisSentinelConfiguration">
+
+		<property name="master">
+			<bean class="org.springframework.data.redis.connection.RedisNode">
+				<property name="name" value="${redis.master.name}"/>
+			</bean>
+		</property>
+
+		<property name="sentinels">
+			<set>
+				<bean class="org.springframework.data.redis.connection.RedisNode">
+					<constructor-arg name="host" value="${sentinel1.ip}"/>
+					<constructor-arg name="port" value="${sentinel1.port}"/>
+				</bean>
+				<bean class="org.springframework.data.redis.connection.RedisNode">
+					<constructor-arg name="host" value="${sentinel2.ip}"/>
+					<constructor-arg name="port" value="${sentinel2.port}"/>
+				</bean>
+			</set>
+		</property>
+	</bean>
+
+	<!-- Jedis ConnectionFactory连接配置 -->
+	<bean id="jedisConnectionFactory"
+		  class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+		<property name="password" value="${redis.pass}"/>
+		<property name="poolConfig" ref="jedisPoolConfig"/>
+		<constructor-arg name="sentinelConfig" ref="sentinelConfiguration"/>
+	</bean>
+
+	<!-- redisTemplate配置，redisTemplate是对Jedis的对redis操作的扩展，有更多的操作，封装使操作更便捷 -->
+	<bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+		<property name="connectionFactory" ref="jedisConnectionFactory" />
+
+		<property name="keySerializer" >
+			<bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />
+		</property>
+		<property name="valueSerializer" >
+			<bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer" />
+		</property>
+	</bean>
+
+	<bean id="redisUtil" class="com.imall.commons.redis.RedisUtil">
+		<property name="manager" ref="redisCacheManager" />
+	</bean>
+
+	<bean id="redisCacheInitBean" class="com.imall.commons.redis.RedisCacheInitBean" />
+
+</beans>

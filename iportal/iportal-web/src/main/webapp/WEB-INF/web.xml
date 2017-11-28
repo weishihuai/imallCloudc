@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        version="3.0"
+        metadata-complete="false">
+
+        <!-- 默认首页定义 -->
+        <welcome-file-list>
+                <welcome-file>index.jsp</welcome-file>
+                <welcome-file>index.html</welcome-file>
+        </welcome-file-list>
+
+        <mime-mapping>
+                <extension>ico</extension>
+                <mime-type>image/x-icon</mime-type>
+        </mime-mapping>
+
+        <!-- 默认首页定义 -->
+        <welcome-file-list>
+                <welcome-file>index.jsp</welcome-file>
+                <welcome-file>index.html</welcome-file>
+        </welcome-file-list>
+
+        <!-- Error Page定义 -->
+        <!--<error-page>-->
+        <!--<error-code>500</error-code>-->
+        <!--<location>/commons/error.jsp</location>-->
+        <!--</error-page>-->
+        <!--<error-page>-->
+        <!--<error-code>404</error-code>-->
+        <!--<location>/commons/404.jsp</location>-->
+        <!--</error-page>-->
+        <!--<error-page>-->
+        <!--<error-code>403</error-code>-->
+        <!--<location>/commons/403.jsp</location>-->
+        <!--</error-page>-->
+
+        <context-param>
+                <param-name>contextClass</param-name>
+                <param-value>com.imall.iportal.core.main.commons.MyWebApplicationContext</param-value>
+        </context-param>
+
+        <!-- Spring ApplicationContext配置文件的路径可使用通配符，多个路径用,号分隔
+           此参数用于后面的Spring-Context loader -->
+        <context-param>
+                <param-name>contextConfigLocation</param-name>
+                <param-value>
+                        classpath*:spring/applicationContext.xml,
+                        classpath*:com/imall/**/META-INF/beans.xml
+                </param-value>
+        </context-param>
+
+
+        <!--<context-param>
+                <param-name>spring.profiles.default</param-name>
+                <param-value>development</param-value>
+        </context-param>
+-->
+
+        <listener>
+                <listener-class>com.imall.iportal.core.servlet.InitConfigListener</listener-class>
+        </listener>
+
+        <listener>
+                <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+        </listener>
+
+        <!-- Character Encoding filter -->
+        <filter>
+                <filter-name>CharacterEncodingFilter</filter-name>
+                <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+                <init-param>
+                        <param-name>encoding</param-name>
+                        <param-value>UTF-8</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>forceEncoding</param-name>
+                        <param-value>true</param-value>
+                </init-param>
+        </filter>
+
+        <filter-mapping>
+                <filter-name>CharacterEncodingFilter</filter-name>
+                <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+        <servlet>
+                <servlet-name>ValidateCode</servlet-name>
+                <servlet-class>com.imall.iportal.core.main.web.servlet.ValidateCodeServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+                <servlet-name>ValidateCode</servlet-name>
+                <url-pattern>/ValidateCode</url-pattern>
+        </servlet-mapping>
+
+
+        <filter>
+                <!--请使用apache-tomcat-7.0.73版本或以上的tomcat-->
+                <filter-name>CorsFilter</filter-name>
+                <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+                <init-param>
+                        <param-name>cors.allowed.origins</param-name>
+                        <param-value>*</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>cors.allowed.methods</param-name>
+                        <param-value>GET,POST,HEAD,OPTIONS,PUT</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>cors.allowed.headers</param-name>
+                        <param-value>Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>cors.exposed.headers</param-name>
+                        <param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>cors.support.credentials</param-name>
+                        <param-value>true</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>cors.preflight.maxage</param-name>
+                        <param-value>3600</param-value>
+                </init-param>
+        </filter>
+        <filter-mapping>
+                <filter-name>CorsFilter</filter-name>
+                <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+        <!-- 使Spring支持request与session的scope,如:<bean id="loginAction" class="com.foo.LoginAction" scope="request"/> -->
+        <listener>
+                <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+        </listener>
+
+        <!-- The filter-name matches name of a 'shiroFilter' bean inside applicationContext.xml -->
+        <filter>
+                <filter-name>shiroFilter</filter-name>
+                <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+                <async-supported>true</async-supported>
+                <init-param>
+                        <param-name>targetFilterLifecycle</param-name>
+                        <param-value>true</param-value>
+                </init-param>
+        </filter>
+
+        <!-- Make sure any request you want accessible to Shiro is filtered. /* catches all -->
+        <!-- requests.  Usually this filter mapping is defined first (before all others) to -->
+        <!-- ensure that Shiro works in subsequent filters in the filter chain:             -->
+        <filter-mapping>
+                <filter-name>shiroFilter</filter-name>
+                <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+        <error-page>
+                <exception-type>org.apache.shiro.session.InvalidSessionException</exception-type>
+                <location>/index.jsp</location>
+        </error-page>
+        <!-- shiro end-->
+        
+        <servlet>
+                <servlet-name>spring</servlet-name>
+                <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+                <init-param>
+                        <param-name>contextConfigLocation</param-name>
+                        <param-value>classpath:spring/applicationContext-mvc.xml</param-value>
+                </init-param>
+                <load-on-startup>1</load-on-startup>
+                <async-supported>true</async-supported>
+        </servlet>
+        <servlet-mapping>
+                <servlet-name>spring</servlet-name>
+                <url-pattern>/</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+                <servlet-name>spring</servlet-name>
+                <url-pattern>*.json</url-pattern>
+        </servlet-mapping>
+
+        <!--<servlet-mapping>
+                <servlet-name>default</servlet-name>
+                <url-pattern>*.png</url-pattern>
+                <url-pattern>*.js</url-pattern>
+                <url-pattern>*.css</url-pattern>
+        </servlet-mapping>-->
+
+        <!-- Druid,监控数据库,以及WEB访问连接信息 -->
+        <!-- 参考: https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_%E9%85%8D%E7%BD%AEWebStatFilter -->
+        <filter>
+                <filter-name>DruidWebStatFilter</filter-name>
+                <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
+                <init-param>
+                        <param-name>exclusions</param-name>
+                        <param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,*.jsp,/druid/*,/download/*</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>sessionStatMaxCount</param-name>
+                        <param-value>2000</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>sessionStatEnable</param-name>
+                        <param-value>true</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>principalSessionName</param-name>
+                        <param-value>session_user_key</param-value>
+                </init-param>
+                <init-param>
+                        <param-name>profileEnable</param-name>
+                        <param-value>true</param-value>
+                </init-param>
+        </filter>
+        <filter-mapping>
+                <filter-name>DruidWebStatFilter</filter-name>
+                <url-pattern>/*</url-pattern>
+        </filter-mapping>
+        <!-- 配置 Druid 监控信息显示页面 -->
+        <servlet>
+                <servlet-name>DruidStatView</servlet-name>
+                <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+                <init-param>
+                        <!-- 允许清空统计数据 -->
+                        <param-name>resetEnable</param-name>
+                        <param-value>true</param-value>
+                </init-param>
+                <init-param>
+                        <!-- 用户名 -->
+                        <param-name>loginUsername</param-name>
+                        <param-value>druidcoock</param-value>
+                </init-param>
+                <init-param>
+                        <!-- 密码 -->
+                        <param-name>loginPassword</param-name>
+                        <param-value>druidcoock123123</param-value>
+                </init-param>
+        </servlet>
+        <servlet-mapping>
+                <servlet-name>DruidStatView</servlet-name>
+                <url-pattern>/druid/*</url-pattern>
+        </servlet-mapping>
+
+        <context-param>
+                <param-name>webAppRootKey</param-name>
+                <param-value>iportal.web.root</param-value>
+        </context-param>
+
+        <context-param>
+                <param-name>log4jConfigLocation</param-name>
+                <param-value>classpath:log4j.properties</param-value>
+        </context-param>
+
+        <context-param>
+                <param-name>log4jRefreshInterval</param-name>
+                <param-value>6000</param-value>
+        </context-param>
+
+    <filter>
+        <filter-name>WebContextFileter</filter-name>
+        <filter-class>com.imall.iportal.frontend.wechat.common.filter.WebContextFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>WebContextFileter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+
+    <filter>
+         <filter-name>WeixinAutoLoginFilter</filter-name>
+         <filter-class>com.imall.iportal.frontend.wechat.common.filter.WeChatAutoLoginFilter</filter-class>
+         <init-param>
+              <description>加载的URL</description>
+              <param-name>includeUrls</param-name>
+              <param-value>
+                      */wechat/*;
+              </param-value>
+         </init-param>
+         <init-param>
+             <description>不验证的URL</description>
+             <param-name>excludeUrls</param-name>
+             <param-value>*.js;*.css;*.jpg;*.gif;*.png;*.txt;*.swf;*/wechat/weixinAcceptMsgServlet;</param-value>
+         </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>WeixinAutoLoginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>CodeToLoginServlet</servlet-name>
+        <servlet-class>com.imall.iportal.frontend.wechat.common.servlet.CodeToLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CodeToLoginServlet</servlet-name>
+        <url-pattern>/wechat/codeToLoginServlet</url-pattern>
+    </servlet-mapping>
+
+        <servlet>
+                <servlet-name>WeixinAcceptMsgServlet</servlet-name>
+                <servlet-class>com.imall.iportal.frontend.wechat.common.servlet.WeixinAcceptMsgServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+                <servlet-name>WeixinAcceptMsgServlet</servlet-name>
+                <url-pattern>/wechat/weixinAcceptMsgServlet</url-pattern>
+        </servlet-mapping>
+</web-app>
+

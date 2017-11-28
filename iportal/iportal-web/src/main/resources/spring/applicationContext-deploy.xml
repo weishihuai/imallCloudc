@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+	
+	<description>跟平台和部署相关，便于根据不同平台替换的，只能放跟平台和部署相关的Bean</description>
+
+    <beans profile="test">
+        <context:property-placeholder ignore-resource-not-found="true" location="classpath:properties/appConfig.local.testing.properties"/>
+        <!-- Spring Simple连接池 -->
+        <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+            <property name="driverClass" value="${jdbc.driver}"/>
+            <property name="url" value="${jdbc.url}"/>
+            <property name="username" value="${jdbc.username}"/>
+            <property name="password" value="${jdbc.password}"/>
+        </bean>
+    </beans>
+
+	<beans profile="development">
+		<context:property-placeholder ignore-resource-not-found="true" location="classpath:properties/appConfig.local.development.properties,classpath:properties/soa_server.properties,classpath:properties/mq_config.properties,classpath:properties/redis_config.properties"/>
+        <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+            <!-- 数据库基本信息配置 -->
+            <property name="driverClassName" value="${app.dataSource.driver}" />
+            <property name="url" value="${app.dataSource.driverUrl}" />
+            <property name="username" value="${app.dataSource.username}" />
+            <property name="password" value="${app.dataSource.password}" />
+            <!-- 初始化连接数量 -->
+            <property name="initialSize" value="${app.dataSource.initialSize}" />
+            <!-- 最大并发连接数 -->
+            <property name="maxActive" value="${app.dataSource.maxActive}" />
+            <!-- 最大空闲连接数 -->
+            <property name="maxIdle" value="${app.dataSource.maxIdle}" />
+            <!-- 最小空闲连接数 -->
+            <property name="minIdle" value="${app.dataSource.minIdle}" />
+            <!-- 配置获取连接等待超时的时间 -->
+            <property name="maxWait" value="${app.dataSource.maxWait}" />
+            <!-- 超过时间限制是否回收 -->
+            <property name="removeAbandoned" value="${app.dataSource.removeAbandoned}" />
+            <!-- 超过时间限制多长； -->
+            <property name="removeAbandonedTimeout" value="${app.dataSource.removeAbandonedTimeout}" />
+            <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+            <property name="timeBetweenEvictionRunsMillis" value="${app.dataSource.timeBetweenEvictionRunsMillis}" />
+            <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+            <property name="minEvictableIdleTimeMillis" value="${app.dataSource.minEvictableIdleTimeMillis}" />
+            <!-- 用来检测连接是否有效的sql，要求是一个查询语句-->
+            <property name="validationQuery" value="${app.dataSource.validationQuery}" />
+            <!-- 申请连接的时候检测 -->
+            <property name="testWhileIdle" value="${app.dataSource.testWhileIdle}" />
+            <!-- 申请连接时执行validationQuery检测连接是否有效，配置为true会降低性能 -->
+            <property name="testOnBorrow" value="${app.dataSource.testOnBorrow}" />
+            <!-- 归还连接时执行validationQuery检测连接是否有效，配置为true会降低性能  -->
+            <property name="testOnReturn" value="${app.dataSource.testOnReturn}" />
+            <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+            <property name="poolPreparedStatements" value="${app.dataSource.poolPreparedStatements}" />
+            <property name="maxPoolPreparedStatementPerConnectionSize" value="${app.dataSource.maxPoolPreparedStatementPerConnectionSize}" />
+            <!--属性类型是字符串，通过别名的方式配置扩展插件，常用的插件有：
+                    监控统计用的filter:stat
+                    日志用的filter:log4j
+                   防御SQL注入的filter:wall -->
+            <property name="filters" value="${app.dataSource.filters}" />
+        </bean>
+
+        <!-- 初始化数据结构与默认数据 -->
+        <jdbc:initialize-database data-source="dataSource" enabled="${app.hibernate.db.init}">
+            <jdbc:script location="classpath:data/development/iportal/init-base-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/development/iportal/init-zone-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/development/iportal/init-dict-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/development/iportal/init-exception-code.sql" encoding="utf-8"/>
+        <!--    <jdbc:script location="classpath:data/development/index/init-index-table.sql" encoding="utf-8"/>-->
+        <!--    <jdbc:script location="classpath:data/development/quartz/init-qrtz-table-no-foreignkey.sql" encoding="utf-8"/>-->
+            <jdbc:script location="classpath:data/development/shop/init-base-data.sql" encoding="utf-8"/>
+        </jdbc:initialize-database>
+	</beans>
+
+	<beans profile="acceptance">
+        <context:property-placeholder ignore-resource-not-found="true" location="classpath:properties/appConfig.local.acceptance.properties,classpath:properties/soa_server.properties,classpath:properties/mq_config.properties,classpath:properties/redis_config.properties"/>
+        <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+            <!-- 数据库基本信息配置 -->
+            <property name="driverClassName" value="${app.dataSource.driver}" />
+            <property name="url" value="${app.dataSource.driverUrl}" />
+            <property name="username" value="${app.dataSource.username}" />
+            <property name="password" value="${app.dataSource.password}" />
+            <!-- 初始化连接数量 -->
+            <property name="initialSize" value="${app.dataSource.initialSize}" />
+            <!-- 最大并发连接数 -->
+            <property name="maxActive" value="${app.dataSource.maxActive}" />
+            <!-- 最大空闲连接数 -->
+            <property name="maxIdle" value="${app.dataSource.maxIdle}" />
+            <!-- 最小空闲连接数 -->
+            <property name="minIdle" value="${app.dataSource.minIdle}" />
+            <!-- 配置获取连接等待超时的时间 -->
+            <property name="maxWait" value="${app.dataSource.maxWait}" />
+            <!-- 超过时间限制是否回收 -->
+            <property name="removeAbandoned" value="${app.dataSource.removeAbandoned}" />
+            <!-- 超过时间限制多长； -->
+            <property name="removeAbandonedTimeout" value="${app.dataSource.removeAbandonedTimeout}" />
+            <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+            <property name="timeBetweenEvictionRunsMillis" value="${app.dataSource.timeBetweenEvictionRunsMillis}" />
+            <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+            <property name="minEvictableIdleTimeMillis" value="${app.dataSource.minEvictableIdleTimeMillis}" />
+            <!-- 用来检测连接是否有效的sql，要求是一个查询语句-->
+            <property name="validationQuery" value="${app.dataSource.validationQuery}" />
+            <!-- 申请连接的时候检测 -->
+            <property name="testWhileIdle" value="${app.dataSource.testWhileIdle}" />
+            <!-- 申请连接时执行validationQuery检测连接是否有效，配置为true会降低性能 -->
+            <property name="testOnBorrow" value="${app.dataSource.testOnBorrow}" />
+            <!-- 归还连接时执行validationQuery检测连接是否有效，配置为true会降低性能  -->
+            <property name="testOnReturn" value="${app.dataSource.testOnReturn}" />
+            <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+            <property name="poolPreparedStatements" value="${app.dataSource.poolPreparedStatements}" />
+            <property name="maxPoolPreparedStatementPerConnectionSize" value="${app.dataSource.maxPoolPreparedStatementPerConnectionSize}" />
+            <!--属性类型是字符串，通过别名的方式配置扩展插件，常用的插件有：
+                    监控统计用的filter:stat
+                    日志用的filter:log4j
+                   防御SQL注入的filter:wall -->
+            <property name="filters" value="${app.dataSource.filters}" />
+        </bean>
+
+        <!-- 初始化数据结构与默认数据 -->
+        <jdbc:initialize-database data-source="dataSource" enabled="${app.hibernate.db.init}">
+            <jdbc:script location="classpath:data/acceptance/iportal/init-base-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/acceptance/iportal/init-zone-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/acceptance/iportal/init-dict-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/acceptance/iportal/init-exception-code.sql" encoding="utf-8"/>
+            <!--    <jdbc:script location="classpath:data/acceptance/index/init-index-table.sql" encoding="utf-8"/>-->
+            <!--    <jdbc:script location="classpath:data/acceptance/quartz/init-qrtz-table-no-foreignkey.sql" encoding="utf-8"/>-->
+            <jdbc:script location="classpath:data/acceptance/shop/init-base-data.sql" encoding="utf-8"/>
+
+        </jdbc:initialize-database>
+	</beans>
+
+	<beans profile="production">
+        <context:property-placeholder ignore-resource-not-found="true" location="classpath:properties/appConfig.local.production.properties,classpath:properties/soa_server.properties,classpath:properties/mq_config.properties,classpath:properties/redis_config.properties"/>
+        <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+            <!-- 数据库基本信息配置 -->
+            <property name="driverClassName" value="${app.dataSource.driver}" />
+            <property name="url" value="${app.dataSource.driverUrl}" />
+            <property name="username" value="${app.dataSource.username}" />
+            <property name="password" value="${app.dataSource.password}" />
+            <!-- 初始化连接数量 -->
+            <property name="initialSize" value="${app.dataSource.initialSize}" />
+            <!-- 最大并发连接数 -->
+            <property name="maxActive" value="${app.dataSource.maxActive}" />
+            <!-- 最大空闲连接数 -->
+            <property name="maxIdle" value="${app.dataSource.maxIdle}" />
+            <!-- 最小空闲连接数 -->
+            <property name="minIdle" value="${app.dataSource.minIdle}" />
+            <!-- 配置获取连接等待超时的时间 -->
+            <property name="maxWait" value="${app.dataSource.maxWait}" />
+            <!-- 超过时间限制是否回收 -->
+            <property name="removeAbandoned" value="${app.dataSource.removeAbandoned}" />
+            <!-- 超过时间限制多长； -->
+            <property name="removeAbandonedTimeout" value="${app.dataSource.removeAbandonedTimeout}" />
+            <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+            <property name="timeBetweenEvictionRunsMillis" value="${app.dataSource.timeBetweenEvictionRunsMillis}" />
+            <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+            <property name="minEvictableIdleTimeMillis" value="${app.dataSource.minEvictableIdleTimeMillis}" />
+            <!-- 用来检测连接是否有效的sql，要求是一个查询语句-->
+            <property name="validationQuery" value="${app.dataSource.validationQuery}" />
+            <!-- 申请连接的时候检测 -->
+            <property name="testWhileIdle" value="${app.dataSource.testWhileIdle}" />
+            <!-- 申请连接时执行validationQuery检测连接是否有效，配置为true会降低性能 -->
+            <property name="testOnBorrow" value="${app.dataSource.testOnBorrow}" />
+            <!-- 归还连接时执行validationQuery检测连接是否有效，配置为true会降低性能  -->
+            <property name="testOnReturn" value="${app.dataSource.testOnReturn}" />
+            <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+            <property name="poolPreparedStatements" value="${app.dataSource.poolPreparedStatements}" />
+            <property name="maxPoolPreparedStatementPerConnectionSize" value="${app.dataSource.maxPoolPreparedStatementPerConnectionSize}" />
+            <!--属性类型是字符串，通过别名的方式配置扩展插件，常用的插件有：
+                    监控统计用的filter:stat
+                    日志用的filter:log4j
+                   防御SQL注入的filter:wall -->
+            <property name="filters" value="${app.dataSource.filters}" />
+        </bean>
+
+        <!-- 初始化数据结构与默认数据 -->
+        <jdbc:initialize-database data-source="dataSource" enabled="${app.hibernate.db.init}">
+            <jdbc:script location="classpath:data/production/iportal/init-base-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/production/iportal/init-zone-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/production/iportal/init-dict-data.sql" encoding="utf-8"/>
+            <jdbc:script location="classpath:data/production/iportal/init-exception-code.sql" encoding="utf-8"/>
+            <!--    <jdbc:script location="classpath:data/production/index/init-index-table.sql" encoding="utf-8"/>-->
+            <!--    <jdbc:script location="classpath:data/production/quartz/init-qrtz-table-no-foreignkey.sql" encoding="utf-8"/>-->
+            <jdbc:script location="classpath:data/production/shop/init-base-data.sql" encoding="utf-8"/>
+
+        </jdbc:initialize-database>
+	</beans>
+</beans>

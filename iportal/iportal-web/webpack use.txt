@@ -1,0 +1,107 @@
+1.安装nodejs
+
+2.打开cmd，然后进入目录：
+>cd D:\imall-future\iportal\iportal-web\
+>D:
+
+3.初始化
+>npm install
+
+4.通过全局安装webpack
+>npm install -g webpack
+在c盘下会生成node_modules文件夹中会包含webpack，此时此刻我们可以使用webpack命令了
+
+npm uninstall  -g  webpack --save-dev
+
+5.编译
+>webpack
+
+6.热加载
+>node server
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+以下是配置webpack的步骤：
+
+3.执行以下命令，如果想知道为什么，请看：http://www.cnblogs.com/Leo_wl/p/4793722.html
+（1）生成package.json文件
+>npm init
+name:>iportal-web
+version:>1.0.0
+description:>iportal-web for www.imall.com.cn
+entry point:>main.js
+test command:>iportal-web test
+git repository:>回车
+keywords:>iportal-web
+author:>imall
+license:>回车
+Is this ok?>y
+
+(2)通过全局安装webpack
+>npm install -g webpack
+在c盘下会生成node_modules文件夹中会包含webpack，此时此刻我们可以使用webpack命令了
+
+(3)配置webpack（在目录下可以看到已经配置好的webpack.config.js）
+
+(4)安装需要的加载器
+>npm install jsx-loader --save-dev
+>npm install css-loader less-loader style-loader --save-dev
+>npm install babel-loader –save-dev
+
+(5)局部安装webpack：
+>npm install webpack --save-dev
+
+(6)Gulp全局安装：
+>npm install -g gulp
+
+(7)在项目文件内，gulp局部安装：
+>npm install gulp --save-dev
+>npm install --save-dev gulp-webpack
+这时，你会发现生成了imall-future\iportal\iportal-web\trunk\node_modules
+
+(8)执行命令进行编译：
+>webpack
+你会发现生成了imall-future\iportal\iportal-web\trunk\src\main\webapp\WEB-INF\static\build\build.js
+
+(9)安装redux
+>npm install --save redux
+
+(10)多数情况下，你还需要使用 React 绑定库和开发者工具，你会发现react也自动安装了。
+>npm install --save react-redux
+>npm install --save-dev redux-devtools
+
+(11)错误记录：babel-loader jsx SyntaxError: Unexpected token
+>npm install --save-dev babel-loader babel-core
+>npm install babel-preset-es2015 --save-dev
+>npm install babel-preset-react
+
+解决方法：http://stackoverflow.com/questions/33460420/babel-loader-jsx-syntaxerror-unexpected-token
+{
+    test: /\.jsx?$/,         // Match both .js and .jsx files
+    exclude: /node_modules/,
+    loader: "babel",
+    query:
+      {
+        presets:['react']
+      }
+}
+
+(12)npm install --save-dev webpack-dev-server react-hot-loader
+
+npm install --save-dev webpack-dev-middleware webpack-hot-middleware
+
+npm install --save redux-thunk
+
+(13)npm install --save react-router
+
+(14)
+>npm install --save babel-polyfill
+>npm install --save classnames
+
+npm i --save redux-logger
+npm install react-bootstrap-table --save
+npm install script-loader --save
+
+>npm install --save-dev babel-preset-react babel-preset-react-hmre babel-register cross-env expect express jsdom mocha node-libs-browser raw-loader react-addons-test-utils webpack-dev-middleware webpack-hot-middleware
+
+
+

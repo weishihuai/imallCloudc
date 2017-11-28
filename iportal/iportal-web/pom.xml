@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<parent>
+		<groupId>com.imall</groupId>
+		<artifactId>commons-parent-cloudc-1.0</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.imall</groupId>
+	<artifactId>iportal-web-cloudc-1.0</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>iportal-web</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<!--<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>file-mgr-frontend-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>-->
+
+		<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>iportal-core-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>iportal-uam-core-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>iportal-uam-server-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+
+
+<!--		<dependency>
+			<groupId>com.imall</groupId>
+			<artifactId>iportal-uam-server-cloudc-1.0</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>-->
+
+		<!-- web项目编译时需要，部署到tomcat中就不需要了 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<!--<scope>provided</scope>-->
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<!-- web项目编译时需要，部署到tomcat中就不需要了 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>iportal</id>
+			<name>iportal release</name>
+			<url>http://192.168.1.202:8020/nexus/content/repositories/iportal-snapshot/</url>
+		</repository>
+		<snapshotRepository>
+			<id>iportal</id>
+			<name>iportal snapshot</name>
+			<url>http://192.168.1.202:8020/nexus/content/repositories/iportal-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
