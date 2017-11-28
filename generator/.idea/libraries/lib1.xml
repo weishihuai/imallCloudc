@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../generator-mgr/lib/freemarker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../generator-mgr/lib/mysql-connector-java-5.0.5-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../generator-mgr/lib/rapid-generator-3.9.3.20100923-source.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../generator-mgr/lib/rapid-generator-3.9.3.20100923.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../generator-mgr/lib/ojdbc5-11.1.0.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../generator-mgr/lib/sqljdbc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

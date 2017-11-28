@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>
+		代码生成器配置文件: 
+		1.修改 basepackage，为子系统顶层包
+		2.修改outRoot 输出生成结果文件路径
+        3.改jdbc.username、jdbc.password 数据库用户名和密码
+        4.改jdbc.schema
+        5.改jdbc.url
+	</comment>
+	
+    <entry key="basepackage">com.imall.iportal.core</entry>
+
+
+	<entry key="outRoot">D:/gensrc51</entry>
+	
+	<!-- 需要移除的表名前缀,使用逗号进行分隔多个前缀,示例值: t_,v_ -->
+	<entry key="tableRemovePrefixes">t_shp_</entry>
+
+    <entry key="jdbc.username">imall_cloudc</entry>
+    <entry key="jdbc.password">imall_cloudc</entry>
+
+	<!-- oracle需要指定jdbc.schema,并且可能要大写，其它数据库忽略此项配置  -->
+	<entry key="jdbc.schema">B2C</entry>
+	<entry key="jdbc.catalog"></entry>
+	
+	<!-- 数据库类型至java类型映射  -->
+	<entry key="java_typemapping.java.sql.Timestamp">java.util.Date</entry>
+	<entry key="java_typemapping.java.sql.Date">java.util.Date</entry>
+	<entry key="java_typemapping.java.sql.Time">java.util.Date</entry>	
+	<entry key="java_typemapping.java.lang.Byte">Integer</entry>
+	<entry key="java_typemapping.java.lang.Short">Integer</entry>
+	<entry key="java_typemapping.java.math.BigDecimal">BigDecimal</entry>
+	<entry key="java_typemapping.java.sql.Clob">String</entry>
+
+
+    <!-- Mysql -->
+    <entry key="jdbc.url">jdbc:mysql://localhost:3306/imall_cloudc?useUnicode=true&amp;characterEncoding=UTF-8</entry>
+    <entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+
+    <!-- Oracle		jdbc:oracle:oci:@tnsname_devdb-->
+    <!--<entry key="jdbc.url">jdbc:oracle:thin:@192.168.1.89:1521:crmdev</entry>-->
+    <!--<entry key="jdbc.driver">oracle.jdbc.driver.OracleDriver</entry>-->
+</properties>

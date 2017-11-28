@@ -1,0 +1,22 @@
+<#assign className = table.className>
+import java.util.*;
+
+import com.iloosen.imall.commons.base.*;
+import com.iloosen.imall.commons.util.*;
+
+import cn.org.rapid_framework.util.*;
+import cn.org.rapid_framework.web.util.*;
+import cn.org.rapid_framework.page.*;
+import cn.org.rapid_framework.page.impl.*;
+
+import ${basepackage}.${moduleName}.domain.*;
+import ${basepackage}.${moduleName}.dao.*;
+import ${basepackage}.${moduleName}.service.*;
+import ${servicepackage}.*;
+
+/**
+ * @key gen www.iloosen.com
+ * @version 1.0
+ * @since 1.0
+ */
+
