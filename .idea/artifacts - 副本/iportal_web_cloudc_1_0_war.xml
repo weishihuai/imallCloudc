@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="iportal-web-cloudc-1.0:war">
+    <output-path>$PROJECT_DIR$/iportal/iportal-web/target</output-path>
+    <root id="archive" name="iportal-web-cloudc-1.0.war">
+      <element id="artifact" artifact-name="iportal-web-cloudc-1.0:war exploded" />
+    </root>
+  </artifact>
+</component>

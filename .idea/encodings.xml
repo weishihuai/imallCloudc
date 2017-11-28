@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/commons/commons-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/commons-dicts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/commons-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/commons-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commons/commons-tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/doc/3-Delivery/3-Scripts/build/170713创建出入库日志表.sql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iportal/iportal-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iportal/iportal-uam-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iportal/iportal-uam-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iportal/iportal-uam-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/iportal/iportal-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

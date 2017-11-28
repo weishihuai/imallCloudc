@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commons/commons-base/commons-base-cloudc-1.0.iml" filepath="$PROJECT_DIR$/commons/commons-base/commons-base-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons-cloudc-1.0.iml" filepath="$PROJECT_DIR$/commons/commons-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons-dicts/commons-dicts-cloudc-1.0.iml" filepath="$PROJECT_DIR$/commons/commons-dicts/commons-dicts-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons-parent/commons-parent-cloudc-1.0.iml" filepath="$PROJECT_DIR$/commons/commons-parent/commons-parent-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons-redis/commons-redis-cloudc-1.0.iml" filepath="$PROJECT_DIR$/commons/commons-redis/commons-redis-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons-tools/commons-tools-cloudc-1.0.iml" filepath="$PROJECT_DIR$/commons/commons-tools/commons-tools-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imall-cloudc-1.0.iml" filepath="$PROJECT_DIR$/imall-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal/iportal-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal/iportal-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal/iportal-core/iportal-core-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal/iportal-core/iportal-core-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal/iportal-uam-client/iportal-uam-client-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal/iportal-uam-client/iportal-uam-client-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal/iportal-uam-core/iportal-uam-core-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal/iportal-uam-core/iportal-uam-core-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal/iportal-uam-server/iportal-uam-server-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal/iportal-uam-server/iportal-uam-server-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal/iportal-web/iportal-web-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal/iportal-web/iportal-web-cloudc-1.0.iml" />
+    </modules>
+  </component>
+</project>
