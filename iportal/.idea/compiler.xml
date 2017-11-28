@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="iportal-core-cloudc-1.0" />
+        <module name="iportal-uam-client-cloudc-1.0" />
+        <module name="iportal-uam-core-cloudc-1.0" />
+        <module name="iportal-uam-server-cloudc-1.0" />
+        <module name="iportal-web-cloudc-1.0" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="iportal-cloudc-1.0" target="1.5" />
+      <module name="iportal-core-cloudc-1.0" target="1.5" />
+      <module name="iportal-uam-client-cloudc-1.0" target="1.5" />
+      <module name="iportal-uam-core-cloudc-1.0" target="1.5" />
+      <module name="iportal-uam-server-cloudc-1.0" target="1.5" />
+      <module name="iportal-web-cloudc-1.0" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

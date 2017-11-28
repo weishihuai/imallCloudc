@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/iportal-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal-core/iportal-core-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal-core/iportal-core-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal-uam-client/iportal-uam-client-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal-uam-client/iportal-uam-client-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal-uam-core/iportal-uam-core-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal-uam-core/iportal-uam-core-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal-uam-server/iportal-uam-server-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal-uam-server/iportal-uam-server-cloudc-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iportal-web/iportal-web-cloudc-1.0.iml" filepath="$PROJECT_DIR$/iportal-web/iportal-web-cloudc-1.0.iml" />
+    </modules>
+  </component>
+</project>
