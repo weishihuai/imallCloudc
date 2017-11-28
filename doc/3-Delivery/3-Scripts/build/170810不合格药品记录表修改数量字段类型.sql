@@ -1,0 +1,1 @@
+ALTER TABLE t_shp_disqualification_drug_process_record MODIFY COLUMN quantity LONG NOT NULL;

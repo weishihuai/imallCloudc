@@ -1,0 +1,1 @@
+ALTER TABLE `imall_cloudc`.`t_pt_sys_org` CHANGE `ORG_CODE` `ORG_CODE` VARCHAR(32) CHARSET utf8 COLLATE utf8_general_ci NOT NULL; 

@@ -1,0 +1,48 @@
+.j_select .current_select {
+    height:40px;line-height:40px;border:none;
+    font-size: 16px;
+    color: #333;
+}
+/*主体*/
+.main .mc{width: 100%;}
+
+/*表格*/
+.main .mc .table-box{width: 100%; max-height: 630px; background-color: #fff;  overflow: hidden; overflow-x: auto; }
+.main .mc .table-box table {width: 100%; }
+.main .mc .table-box th {border-bottom: 1px solid #f5f4fb; font-weight: 400; line-height: 20px; padding: 20px 0; font-size: 15px; color: #9a98b8; overflow: hidden;}
+.main .mc .table-box .th-coding{width: 100px; padding-left: 30px;}
+.main .mc .table-box .common-name{width: 160px; padding-left: 30px;}
+.main .mc .table-box .statutory{width: 115px; padding-left: 30px;}
+.main .mc .table-box .zl-principal{width: 105px; padding-left: 30px;}
+.main .mc .table-box .yw-principal{width: 105px; padding-left: 30px;}
+.main .mc .table-box .taxation{width: 130px; padding-left: 30px;}
+.main .mc .table-box .license{width: 110px; padding-left: 30px;}
+.main .mc .table-box .tvalid-period{width: 125px; padding-left: 30px;}
+.main .mc .table-box .status{width: 108px; padding-left: 30px;}
+.main .mc .table-box .time{width: 155px; padding-left: 30px;}
+.main .mc .table-box .operating{width: 135px; text-align: right; padding-right: 35px;}
+
+.main .mc .table-box tr{background-color: #fff;}
+.main .mc .table-box td{padding: 15px 0; border-bottom: 1px solid #f5f4fb;}
+.main .mc .table-box .td-cont{padding: 0 5px 0 30px; color: #333333; font-size: 15px; }
+.main .mc .table-box .green-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; line-height: 30px;  float: right; margin-left: 10px; color: #fff; font-size: 15px; background-color: #2bcd73; border-radius: 2px;}
+.main .mc .table-box .gray-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; line-height: 30px; float: right; margin-left: 10px; color: #333333; font-size: 15px; background-color: #dddddd; border-radius: 2px;}
+.main .mc .table-box .red-word{color: #fe1414;}
+.main .mc .table-box tbody tr:hover{background-color: #e2e2e2;}
+.main .mc .table-box tbody tr:hover .gray-btn{background-color: #eee;}
+
+
+/*审核弹窗*/
+.layer-verify{width:430px;}
+.layer-verify .layer-body{padding-top: 50px;}
+.layer-verify .layer-body .item{height: 50px;}
+.layer-verify .layer-body .item .mlt{display: block; width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-verify .layer-body .item .mlt span{color: #ff0000;}
+.layer-verify .layer-body .item .mrt{width: 270px; float: left;}
+.layer-verify .layer-body .item .mrt input{display: block; width: 165px; padding-left: 13px; height: 34px; line-height: 34px; color: #666666; font-size: 15px; border: 1px solid #e5e5e5;}
+
+.layer-verify .layer-footer{padding: 12px 0 50px 150px;}
+.layer-footer .confirm{display: inline-block; width: 106px; height: 36px; margin-right: 23px; border-radius: 3px; text-align: center; line-height: 36px; color: #fff; font-size: 16px; background-color: #2bcd73;}
+.layer-footer .cancel{line-height: 36px; color: #2bcd73; font-size: 16px;}
+
+

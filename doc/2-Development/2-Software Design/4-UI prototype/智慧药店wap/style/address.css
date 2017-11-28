@@ -1,0 +1,20 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #fff; padding-bottom: 6rem; }
+.main .mc{padding: 0 1.8rem;}
+.main .mc .item{display: block; padding: 1.8rem 6rem 1.8rem 0; border-bottom:1px solid #E5E5E5; position: relative; }
+.main .mc .item p{margin-bottom: 0.7rem; color: #37474F; font-size: 1.5rem; line-height: 1.8rem;}
+.main .mc .item span{color: #455A64; font-size: 1.4rem; padding-right: 1rem;}
+.main .mc .compile{display: block; width: 3rem; height: 3rem; background: url("../images/bianji.png") no-repeat 100% center / 2rem 2rem; position: absolute; right: 0; top:50%; margin-top: -1.5rem;}
+
+
+.main .check-btn-auto{margin: 0 auto; max-width: 640px; min-width: 320px; overflow: hidden; width: 100%;}
+.main .check-btn-total{background: #fff none repeat scroll 0 0; bottom: 0px; height: 7em; max-width: 640px; padding-top: 0.6em; position: fixed; text-align: center; width: 100%; z-index: 6;}
+.main .add-btn{display: inline-block; width: 13rem; height: 4rem; line-height: 4rem; box-shadow: 2px 10px 14px 0 rgba(35,142,229,0.50); text-align: center; color: #fff; font-size: 1.4rem;  border-radius: 2rem; background-color: #238EE5; background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+
+
+/*管理地址 超出配送范围 新增2017-8-31*/
+.beyond-scope {padding: 0 1.8rem; margin-top: -1px; border-top: 1.1rem solid #f5f5f5; position: relative;}
+.beyond-scope .title {height: 4rem; color: #333; font-size: 1.6rem; line-height: 4rem; border-bottom: 1px solid #e2e2e2; margin-bottom: 0;}
+.beyond-scope .beyond-site {border-bottom: 1px solid #e2e2e2; padding: 1.8rem 6rem 1.8rem 0; position: relative;}
+.beyond-scope p{margin-bottom: 0.7rem; color: #bdbdbd; font-size: 1.5rem; line-height: 1.8rem;}
+.beyond-scope span{color: #bdbdbd; font-size: 1.4rem; padding-right: 1rem;}
+.beyond-scope .compile{display: block; width: 3rem; height: 3rem; background: url("../images/bianji.png") no-repeat 100% center / 2rem 2rem; position: absolute; right: 0; top:50%; margin-top: -1.5rem;}

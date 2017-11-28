@@ -1,0 +1,2 @@
+ALTER TABLE `t_shp_out_in_stock_log` ADD COLUMN  OBJECT_ORDER_NUM  VARCHAR(32) NULL COMMENT '对象 单号';
+ALTER TABLE `t_shp_out_in_stock_log` DROP COLUMN  UNIT_PRICE;

@@ -1,0 +1,13 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #fff; padding-bottom: 6rem; }
+.main .mc{padding: 1rem;}
+.main .mc .item{display: block; height: 7.5rem; padding: 2rem 0 2rem 1rem; border-bottom:1px solid #E5E5E5; }
+.main .mc .item a{float:left; line-height: 3.5rem; color: #237DE4; margin-left: 1rem; font-size: 1.5rem; overflow: hidden;}
+.main .mc .item span{float: left; display: block; width: 7.5rem; height: 3.5rem; color: #444A50; font-size: 1.9rem; overflow: hidden;}
+.main .mc .item input{float: left; display: block; width: 19rem; height: 3.5rem; line-height: 3.5rem; color: #333; font-size: 1.7rem; overflow: hidden;}
+.main .mc .item .again{color: #A1B0B8; cursor: default;}
+
+.main .bd-btn{display: block; width: 28rem; height: 5rem; line-height: 5rem; text-align: center; color: #fff; font-size: 1.6rem; margin: 3.5rem auto 0; border-radius: 2.4rem; background-color: #238EE5; box-shadow: 2px 10px 14px 0 rgba(35,142,229,0.50);  background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+
+
+
+

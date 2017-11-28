@@ -1,0 +1,1 @@
+ALTER TABLE `t_es_index_queue` RENAME `t_pt_es_index_queue`;

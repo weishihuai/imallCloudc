@@ -1,0 +1,145 @@
+.j_select .current_select {
+    height:40px;line-height:40px;border:none;
+    font-size: 15px;
+    color: #333;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.j_select ul li{height: 30px; overflow: hidden;}
+
+/*主体*/
+.main .mc{width: 100%;}
+
+/*表格*/
+.main .mc .table-box{width: 100%; max-height: 630px; background-color: #fff;  overflow: hidden; overflow-x: auto; }
+.main .mc .table-box table {width: 100%; }
+.main .mc .table-box th {border-bottom: 1px solid #f5f4fb; font-weight: 400; line-height: 20px; padding: 20px 0; font-size: 15px; color: #9a98b8; overflow: hidden;}
+.main .mc .table-box .name{padding-left: 30px;}
+.main .mc .table-box .types{width: 200px; padding-left: 30px;}
+.main .mc .table-box .status{width: 200px; padding-left: 30px;}
+.main .mc .table-box .operating{min-width: 120px; text-align: right; padding-right: 35px;}
+.main .mc .table-box tr{background-color: #fff;}
+.main .mc .table-box td{padding: 15px 0; border-bottom: 1px solid #f5f4fb;}
+.main .mc .table-box .td-cont{padding: 0 5px 0 30px; color: #333333; font-size: 15px; }
+.main .mc .table-box .gray-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; margin-left: 10px; line-height: 30px; float: right;  color: #333333; font-size: 15px; background-color: #dddddd; border-radius: 2px;}
+.main .mc .table-box tbody tr:hover{background-color: #e2e2e2;}
+.main .mc .table-box tbody tr:hover .gray-btn{background-color: #eee;}
+
+.main .mc .table-box .th-number{width: 50px; text-align: center;}
+.main .mc .table-box .th-coding{width: 80px; padding-left: 30px;}
+.main .mc .table-box .th-title{width: 120px; padding-left: 30px;}
+.main .mc .table-box .common-name{width: 150px; padding-left: 30px;}
+.main .mc .table-box .standard{width: 65px; padding-left: 30px;}
+.main .mc .table-box .dosage{width: 65px; padding-left: 30px;}
+.main .mc .table-box .units{width: 65px; padding-left: 30px;}
+.main .mc .table-box .manufacturer{width: 105px; padding-left: 30px;}
+.main .mc .table-box .approval{width: 85px; padding-left: 30px;}
+.main .mc .table-box .origin{width:100px; padding-left: 30px;}
+.main .mc .table-box .supplier{width: 105px; padding-left: 30px;}
+.main .mc .table-box .batch-number{width: 95px; padding-left: 30px;}
+.main .mc .table-box .time{width: 125px; padding-left: 30px;}
+.main .mc .table-box .cargo-location{width:70px; padding-left: 30px;}
+.main .mc .table-box .inventory{width: 75px; padding-left: 30px;}
+.main .mc .table-box .td-number{padding: 0 5px; text-align: center;}
+
+
+
+
+/*弹窗底部*/
+.layer-footer .confirm{display: inline-block; width: 106px; height: 36px; margin-right: 23px; border-radius: 3px; text-align: center; line-height: 36px; color: #fff; font-size: 16px; background-color: #2bcd73;}
+.layer-footer .cancel{line-height: 36px; color: #2bcd73; font-size: 16px;}
+
+
+/*审核弹窗*/
+.layer-verify{width:430px;}
+.layer-verify .layer-body{padding-top: 50px;}
+.layer-verify .layer-body .item{height: 50px;}
+.layer-verify .layer-body .item .mlt{width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-verify .layer-body .item .mlt span{color: #ff0000;}
+.layer-verify .layer-body .item .mrt{width: 270px; float: left;}
+.layer-verify .layer-body .item .mrt .j_select{width: 180px !important;}
+.layer-verify .layer-body .item .mrt label{display: inline-block; font-size: 15px; line-height: 36px; color: #333; margin-right: 25px;}
+.layer-verify .layer-body .item .mrt label input[type="radio"]{display: inline-block; margin-right: 3px;}
+.layer-verify .layer-footer{padding: 12px 0 50px 150px;}
+
+/*审核弹窗*/
+.layer-start{width:430px;}
+.layer-start .layer-body{padding-top: 50px;}
+.layer-start .layer-body .item{height: 50px;}
+.layer-start .layer-body .item .mlt{width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-start .layer-body .item .mlt span{color: #ff0000;}
+.layer-start .layer-body .item .mrt{width: 270px; float: left;}
+.layer-start .layer-body .item .mrt span{line-height: 36px; color: #333; font-size: 15px;}
+.layer-start .layer-body .item .mrt label{display: inline-block; font-size: 15px; line-height: 36px; color: #333; margin-right: 25px;}
+.layer-start .layer-body .item .mrt label input[type="radio"]{display: inline-block; margin-right: 3px;}
+.layer-start .layer-body .item .mrt input[type="text"]{border: 1px solid #e5e5e5; color: #666666; display: block; font-size: 15px; height: 34px; line-height: 34px; padding-left: 13px; width: 165px;}
+.layer-start .layer-body .item .mrt input[type="password"]{border: 1px solid #e5e5e5; color: #666666; display: block; font-size: 15px; height: 34px; line-height: 34px; padding-left: 13px; width: 165px;}
+
+.layer-start .layer-footer{padding: 12px 0 50px 150px;}
+
+/*修改记录*/
+.layer-record .layer-body{padding: 30px 22px 0; height: 268px; overflow: hidden; overflow-y: auto;}
+.layer-record .layer-body .table-box{width: 100%; max-height: 630px; background-color: #fff;  overflow: hidden; overflow-x: auto; }
+.layer-record .layer-body .table-box table {width: 100%; border-left: 1px solid #ccc; border-top: 1px solid #ccc; }
+.layer-record .layer-body .table-box th {border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; font-weight: 400; line-height: 20px; padding: 20px 0; font-size: 15px; color: #9a98b8; overflow: hidden;}
+.layer-record .layer-body .table-box .th-number{width: 58px; text-align: center;}
+.layer-record .layer-body .table-box .th-coding{width: 130px; padding-left: 20px;}
+.layer-record .layer-body .table-box .common-name{width: 175px; padding-left: 20px;}
+.layer-record .layer-body .table-box .operating{width: 100px; padding-left: 20px;}
+.layer-record .layer-body .table-box .reason{width: 135px; padding-left: 20px;}
+.layer-record .layer-body .table-box .operator{width: 95px; padding-left: 20px;}
+.layer-record .layer-body .table-box .time{width: 145px; padding-left: 20px;}
+.layer-record .layer-body .table-box tr{background-color: #fff;}
+.layer-record .layer-body .table-box td{padding: 15px 0; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;}
+.layer-record .layer-body .table-box .td-cont{padding: 0 5px 0 20px; color: #333333; font-size: 15px; }
+.layer-record .layer-body .table-box .td-number{text-align: center; padding: 0;}
+.layer-record .layer-footer{height: 30px;}
+
+/*商品信息*/
+.layer-info .j_select{width: 180px !important; float: left; border:1px solid #e5e5e5;}
+.layer-info .j_select .current_select{line-height: 28px; height: 28px;}
+.layer-info .j_select .current_select .select_icon{top:12px;}
+.layer-info .layer-body{padding: 35px 0 0 40px;}
+.layer-info .md-box{padding-top: 10px;}
+.layer-info .box-mt{color: #000; font-size: 15px; font-weight: bold;}
+.layer-info .box-mc{padding:10px 0 1px;}
+.layer-info .box-mc .item{width: 225px; min-height: 70px; padding-bottom: 10px; float: left;}
+.layer-info .box-mc .item p{clear: both; height: 30px; line-height: 30px; font-size: 13px; color: #666;}
+.layer-info .box-mc .item p i{color: #ff0000; padding-right: 2px;}
+.layer-info .box-mc .item > span{float: left; line-height: 24px; font-size: 13px; padding: 3px 30px 3px 0; color: #333;}
+.layer-info .box-mc .item > input[type="text"]{display: block; font-size: 13px; width: 170px; height: 28px; padding-left: 10px; color: #333; line-height: 28px; border: 1px solid #e5e5e5; float: left;}
+.layer-info .box-mc .item > label{display: inline-block; font-size: 13px; line-height: 30px; color: #333; margin-right: 25px; float: left;}
+.layer-info .box-mc .item > label input[type="radio"]{display: inline-block; margin-right: 3px;}
+.layer-info .box-mc .item .sel-date{float: left; font-size: 13px;}
+.layer-info .box-mc .item textarea{width: 398px; font-size: 13px; height: 170px; border: 1px solid #e5e5e5; padding: 5px; line-height: 25px; color: #333;}
+.layer-info .box-mc .item .uploading{display: inline-block; padding: 0 25px; height: 30px; text-align: center; line-height: 30px; float: left;  color: #333333; font-size: 14px; background-color: #dddddd; border-radius: 2px;}
+.layer-info .box-mc .item .pic{width: 65px; height: 65px; border: 1px solid #6a7576; float: left; margin: 0 10px 10px 0; overflow: hidden;}
+.layer-info .box-mc .item .pic img{width: 65px; height: 65px;}
+.layer-info .box-mc .item .added{display: block; width: 65px; text-align: center; height: 65px; color: #333; line-height: 65px;}
+.layer-info .box-mc .item .download{float: left; line-height: 30px; color: #0d60f5;}
+.layer-info .box-mc .item .download:hover{text-decoration: underline;}
+.layer-info .box-mc .item .review{display:inline-block; padding: 0 30px; height: 28px; line-height: 28px; text-align: center; border: 1px solid #ccc; font-size: 14px;}
+
+.layer-info .layer-footer{padding: 30px 45px 30px 0; text-align: center;}
+
+/*修改*/
+.layer-class{width:430px;}
+.layer-class .layer-body{padding-top: 50px;}
+.layer-class .layer-body .item{min-height: 40px; padding-bottom: 10px; overflow: hidden;}
+.layer-class .layer-body .item .mlt{width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-class .layer-body .item .mlt span{color: #ff0000;}
+.layer-class .layer-body .item .mrt{width: 270px; float: left;}
+.layer-class .layer-body .item .mrt span{line-height: 36px; color: #333; font-size: 15px;}
+.layer-class .layer-body .item .mrt label{display: inline-block; font-size: 15px; line-height: 36px; color: #333; margin-right: 25px;}
+.layer-class .layer-body .item .mrt label input[type="radio"]{display: inline-block; margin-right: 3px;}
+.layer-class .layer-body .item .mrt input[type="text"]{border: 1px solid #e5e5e5; color: #666666; display: block; font-size: 15px; height: 34px; line-height: 34px; padding-left: 13px; width: 165px;}
+.layer-class .layer-body .item .pic{width: 50px; height: 50px; background-color: #eee; border: 1px solid #ccc; float: left;}
+.layer-class .layer-body .item .pic a{display: block; width:50px; height: 50px; font-size: 11px; line-height: 50px; text-align: center; color: #333;}
+
+.layer-class .layer-footer{padding: 12px 0 50px 150px;}
+
+
+
+
+
+

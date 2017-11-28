@@ -1,0 +1,39 @@
+DROP TABLE IF EXISTS T_SHP_FANS;
+CREATE TABLE T_SHP_FANS
+(
+   ID                   BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+   SHOP_ID              BIGINT NOT NULL COMMENT '门店 ID',
+   WE_CHAT_USER_ID      BIGINT NOT NULL COMMENT '微信 用户 ID',
+   NAME                 VARCHAR(32) NOT NULL COMMENT '姓名',
+   MOBILE               VARCHAR(32) NOT NULL COMMENT '手机',
+   OPEN_ID              VARCHAR(32) NOT NULL COMMENT '微信 ID',
+   NICK_NAME            VARCHAR(32) NOT NULL COMMENT '微信 称昵',
+   FANS_SOURCE_CODE     VARCHAR(32) NOT NULL COMMENT '粉丝 来源 代码',
+   IS_MEMBER            CHAR(1) NOT NULL COMMENT '是否 会员',
+   MEMBER_ID            BIGINT COMMENT '会员 ID',
+   BUY_TIMES            BIGINT NOT NULL COMMENT '购买 次数',
+   REMARK               VARCHAR(128) COMMENT '备注',
+   CREATE_DATE          TIMESTAMP COMMENT '创建日期',
+   CREATE_BY            VARCHAR(32) COMMENT '创建人',
+   last_modified_date   TIMESTAMP COMMENT '最后更新日期',
+   last_modified_by     VARCHAR(32) COMMENT '最后更新人标识，记录用户的ID',
+   VERSION              BIGINT NOT NULL COMMENT '版本管理标志',
+   PRIMARY KEY (ID)
+);
+ALTER TABLE T_SHP_FANS COMMENT '粉丝';
+
+DROP TABLE IF EXISTS T_SHP_WE_CHAT_USER;
+CREATE TABLE T_SHP_WE_CHAT_USER
+(
+   ID                   BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+   NICK_NAME            VARCHAR(32) NOT NULL COMMENT '昵称',
+   OPEN_ID              VARCHAR(32) NOT NULL COMMENT 'OPEN ID',
+   CREATE_DATE          TIMESTAMP COMMENT '创建日期',
+   CREATE_BY            VARCHAR(32) COMMENT '创建人',
+   last_modified_date   TIMESTAMP COMMENT '最后更新日期',
+   last_modified_by     VARCHAR(32) COMMENT '最后更新人标识，记录用户的ID',
+   VERSION              BIGINT NOT NULL COMMENT '版本管理标志',
+   PRIMARY KEY (ID)
+);
+ALTER TABLE T_SHP_WE_CHAT_USER COMMENT '微信 用户';
+

@@ -1,0 +1,4 @@
+ALTER TABLE `t_shp_shopping_cart_store` DROP COLUMN `MEMBER_ID`;
+ALTER TABLE `t_shp_shopping_cart_store` ADD COLUMN `WE_CHAT_USER_ID` BIGINT NOT NULL COMMENT '微信 用户 ID';
+ALTER TABLE `t_shp_order` CHANGE `MEMBER_ID` `MEMBER_ID` BIGINT NULL;
+ALTER TABLE `t_shp_sku_lock_stock` CHANGE `MEMBER_ID` `MEMBER_ID` BIGINT NULL;

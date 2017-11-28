@@ -1,0 +1,47 @@
+drop table if exists t_shp_drug_release_notice;
+
+CREATE TABLE `t_shp_drug_release_notice` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `SHOP_ID` bigint(20) NOT NULL COMMENT '门店 ID',
+  `RELEASE_NUM` varchar(32) NOT NULL COMMENT '解停 单号',
+  `DOC_MAKER_NM` varchar(32) NOT NULL COMMENT '制单人 姓名',
+  `APPROVE_MAN_ID` bigint(20) NOT NULL COMMENT '审核人 ID',
+  `DOC_MAKE_TIME` datetime NOT NULL COMMENT '制单 时间',
+  `RELEASE_DATE` date NOT NULL COMMENT '解停 日期',
+  `QUALITY_STATE` varchar(64) DEFAULT NULL COMMENT '质量 状况',
+  `RELEASE_SUGGEST` varchar(64) DEFAULT NULL COMMENT '解停 意见',
+  `CREATE_DATE` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `CREATE_BY` varchar(32) NOT NULL COMMENT '创建人',
+  `LAST_MODIFIED_DATE` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '更新时间',
+  `LAST_MODIFIED_BY` varchar(32) DEFAULT NULL COMMENT '更新用户',
+  `VERSION` bigint(20) NOT NULL COMMENT '版本',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+
+
+drop table if exists t_shp_release_goods_inf;
+
+CREATE TABLE `t_shp_release_goods_inf` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `DRUG_RELEASE_NOTICE_ID` bigint(20) NOT NULL COMMENT '药品 解停 通知单 ID',
+  `GOODS_NM` varchar(128) NOT NULL COMMENT '商品 名称',
+  `GOODS_CODE` varchar(32) NOT NULL COMMENT '商品 编码',
+  `COMMON_NM` varchar(64) NOT NULL COMMENT '通用 名称',
+  `GOODS_PINYIN` varchar(64) NOT NULL COMMENT '商品 拼音',
+  `SPEC` varchar(32) NOT NULL COMMENT '规格',
+  `DOSAGE_FORM` varchar(32) DEFAULT NULL COMMENT '剂型',
+  `UNIT` varchar(32) NOT NULL COMMENT '单位',
+  `PRODUCE_MANUFACTURER` varchar(64) NOT NULL COMMENT '生产厂商',
+  `PRODUCTION_PLACE` varchar(32) DEFAULT NULL COMMENT '产地',
+  `APPROVAL_NUMBER` varchar(64) DEFAULT NULL COMMENT '批准文号',
+  `BATCH` varchar(32) NOT NULL COMMENT '批号',
+  `VALID_DATE` date NOT NULL COMMENT '有效期至',
+  `CREATE_DATE` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `CREATE_BY` varchar(32) NOT NULL COMMENT '创建人',
+  `LAST_MODIFIED_DATE` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '更新时间',
+  `LAST_MODIFIED_BY` varchar(32) DEFAULT NULL COMMENT '更新用户',
+  `VERSION` bigint(20) NOT NULL COMMENT '版本',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+

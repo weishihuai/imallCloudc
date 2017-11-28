@@ -1,0 +1,69 @@
+/*打印单*/
+html,body {background: #fff;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.main {height: 100%; font-size: 12px; }
+.main .dt {padding-left: 0; line-height: 27px; text-align: center; background: #f9f9f9; border: 1px solid #afafaf;}
+.main .dt li {display: table-cell; border-left: 1px solid #afafaf; font-weight: bold;}
+.main .dt li:nth-child(1) {border-left: 0;}
+.main .serial-number {width: 40px;}
+.main .th-coding {width: 100px;}
+.main .th-title {width: 200px;}
+.main .standard {width: 100px;}
+.main .dosage {width: 80px;}
+.main .units {width: 80px;}
+.main .unit {width: 100px;}
+.main .manufacturer {width: 320px;}
+.main .number {width: 80px;}
+.main .price {width: 80px;}
+.main .batch {width: 100px;}
+.main .date {width: 150px;}
+.main .goods {width: 100px;}
+.main .article-number {width: 100px;}
+.main .distribution {width: 60px;}
+.main .dt-title {padding: 18px 0 4px 15px; border-bottom: 2px solid #81ACE4;}
+.main .dt-title > div{ display: inline; color: #3764A0; margin-right: 20px;}
+.main .dt-title p {display: inline;}
+.main .dd-table {border-top: 1px solid #ededed; border-bottom: 1px solid #ededed; color: #666;}
+.main .dd:nth-child(2n+1) .dd-table {background: #fafafa;}
+.main .dd .dd-table:hover {background: #efefef; border-color: #ddd;}
+.main .dd-table .tr {border-bottom: 1px solid #ddd;}
+.main .dd-table .tr:last-child {border-bottom: none;}
+.main .dd-table .tr .total {width: 916px; text-align: left; padding-left: 10px;}
+.main .dd-table .tr > div {display: table-cell; min-height: 17px; padding: 10px 0; text-align: center; vertical-align: middle; border-left: 1px solid #ededed;}
+
+/*购物清单*/
+.shopping-list-main {height: auto; padding: 0 2% 50px;}
+.main h5 {font-size: 20px; font-weight: bold; padding: 10px 0;}
+.shopping-list-main .dt-title {position: relative; border-bottom: 2px solid #333; padding-left: 0px; padding-top: 4px;}
+.shopping-list-main .dt-title > div {display: inline-block; width: 24%; margin-right: 0; color: #333;}
+.shopping-list-main .dt-title .item-date {position: absolute; right: 0; width: auto;}
+.shopping-list-main .dt {padding-left: 1%; line-height: 17px; border: none; background: none; border-bottom: 2px solid #333;}
+.shopping-list-main .dt li {border-left: none; padding: 5px; min-height: 27px; vertical-align: middle; text-align: left;}
+.shopping-list-main .dd-table {border-top: none; border-bottom: 2px solid #333;}
+.shopping-list-main .dd-table .tr {padding-left: 1%; border-bottom: 1px dashed #333;}
+.shopping-list-main .dd-table .tr > div {color: #333; border: none; padding: 10px 5px; text-align: left;}
+.shopping-list-main .dd-table .tr > div:ntn-child(1) {border-left: none;}
+.shopping-list-main .serial-number {width: 80px;}
+.shopping-list-main .article-number {width: 140px;}
+.shopping-list-main .th-title {width: 280px;}
+.shopping-list-main .batch {width: 150px;}
+.shopping-list-main .manufacturer {width: 300px;}
+.shopping-list-main .standard {width: 140px;}
+.shopping-list-main .unit {width: 160px;}
+.shopping-list-main .price {width: 120px;}
+.shopping-list-main .number {width: 100px;}
+.shopping-list-main .distribution {width: 70px;}
+.shopping-list-main .dd-table .tr .total {width: 1450px; padding-left: 0;}
+.shopping-list-main .dd-money {border-bottom: 2px solid #333; padding-top: 6px;}
+.shopping-list-main .dd-money .item {width: 33.3%; min-height: 18px; float: left;}
+.shopping-list-main .dd-money .item-bold {min-height: 24px; font-size: 14px; font-weight: bold;}
+.shopping-list-main .dd-money .item-note {width: 100%;}
+.shopping-list-main .dd-integral {height: 24px; line-height: 24px; border-bottom: 2px solid #333;}
+.shopping-list-main .dd-distribution-info {border-bottom: 2px solid #333;}
+.shopping-list-main .dd-distribution-info p {display: inline; margin-right: 10px; line-height: 20px;}
+.shopping-list-main .dd-f {}
+.shopping-list-main .dd-f p {line-height: 20px;}
+.shopping-list-main .dd-f .signature {padding-top: 50px;}
+.foot {width: 100%; height: 36px; background: #5472ae; text-align: center;}
+.foot input {display: inline-block; width: 77px; height: 28px; line-height: 28px; cursor: pointer; margin-top: 4px; border: none; border-radius: 2px; font-size: 15px; font-weight: bold;}

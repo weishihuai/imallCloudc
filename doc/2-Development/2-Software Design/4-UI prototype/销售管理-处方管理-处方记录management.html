@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <title>销售管理-处方管理-处方记录</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/lq.datetimepick.css"/>
+    <link rel="stylesheet" href="style/j-select.css" />
+
+    <link rel="stylesheet" href="style/management10.css">
+</head>
+<body>
+
+    <div class="page-header">
+        <div class="cont">
+            <div class="logo"><a href="##"><img src="img/logo300x90.png" alt=""></a></div>
+            <div class="box">
+                <div class="item">
+                	<a href="##">客户管理</a>
+                </div>
+                <div class="item">
+                	<a href="##">库存管理</a>
+                    <div class="m-box">
+                        <div class="dl">
+                            <div class="dt">盘点管理</div>
+                            <div class="dd">
+                                <div class="dd-item">库存盘点</div>
+                                <div class="dd-item">盘点过道</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">库存调整</div>
+                            <div class="dd">
+                                <div class="dd-item">其他入库</div>
+                                <div class="dd-item">其他出库</div>
+                                <div class="dd-item">货位移动</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">中药饮片</div>
+                            <div class="dd">
+                                <div class="dd-item">药品装斗</div>
+                                <div class="dd-item">药品清斗</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">预警管理</div>
+                            <div class="dd">
+                                <div class="dd-item">过期药品预警</div>
+                                <div class="dd-item">缺货预警</div>
+                                <div class="dd-item">近效期催销</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">库存明细</div>
+                            <div class="dd">
+                                <div class="dd-item">进销存台帐</div>
+                                <div class="dd-item">实时库存(批号)</div>
+                                <div class="dd-item">实时库存(商品)</div>
+                                <div class="dd-item">出入库明细</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                	<a href="##">商品管理</a>
+                    <div class="m-box">
+                        <div class="dl">
+                            <div class="dt">货位管理</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">销售分类管理</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">商品管理</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">商品批号修改</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">药品拆零</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                	<a href="##">采购管理</a>
+                    <div class="m-box">
+                        <div class="dl">
+                            <div class="dt">采购订单</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">采购收货</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">采购验收</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">购进退出</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">快速收货</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                	<a href="##">质量管理</a>
+                    <div class="m-box">
+                        <div class="dl">
+                            <div class="dt">首营审核</div>
+                            <div class="dd">
+                                <div class="dd-item">首营商品质量审核</div>
+                                <div class="dd-item">首营供应商质量审核</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">采购与验收</div>
+                            <div class="dd">
+                                <div class="dd-item">采购记录</div>
+                                <div class="dd-item">收货记录</div>
+                                <div class="dd-item">验收记录</div>
+                                <div class="dd-item">购进退出记录</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">GPS资料</div>
+                            <div class="dd">
+                                <div class="dd-item">档案管理</div>
+                                <div class="dd-item">GPS检查表</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">员工健康档案</div>
+                            <div class="dd">
+                                <div class="dd-item">员工健康档案</div>
+                                <div class="dd-item">员工健康档案</div>
+                                <div class="dd-item">员工健康档案</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">计算器具管理</div>
+                            <div class="dd">
+                                <div class="dd-item">计算器具台帐</div>
+                                <div class="dd-item">检查记录</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">设施设备管理</div>
+                            <div class="dd">
+                                <div class="dd-item">设施设备台帐</div>
+                                <div class="dd-item">使用记录</div>
+                                <div class="dd-item">维护记录</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">陈列与存储</div>
+                            <div class="dd">
+                                <div class="dd-item">销毁记录</div>
+                                <div class="dd-item">中药药片装斗记录</div>
+                                <div class="dd-item">中药药片清斗记录</div>
+                                <div class="dd-item">不合格药品记录处理</div>
+                                <div class="dd-item">温度湿度监控记录</div>
+                                <div class="dd-item">药品停售通知单</div>
+                                <div class="dd-item">药品停解通知单</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">售后管理</div>
+                            <div class="dd">
+                                <div class="dd-item">不良反应报告</div>
+                                <div class="dd-item">投诉记录</div>
+                                <div class="dd-item">销售退货记录</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                	<a href="##">会员管理</a>
+                	
+                </div>
+                <div class="item">
+                	<a href="##">销售管理</a>
+                    <div class="m-box">
+                        <div class="dl">
+                            <div class="dt">处方管理</div>
+                            <div class="dd">
+                                <div class="dd-item">处方登记</div>
+                                <div class="dd-item">处方调剂</div>
+                                <div class="dd-item">处方记录</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">限购登记</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">销售明细</div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">交班记录</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                	<a href="##">药学服务</a>
+                    <div class="m-box">
+                        <div class="dl">
+                            <div class="dt">联合用药</div>
+                            <div class="dd">
+                                <div class="dd-item">联合用药分类</div>
+                                <div class="dd-item">联合用药</div>
+                            </div>
+                        </div>
+                        <div class="dl">
+                            <div class="dt">咨询登记</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hd-user">
+                <div class="pic"><a href="##"><img src="case/pic40x40.jpg" alt=""></a></div>
+                <div class="user-mc">
+                    <a href="##" class="elli">张雨停</a>
+                    <p class="elli">[广州乐商软件]</p>
+                </div>
+                <a href="##" class="dp-out">退出</a>
+            </div>
+        </div>
+    </div>
+    <!--主体-->
+    <div class="main-box">
+        <div class="main">
+            <div class="mt">
+                <div class="mt-lt">
+                    <h5>处方记录</h5>
+                    <a href="##">销售管理</a>
+                    <span>></span>
+                    <a href="##">处方管理</a>
+                    <span>></span>
+                    <a href="##">处方记录</a>
+                    <div class="lt-cont">
+                        <div class="search">
+                            <input type="text" placeholder="订单编号">
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="患者名称">
+                        </div>
+                        <div class="status">
+                            <select id="select-cs1" class="select allSelect1">
+                                <option value="处方类型">处方类型</option>
+                                <option value="类型1">类型1</option>
+                                <option value="类型2">类型2</option>
+                            </select>
+                        </div>
+                        <div class="sel-date">
+                            <div class="form-group float-left w140">
+                                <input name="datepicker" id="datetimepicker1" placeholder="处方日期" class="form-control" value="" type="text">
+                            </div>
+                            <div class="float-left form-group-txt">至</div>
+                            <div class="form-group float-left w140">
+                                <input name="datepicker" id="datetimepicker2" class="form-control" value="" type="text">
+                            </div>
+                        </div>
+                        <div class="search-reset">
+                            <input class="sr-search" value="查询" type="button">
+                            <input class="sr-reset" value="重置" type="button">
+                        </div>
+                    </div>
+                    <div class="lt-bot">
+                    </div>
+                </div>
+                <div class="mt-rt">
+                </div>
+            </div>
+            <div class="mc">
+                <div class="table-box">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th class="odd-number">处方销售单号</th>
+                            <th class="name">患者名称</th>
+                            <th class="phone-number">手机</th>
+                            <th class="id-number">证件号码</th>
+                            <th class="name">调剂人</th>
+                            <th class="name">审核人</th>
+                            <th class="name">发药人</th>
+                            <th class="name">复核人</th>
+                            <th class="time">处方日期</th>
+                            <th class="time">调剂时间</th>
+                            <th class="operating" style="width: 430px;">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="td-cont">12132120</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">小张</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">13760756336</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">11223335544</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">小张</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">小张</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">小张</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">小张</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">2017-06-26</div>
+                            </td>
+                            <td>
+                                <div class="td-cont">2017-06-26</div>
+                            </td>
+                            <td>
+                                <div class="td-cont" style="padding-left: 0; padding-right: 25px; text-align: right;">
+                                    <a href="##" class="gray-btn">查看</a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <div id="infoPage">
+            <ul>
+                <li><a href="" class="upPage" title="上一页">上一页</a></li>
+                <li><a href="" class="everyPage">1</a></li>
+                <li><span class="nowPage">2</span></li>
+                <li><a href="" class="everyPage">3</a></li>
+                <li><a href="" class="everyPage">4</a></li>
+                <li><a href="" class="everyPage">5</a></li>
+                <li><a href="" class="everyPage">6</a></li>
+                <li><a href="" class="downPage" title="下一页">下一页</a></li>
+                <li><div id="page-skip">&nbsp;&nbsp;共12页&nbsp;&nbsp;&nbsp;&nbsp;到&nbsp;&nbsp;<input id="inputPage" value="3">&nbsp;页/128页<button href="javascript:;" onclick="" class="goToPage">确定</button><div></div></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--查看-->
+    <div class="layer" style="display: none;">
+        <div class="layer-box layer-info layer-receiving layer-buying-out w960">
+            <div class="layer-header">
+                <span>处方调剂</span>
+                <a href="##" class="close"></a>
+            </div>
+            <div class="layer-body">
+            <div class="md-box">
+                    <div class="box-mt">调剂信息</div>
+                    <div class="box-mc clearfix">
+                        <div class="item">
+                            <p>调剂员</p>
+                            <span>小张</span>
+                        </div>
+                        <div class="item">
+                            <p>复核员</p>
+                            <span>小张</span>
+                        </div>
+                        <div class="item">
+                            <p>发药人</p>
+                            <span>小张</span>
+                        </div>
+                        <div class="item">
+                            <p>审核人</p>
+                            <span>小张</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-box">
+                    <div class="box-mt">处方信息</div>
+                    <div class="box-mc clearfix">
+                        <div class="item">
+                            <p>处方销售单号</p>
+                            <span>145613100005456</span>
+                        </div>
+                        <div class="item">
+                            <p>处方日期</p>
+                            <span>2017-05-06</span>
+                        </div>
+                        <div class="item">
+                            <p>医疗机构</p>
+                            <span>广东省中医院</span>
+                        </div>
+                        <div class="item">
+                            <p>医师姓名</p>
+                            <span>广东省中医院</span>
+                        </div>
+                        <div class="item">
+                            <p>临床诊断</p>
+                            <span>感冒发烧</span>
+                        </div>
+                        <div class="item">
+                            <p>医嘱</p>
+                            <span>感冒发烧</span>
+                        </div>
+                        <div class="item">
+                            <p>会员</p>
+                            <span>小张</span>
+                        </div>
+                        <div class="item">
+                            <p>患者名称</p>
+                            <span>小张</span>
+                        </div>
+                        <div class="item">
+                            <p>性别</p>
+                            <span>女</span>
+                        </div>
+                        <div class="item">
+                            <p>年龄</p>
+                            <span>11</span>
+                        </div>
+                        <div class="item">
+                            <p>证件类型</p>
+                            <span>身份证</span>
+                        </div>
+                        <div class="item">
+                            <p>证件号码</p>
+                            <span>13722222333</span>
+                        </div>
+                        <div class="item">
+                            <p>手机</p>
+                            <span>134546456125</span>
+                        </div>
+                        <div class="item">
+                            <p>地址</p>
+                            <span>广东省广州市天河区</span>
+                        </div>
+                        <div class="item">
+                            <p>备注</p>
+                            <span>广东省广州市天河区</span>
+                        </div>
+                        <div class="item">
+                            <p>创建用户名称</p>
+                            <span>小张</span>
+                        </div>
+                        <div class="item">
+                            <p>创建时间</p>
+                            <span>2017-06-27</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-box">
+                    <div class="box-mt">商品信息</div>
+                    <div class="box-mc">
+                        <table class="w860">
+                            <thead>
+                            <tr>
+                                <th class="serial-number">序号</th>
+                                <th class="commodity-code">商品编码</th>
+                                <th class="commodity-name">商品名称</th>
+                                <th class="general-name">通用名称</th>
+                                <th class="specifications">规格</th>
+                                <th class="dosage-form">剂型</th>
+                                <th class="unit">单位</th>
+                                <th class="manufacturers">生产厂商</th>
+                                <th class="approval-number">批准文号</th>
+                                <th class="origin">产地</th>
+                                <th class="number">数量</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="td-cont">1</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">G2313123</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">999感冒灵颗粒</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">999感冒灵颗粒</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">36g/T</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">颗粒</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">盒</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">白云山药</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">GD55222</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">广州</div>
+                                </td>
+                                <td>
+                                    <div class="td-cont">50</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                  
+            </div>
+            <div class="layer-footer">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/colResizable-1.6.js"></script>
+    <script src='js/selectUi.js' type='text/javascript'></script>
+    <script src='js/lq.datetimepick.js' type='text/javascript'></script>
+    <script src="js/jquery-nicescroll.js"></script>
+    <script src="js/jquery-jSelect.min.js" ></script>
+
+    <script type="text/javascript">
+        $(".select").jSelect();
+//        $("#select-cs1").jSelect();
+//        $("#select-cs2").jSelect();
+//        $("#select-cs3").jSelect();
+
+
+
+        $(function (){
+            $("#datetimepicker1").on("click",function(e){
+                e.stopPropagation();
+                $(this).lqdatetimepicker({
+                    css : 'datetime-day',
+                    dateType : 'D',
+                    selectback : function(){
+
+                    }
+                });
+            });
+            $("#datetimepicker2").on("click",function(e){
+                e.stopPropagation();
+                $(this).lqdatetimepicker({
+                    css : 'datetime-day',
+                    dateType : 'D',
+                    selectback : function(){
+
+                    }
+                });
+            });
+            $("#datetimepicker3").on("click",function(e){
+                e.stopPropagation();
+                $(this).lqdatetimepicker({
+                    css : 'datetime-day',
+                    dateType : 'D',
+                    selectback : function(){
+
+                    }
+                });
+            });
+        });
+        $(function() {
+            $(".table-box table").colResizable();
+            $(".template-table table").colResizable();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+UPDATE `t_pt_sys_role` SET `IS_DEFAULT_ADMIN`='Y' WHERE `DESCRIPTION` LIKE '%#默认角色%';

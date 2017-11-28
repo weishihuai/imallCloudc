@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_destroy_record` CHANGE `LOCK_REASON` `LOCK_REASON` VARCHAR(32) CHARSET utf8 COLLATE utf8_general_ci NULL COMMENT '锁定 原因';

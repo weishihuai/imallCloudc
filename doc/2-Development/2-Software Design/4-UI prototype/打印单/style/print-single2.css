@@ -1,0 +1,82 @@
+/*打印单 新增8-21*/
+html,body {background: #f5f4fb;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.main,.receipt-main {min-width: 1050px; margin: 35px 20px 50px 20px; padding: 35px 0; background: #fff;}
+.main-box {width: 1050px; margin: 0 auto;}
+.main .dt-name {height: 40px; text-align: center; font-size: 18px; font-weight: bold;} 
+.main .dt-title {margin-left: -26px;}
+.main .dt-title .item {display: inline-block; width: 33%; height: 16px; margin-bottom: 4px; overflow: hidden;}
+.main .dt-title .item p {display: inline-block; width: 90px; padding-right: 4px; text-align: right;}
+.main table {width: 100%; border-left: 1px solid #e4e4e4; border-top: 2px solid #81ACE4; font-size: 12px;}
+.main table th, .main table td {border-right: 1px solid #e4e4e4;border-bottom: 1px solid #e4e4e4;padding: 10px 0; text-align: center;}
+.foot {width: 100%; height: 36px; background: #5472ae; text-align: center; border-top: 1px solid #999;}
+.foot input {display: inline-block; width: 77px; height: 26px; line-height: 26px; cursor: pointer; margin-top: 4px; border: none; border-radius: 2px; font-size: 15px; font-weight: bold;}
+
+/*购物清单 新增8-22*/
+.main .dt {padding-left: 0; line-height: 27px; text-align: center; background: #f9f9f9; border: 1px solid #afafaf;}
+.main .dt li {display: table-cell; border-left: 1px solid #afafaf; font-weight: bold;}
+.main .dt li:nth-child(1) {border-left: 0;}
+.main .dd-table .tr {border-bottom: 1px solid #ddd;}
+.main .dd-table .tr:last-child {border-bottom: none;}
+.main .dd-table .tr .total {width: 916px; text-align: left; padding-left: 10px;}
+.main .dd-table .tr > div {display: table-cell; min-height: 17px; padding: 10px 0; text-align: center; vertical-align: middle; border-left: 1px solid #ededed;}
+
+.shopping-list-main {height: auto; padding: 0 2% 50px;}
+.main h5 {font-size: 20px; font-weight: bold; padding: 10px 0;}
+.shopping-list-main .dt-title {position: relative; border-bottom: 2px solid #333; padding-left: 0px; padding-top: 4px;}
+.shopping-list-main .dt-title > div {display: inline-block; width: 24%; margin-right: 0; color: #333;}
+.shopping-list-main .dt-title .item-date {position: absolute; right: 0; width: auto;}
+.shopping-list-main .dt {padding-left: 1%; line-height: 17px; border: none; background: none; border-bottom: 2px solid #333;}
+.shopping-list-main .dt li {border-left: none; padding: 5px; min-height: 27px; vertical-align: middle; text-align: left;}
+.shopping-list-main .dd-table {border-top: none; border-bottom: 2px solid #333;}
+.shopping-list-main .dd-table .tr {padding-left: 1%; border-bottom: 1px dashed #333;}
+.shopping-list-main .dd-table .tr > div {color: #333; border: none; padding: 10px 5px; text-align: left;}
+.shopping-list-main .dd-table .tr > div:ntn-child(1) {border-left: none;}
+.shopping-list-main .serial-number {width: 80px;}
+.shopping-list-main .article-number {width: 140px;}
+.shopping-list-main .th-title {width: 280px;}
+.shopping-list-main .batch {width: 150px;}
+.shopping-list-main .manufacturer {width: 300px;}
+.shopping-list-main .standard {width: 140px;}
+.shopping-list-main .unit {width: 160px;}
+.shopping-list-main .price {width: 120px;}
+.shopping-list-main .number {width: 100px;}
+.shopping-list-main .distribution {width: 70px;}
+.shopping-list-main .dd-table .tr .total {width: 1450px; padding-left: 0;}
+.shopping-list-main .dd-money {border-bottom: 2px solid #333; padding-top: 6px;}
+.shopping-list-main .dd-money .item {width: 33.3%; min-height: 18px; float: left;}
+.shopping-list-main .dd-money .item-bold {min-height: 24px; font-size: 14px; font-weight: bold;}
+.shopping-list-main .dd-money .item-note {width: 100%;}
+.shopping-list-main .dd-integral {height: 24px; line-height: 24px; border-bottom: 2px solid #333;}
+.shopping-list-main .dd-distribution-info {border-bottom: 2px solid #333;}
+.shopping-list-main .dd-distribution-info p {display: inline; margin-right: 10px; line-height: 20px;}
+.shopping-list-main .dd-f {}
+.shopping-list-main .dd-f p {line-height: 20px;}
+.shopping-list-main .dd-f .signature {padding-top: 50px;}
+
+/*零售小票 新增8-22*/
+.receipt-main .main-box {width: 310px; padding: 18px 20px; box-shadow: 3px 3px 15px #ddd; font-size: 14px;}
+.receipt-main .goods-box {padding: 7px 10px 0; border: 1px dashed #e6e5e5; margin-bottom: 20px;}
+.receipt-main .goods-box .goods-icon {width: 220px; height: 8px; margin-bottom: 12px; background: url(../img/good-icon1.png) repeat;}
+.receipt-main .goods-box .goods-item1 {height: 16px; overflow: hidden;}
+.receipt-main .goods-box .goods-item2 {height: 56px; overflow: hidden;}
+.receipt-main .goods-box p, .receipt-main .goods-box span {display: inline-block; height: 16px; float: left;}
+.receipt-main .goods-box .goods-item2 p, .receipt-main .goods-box .goods-item2 span {height: 56px;}
+.receipt-main .goods-box .goods-item2 span {width: 250px;}
+.receipt-main h4 {height: 28px; font-size: 15px; font-weight: bold;}
+.receipt-main .operation-item, .receipt-main .date-item {width: 150px; height: 50px; display: inline-block; font-size: 12px; color: #919191;}
+.receipt-main .operation-item p, .receipt-main .date-item p {display: inline-block;}
+.receipt-main table {width: 100%; margin-bottom: 25px;}
+.receipt-main .merchandise-name {width: 100px;}
+.receipt-main .specification {width: 100px;}
+.receipt-main .price {width: 75px;}
+.receipt-main .number {width: 28px;}
+.receipt-main table th {font-size: 12px; color: #919191; font-weight: 500;}
+.receipt-main table td {font-size: 14px; color: #333;}
+.receipt-main .gds-tr {height: 30px; padding-top: 18px; border-bottom: 1px dashed #e1e1e1;}
+.receipt-main .gds-tr td {font-size: 12px; color: #919191; }
+.receipt-main .merchandise-name-tr td {padding-top: 12px;}
+.receipt-main .shop-cor p {height: 22px;}
+.receipt-main .shop-cor .phone-p, .receipt-main .shop-cor .address-p {height: 18px; font-size: 12px; color: #919191;}
+.receipt-main .shop-cor .phone-p {padding-top: 25px;}

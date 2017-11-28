@@ -1,0 +1,155 @@
+.j_select .current_select {
+    height:40px;line-height:40px;border:none;
+    font-size: 15px;
+    color: #333;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.j_select ul li{height: 30px; overflow: hidden;}
+
+/*主体*/
+.main .mc{width: 100%;}
+
+/*表格*/
+.main .mc .table-box{width: 100%; background-color: #fff;  overflow: hidden; overflow-x: auto; }
+.main .mc .table-box table {width: 100%; }
+.main .mc .table-box th {border-bottom: 1px solid #f5f4fb; font-weight: 400; line-height: 20px; padding: 20px 0 20px 20px; font-size: 15px; color: #9a98b8; overflow: hidden;}
+.main .mc .table-box .name{padding-left: 30px;}
+.main .mc .table-box .types{width: 200px; padding-left: 30px;}
+.main .mc .table-box .status{width: 120px; padding-left: 30px;}
+.main .mc .table-box .operating{min-width: 120px; text-align: right; padding-right: 35px;}
+.main .mc .table-box tr{background-color: #fff;}
+.main .mc .table-box td{padding: 15px 0; border-bottom: 1px solid #f5f4fb;}
+.main .mc .table-box .td-cont{padding: 0 5px 0 20px; color: #333333; font-size: 15px; }
+.main .mc .table-box .gray-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; margin-left: 10px; line-height: 30px; float: right;  color: #333333; font-size: 15px; background-color: #dddddd; border-radius: 2px;}
+.main .mc .table-box .green-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; margin-left: 10px; line-height: 30px; float: right;  color: #fff; font-size: 15px; background-color: #2bcd73; border-radius: 2px;}
+.main .mc .table-box tbody tr:hover{background-color: #e2e2e2;}
+.main .mc .table-box tbody tr:hover .gray-btn{background-color: #eee;}
+
+
+
+/*弹窗底部*/
+.layer-footer .confirm{display: inline-block; width: 106px; height: 36px; margin-right: 23px; border-radius: 3px; text-align: center; line-height: 36px; color: #fff; font-size: 16px; background-color: #2bcd73;}
+.layer-footer .cancel{line-height: 36px; color: #2bcd73; font-size: 16px;}
+
+/*修改*/
+.drug-check .j_select{width: 180px !important; float: left; border:1px solid #e5e5e5;}
+.drug-check .j_select .current_select{line-height: 28px; height: 28px;}
+.drug-check .j_select .current_select .select_icon{top:12px;}
+.drug-check .layer-body{padding: 35px 0 0 40px;}
+.drug-check .md-box{padding-top: 10px;}
+.drug-check .box-mt{color: #000; font-size: 15px; font-weight: bold;}
+.drug-check .box-mc{padding:10px 0 1px;}
+.drug-check .box-mc .item{width: 225px; min-height: 70px; padding-bottom: 10px; float: left;}
+.drug-check .box-mc .item p{clear: both; height: 30px; line-height: 30px; font-size: 13px; color: #666;}
+.drug-check .box-mc .item p i{color: #ff0000; padding-right: 2px;}
+.drug-check .box-mc .item > span{float: left; line-height: 24px; font-size: 13px; padding: 3px 30px 3px 0; color: #333;}
+.drug-check .box-mc .item > input[type="text"]{display: block; font-size: 13px; width: 170px; height: 28px; padding-left: 10px; color: #333; line-height: 28px; border: 1px solid #e5e5e5; float: left;}
+.drug-check .item-add,.drug-check .item-del {display: inline-block; width: 100px; height: 30px; line-height: 30px; background: #c6c6c6; text-align: center; margin-right: 10px; cursor: pointer;}
+.drug-check .receiving-box .item{height: 30px; min-height: 30px;}
+.drug-check .layer-footer{padding: 30px 45px 30px 0; text-align: center;}
+.drug-check .box-mc .item .review {border: 1px solid #ccc;display: inline-block;font-size: 14px;height: 28px;line-height: 28px;padding: 0 30px;text-align: center;}
+
+.layer-start .layer-body{padding-top: 50px;}
+.layer-start .layer-body .item{height: 50px;}
+.layer-start .layer-body .item .mlt{width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-start .layer-body .item .mlt span{color: #ff0000;}
+.layer-start .layer-body .item .mrt{width: 270px; float: left;}
+.layer-start .layer-body .item .mrt span{line-height: 36px; color: #333; font-size: 15px;}
+.layer-start .layer-body .item .mrt input[type="text"]{border: 1px solid #e5e5e5; color: #666666; display: block; font-size: 15px; height: 34px; line-height: 34px; padding-left: 13px; width: 165px;}
+.layer-start .layer-body .item .mrt input[type="password"]{border: 1px solid #e5e5e5; color: #666666; display: block; font-size: 15px; height: 34px; line-height: 34px; padding-left: 13px; width: 165px;}
+.layer-start .layer-footer{padding: 12px 0 50px 150px;}
+
+.drug-check table {width: 1210px; margin-bottom: 30px; font-size: 13px; border-top: 1px solid #c3c3c3; border-left: 1px solid #c3c3c3; color: #666;}
+.drug-check table th,.drug-check table td { border-right: 1px solid #c3c3c3;border-bottom: 1px solid #c3c3c3}
+.drug-check thead th {height: 36px; padding-left: 8px; font-weight: normal;}
+.drug-check tbody td {height: 36px; padding-left: 8px;}
+.drug-check .serial-number {width: 32px;}
+.drug-check .th-ipt {width: 60px;}
+.drug-check .number {width: 65px;}
+.drug-check .why {width: 65px;}
+.drug-check .price {width: 65px;}
+.drug-check .commodity-code {width: 80px;}
+.drug-check .time {width: 75px;}
+.drug-check .commodity-name {width: 115px;}
+.drug-check .general-name {width: 115px;}
+.drug-check .specifications {width: 60px;}
+.drug-check .batch-number {width: 85px;}
+.drug-check .dosage-form {width: 46px;}
+.drug-check .cargo-location {width: 70px;}
+.drug-check .unit {width: 46px;}
+.drug-check .manufacturers {width: 70px;}
+.drug-check .approval-number {width: 70px;}
+.drug-check .origin {width: 70px;}
+.drug-check .purchase-rate {width: 70px;}
+.drug-check .reason {width: 70px;}
+.drug-check .remark {width: 70px;}
+.drug-check .quality {width: 70px;}
+.drug-check table input {width: 47px; height: 26px; line-height: 26px; padding-left: 5px;}
+
+/*7-17*/
+/*添加商品*/
+.layer-addsp .layer-body {padding-top: 0; padding-left: 35px;}
+.layer-addsp .box-mc .item {width: 210px; min-height: 30px; padding-bottom: 0;}
+.layer-addsp .box-mc .item > label {color: #666; font-size: 12px;}
+.layer-addsp .item label input {width: 120px; height: 26px; margin-left: 10px; border: 1px solid #e5e5e5;}
+.layer-addsp .gray-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; margin-left: 10px; line-height: 30px; color: #333333; font-size: 15px; background-color: #dddddd; border-radius: 2px;}
+.layer-addsp .green-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; margin-left: 10px; line-height: 30px; color: #fff; font-size: 15px; background-color: #2bcd73; border-radius: 2px;}
+.layer-addsp .black-btn{display: inline-block; padding: 0 15px; height: 30px; text-align: center; line-height: 30px; color: #fff; font-size: 15px; background-color: #5d5d5d; border-radius: 2px;}
+.layer-addsp table {width: 1540px; margin-bottom: 30px; font-size: 13px; border-top: 1px solid #c3c3c3; border-left: 1px solid #c3c3c3; color: #666;}
+.layer-addsp table th,.layer-addsp table td {border-right: 1px solid #c3c3c3;border-bottom: 1px solid #c3c3c3}
+.layer-addsp thead th {height: 36px; padding-left: 8px;  font-weight: normal;}
+.layer-addsp tbody td {height: 36px; padding-left: 8px;}
+.layer-addsp .th-checkbox {width: 25px;}
+.layer-addsp table input {margin-left: 5px;}
+.layer-addsp .serial-number {width: 30px;}
+.layer-addsp .number {width: 50px;}
+.layer-addsp .batch {width: 50px;}
+.layer-addsp .why {width: 65px;}
+.layer-addsp .price {width: 60px;}
+.layer-addsp .commodity-code {width: 75px;}
+.layer-addsp .commodity-name {width: 100px;}
+.layer-addsp .general-name {width: 100px;}
+.layer-addsp .specifications {width: 60px;}
+.layer-addsp .dosage-form {width: 46px;}
+.layer-addsp .unit {width: 46px;}
+.layer-addsp .manufacturers {width: 70px;}
+.layer-addsp .approval-number {width: 70px;}
+.layer-addsp .origin {width: 70px;}
+.layer-addsp .purchase-rate {width: 70px;}
+.layer-addsp .receiving-report {width: 50px;}
+.layer-addsp .serial-number {width: 50px;}
+.layer-addsp .date {width: 50px;}
+.layer-addsp .goods {width: 50px;}
+.layer-addsp .a-conclusion {width: 50px;}
+
+/*盘点过帐*/
+.main .mc .initial .th-checkbox{width: 60px;}
+.main .mc .initial .th-checkbox input[type="checkbox"]{display: inline-block; margin-right: 5px;}
+.main .mc .initial .th-coding{width: 88px;}
+.main .mc .initial .commodity-name{width: 120px;}
+.main .mc .initial .common-name{width: 110px;}
+.main .mc .initial .standard{width: 65px;}
+.main .mc .initial .dosage-form{width: 50px;}
+.main .mc .initial .unit{width: 50px;}
+.main .mc .initial .manufacturers{width: 75px;}
+.main .mc .initial .approval-number{width: 80px;}
+.main .mc .initial .origin{width: 75px;}
+.main .mc .initial .batch-number{width: 78px;}
+.main .mc .initial .time{width: 95px;}
+.main .mc .initial .cargo-location{width: 75px;}
+.main .mc .initial .inventory{width: 75px;}
+.main .mc .initial .retail-price{width: 75px;}
+.main .mc .initial .name{width: 90px; padding-left: 20px;}
+.main .mc .initial .reason{width: 100px;}
+.main .mc .initial .remark{width: 100px;}
+.main .mc .initial .th-operating{width: 100px;}
+.main .mc .initial .quality{width: 100px;}
+
+
+
+
+
+
+
+

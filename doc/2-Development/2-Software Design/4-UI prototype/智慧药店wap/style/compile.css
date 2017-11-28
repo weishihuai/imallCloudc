@@ -1,0 +1,27 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #fff; padding-bottom: 6rem; }
+
+.we-chat-user-info-detail .mt{height: 9rem; padding:2rem; position: relative; overflow: hidden;}
+.we-chat-user-info-detail .mt span{float: left; line-height: 5rem; color: #444A50; font-size: 1.9rem;}
+.we-chat-user-info-detail .mt .pic{float: right; width: 5rem; height: 5rem; border-radius: 50%; overflow: hidden;}
+.we-chat-user-info-detail .mt .pic img{width: 5rem; height: 5rem;}
+
+.we-chat-user-info-detail .mc .item{display: block; height: 7.5rem; padding: 2rem; border-bottom:1px solid #E5E5E5; }
+.we-chat-user-info-detail .mc .item:first-child{border-top:1px solid #E5E5E5;}
+.we-chat-user-info-detail .mc .item a{display: block; line-height: 3.5rem; overflow: hidden;}
+.we-chat-user-info-detail .mc .item span{float: left; color: #444A50; font-size: 1.9rem;}
+.we-chat-user-info-detail .mc .item i{float: right; display: block; width: 15rem; text-align: right; color: #90A4AE; font-size: 1.6rem;}
+.we-chat-user-info-detail .tips{text-align: center; color: #7E939E; margin-top: 2.1rem; font-size: 1.4rem;}
+
+.we-chat-user-update-layer{background-color: rgba(0, 0, 0, 0.5); bottom: 0; left: 0; overflow-x: hidden; overflow-y: auto; position: fixed; right: 0; text-align: center; top: 0; vertical-align: middle; z-index: 100;}
+.we-chat-user-update-layer-box{width: 28rem; background-color: #fff; border-radius: 0.4rem; position: absolute; left: 50%; top:50%; margin: -8rem 0 0 -14rem;}
+.we-chat-user-update-layer-box .mc{padding: 2.5rem 0 1.5rem;}
+.we-chat-user-update-layer-box .mc p{text-align: center; color: #000000; font-size: 1.8rem; height: 2.5rem; line-height: 2.5rem; overflow: hidden;}
+.we-chat-user-update-layer-box .mc input{display: block; width: 24.5rem; padding-left: 1rem; height: 3.8rem; color: #C7C7CD; font-size: 1.4rem; background-color: #EEEFF3; line-height: 3.8rem; border: none; margin: 1.2rem auto 0;}
+.we-chat-user-update-layer-box .md{height: 4.8rem;  overflow: hidden;}
+.we-chat-user-update-layer-box .md a{display: block; width: 50%; text-align: center; height: 4.8rem; border-top: 1px solid #E5E5E5; line-height: 4.8rem; float: left;}
+.we-chat-user-update-layer-box .md button{display: block; width: 50%; text-align: center; height: 4.8rem;line-height: 4.8rem; float: left;border: none;border-radius: 0 0 0.4rem 0;background-color: #fff;border-top: 1px solid #E5E5E5;}
+.we-chat-user-update-layer-box .md a.cancel{color: #000; font-size: 1.8rem; border-right: 1px solid #E5E5E5;}
+.we-chat-user-update-layer-box .md button.confirm{color: #1AAD19; font-size: 1.8rem;}
+
+
+

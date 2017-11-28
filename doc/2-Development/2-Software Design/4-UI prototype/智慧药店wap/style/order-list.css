@@ -1,0 +1,24 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #fff; padding-bottom: 6rem; }
+.main{padding: 0 2rem;}
+.main .item{padding: 2rem 0; border-bottom: 1px solid #E5E5E5;}
+.main .item .mt{height: 2.1rem; line-height: 2.1rem; overflow: hidden;}
+.main .item .mt a{display: block; float: left; width: 20rem; height: 2.1rem; font-size: 1.5rem; color: #0C1828; }
+.main .item .mt span{display: block; float: right; height: 2.1rem; font-size: 1.4rem; overflow: hidden; color: #FF5A51;}
+.main .item .mc{padding-top: 1.2rem; overflow: hidden;}
+.main .item .mc .pic{display: inline-block; width: 6rem; height: 6rem; margin:0 0.8rem 0.8rem 0; overflow: hidden; float: left;}
+.main .item .mc .pic img{width: 6rem; height: 6rem;}
+.main .item .mc .gd-box{width: 20rem; float: left; padding-left: 0.5rem;}
+.main .item .mc .title{display: block; width: 18rem; height: 3.6rem; line-height: 1.8rem; margin-bottom: 0.5rem; color: #333333; font-size: 1.5rem; overflow: hidden;}
+.main .item .mc .rx{display: inline-block; text-align: center; background-color: #EDF3F8; color: #59606C; font-size: 1rem; width: 4.2rem; height: 1.8rem; line-height: 1.7rem; border-radius: 0.9rem; border: 1px solid #59606C;}
+
+.main .item .md{text-align: right;}
+.main .item .md .alt{height: 3.2rem; line-height: 3.2rem; margin-bottom: 0.5rem; text-align: center; color: #0C1828; font-size: 1.4rem; }
+.main .item .md .alt span{padding: 0 0.4rem;}
+.main .item .md .alt i{color: #0C1828; font-weight: bold;}
+.main .item .md .md-btn{display: inline-block; width: 8rem; height: 3.3rem; line-height: 3.2rem; border: 1px solid #237DE4; border-radius: 2.5rem; color: #237DE4; font-size: 1.4rem; text-align: center; box-shadow: 0 8px 16px 0 rgba(35,125,228,0.20);}
+
+
+
+.main .empty{color: #90A4AE; font-size: 1.4rem; line-height: 6.5rem; text-align: center;}
+
+

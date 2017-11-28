@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_staff_health_doc` CHANGE `SHOP_ID` `SHOP_ID` BIGINT(20) NULL COMMENT '门店 ID';

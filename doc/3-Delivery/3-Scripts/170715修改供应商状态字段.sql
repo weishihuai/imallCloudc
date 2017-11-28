@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_supplier` CHANGE `STAT` `STATE` VARCHAR(32) CHARSET utf8 COLLATE utf8_general_ci NULL COMMENT '״̬'; 

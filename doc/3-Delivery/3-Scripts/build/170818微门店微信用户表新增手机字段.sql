@@ -1,0 +1,1 @@
+ALTER TABLE t_shp_we_chat_user ADD COLUMN MOBILE VARCHAR(32) COMMENT '手机';

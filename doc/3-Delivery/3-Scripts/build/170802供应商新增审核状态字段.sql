@@ -1,0 +1,1 @@
+ALTER TABLE `imall_cloudc`.`t_shp_supplier` ADD COLUMN `APPROVE_STATE_CODE` VARCHAR(32) CHARSET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '审核 状态 代码' AFTER `VERSION`; 

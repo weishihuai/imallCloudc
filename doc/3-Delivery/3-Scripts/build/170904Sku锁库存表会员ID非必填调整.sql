@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_sku_lock_stock` CHANGE `MEMBER_ID` `MEMBER_ID` BIGINT(20) NULL COMMENT '会员 ID'; 

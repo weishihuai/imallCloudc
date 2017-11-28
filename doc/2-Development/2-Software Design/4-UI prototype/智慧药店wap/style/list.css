@@ -1,0 +1,41 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto;}
+.main .list-search{height: 5rem; padding: 1rem 2rem 0;}
+.main .list-search input{display: block; width: 100%; height: 3.4rem; color: #3B3D40; font-size: 1.4rem; padding-left: 1.2rem; border-radius: 1.7rem; line-height: 3.3rem; border: 1px solid #D1D6DD; background-color: #EFF1F6;}
+
+.main .mt{height: 5rem; overflow: hidden;}
+.main .mt li{width: 33.33%; height: 5rem; float: left;}
+.main .mt li a{color: #4B5963; display: block; height: 5rem; line-height: 5rem; font-size: 1.5rem; text-align: center; overflow: hidden;}
+.main .mt .sort-price a:after{display: inline-block; content: ''; width: 0.7rem; height: 1.1rem; margin-left: 0.5rem; background: url("../images/jiagepaixu1.png") no-repeat 0 0 / 0.7rem 1.1rem; }
+.main .mt .active a{color: #237DE4;}
+.main .mt .sort-price .arrow-down:after{background: url("../images/jiagepaixu2.png") no-repeat 0 0 / 0.7rem 1.1rem; }
+.main .mt .sort-price .arrow-up:after{background: url("../images/jiagepaixu3.png") no-repeat 0 0 / 0.7rem 1.1rem; }
+
+.main .mc{padding: 0 1.8rem;}
+.main .mc .item{border-bottom: 1px solid #E5E5E5; height: 13.5rem; padding-top: 1.2rem; position: relative; overflow: hidden;}
+.main .mc .item .pic{width: 11rem; height: 11rem; margin-right: 1.5rem; float: left;}
+.main .mc .item .pic img{width: 11rem; height: 11rem;}
+.main .mc .item .title{display: block; width: 15rem; height: 2.2rem; line-height: 2.2rem; color: #0C1828; font-size: 1.6rem; float: left;}
+.main .mc .item p{width: 15rem; height: 2rem; line-height: 2rem; color: #757D86; font-size: 1.4rem; margin-top: 0.4rem; float: left;}
+.main .mc .item .rx-box{float: left; width: 13rem; margin-top: 0.5rem; height: 2.5rem;}
+.main .mc .item .rx{display: inline-block; text-align: center; background-color: #EDF3F8; color: #59606C; font-size: 1rem; width: 4.2rem; height: 1.8rem; line-height: 1.7rem; border-radius: 0.9rem; border: 1px solid #59606C;}
+.main .mc .item .price{float: left; color: #FF6D57; font-size: 1.7rem;}
+.main .mc .item .dw-btn{display: block; width: 4.4rem; height: 4.4rem; position: absolute; right:0; bottom:1rem;}
+.main .mc .item .dw-btn a{display: block; width: 4.4rem; height: 4.4rem; }
+.main .mc .item .quantity{width: 9rem; height: 2.3rem; position: absolute; right:0; bottom: 2.2rem; overflow: hidden;}
+.main .mc .item .quantity input{border: none; text-align: center; width: 2.8rem; height: 2.2rem; line-height: 2.2rem; color: #333; font-size: 1.3rem; float: left;}
+.main .mc .item .btn-reduce{display: block; width: 2.2rem; height: 2.2rem; background: url("../images/jianhao.png") no-repeat 0 0 / 2.2rem 2.2rem; float: left;}
+.main .mc .item .btn-add{display: block; width: 2.2rem; height: 2.2rem; background: url("../images/jiahao.png") no-repeat 0 0 / 2.2rem 2.2rem; float: left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

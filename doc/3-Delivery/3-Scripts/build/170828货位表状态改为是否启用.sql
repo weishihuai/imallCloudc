@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_storage_space` CHANGE `ENABLE_STATE_CODE` `IS_ENABLE` CHAR(1) CHARSET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '是否 启用 状态';

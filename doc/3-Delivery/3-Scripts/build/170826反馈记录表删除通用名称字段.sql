@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_complain_record` DROP COLUMN `GOODS_COMMON_NM`;

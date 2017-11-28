@@ -1,0 +1,1 @@
+UPDATE `t_pt_sys_menu` SET RESOURCE_ID = 913 WHERE ID = 139;

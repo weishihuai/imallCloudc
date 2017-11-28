@@ -1,0 +1,3 @@
+UPDATE t_pt_sys_resource SET PERMISSION_CODE="stock:problem:drugLockDestroy:destroy" WHERE id = 732;
+UPDATE t_pt_sys_resource SET ROUTER_KEY='quality/destroyRecord-list',PERMISSION_CODE='quality:displayStorage:destroyRecord:list',ROUTER_TEMPLATE_JS='static/dist/destroyRecord.js' WHERE id = 813;
+UPDATE t_pt_sys_resource SET ROUTER_KEY='stock/drugLockDestroy-list',PERMISSION_CODE='stock:problem:drugLockDestroy:list',ROUTER_TEMPLATE_JS='static/dist/drugLockDestroy.js' WHERE id = 729;

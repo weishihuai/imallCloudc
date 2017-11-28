@@ -1,0 +1,1 @@
+UPDATE `t_pt_sys_resource` SET `PERMISSION_CODE` = 'quality:purchaseReceive:acceptanceRecord:list' , `ROUTER_KEY` = 'quality/acceptanceRecord-list' , `ROUTER_TEMPLATE_JS` = 'static/dist/acceptanceRecord.js' WHERE `id` = '788';

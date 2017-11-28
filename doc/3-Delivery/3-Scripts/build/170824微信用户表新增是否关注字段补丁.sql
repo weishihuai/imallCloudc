@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_we_chat_user` ADD COLUMN `IS_SUBSCRIBE` CHAR(1) NOT NULL;

@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_we_chat_user` ADD COLUMN USER_HEAD_PICT  VARCHAR(128) NULL  COMMENT '用户 头像';

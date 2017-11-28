@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_storage_space` ADD COLUMN SHOP_ID  BIGINT NOT NULL COMMENT 'це╣Й ID';

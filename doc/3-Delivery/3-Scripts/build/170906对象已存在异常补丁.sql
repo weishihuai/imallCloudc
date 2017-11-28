@@ -1,0 +1,1 @@
+insert into `t_pt_sys_exception_code` (`id`, `create_by`, `create_date`, `last_modified_by`, `last_modified_date`, `version`, `CODE`, `EXCEPTION_MSG`, `REMARK`) values(null,'portalUser','2015-11-11 16:40:23','2015-11-11 16:40:23','2015-11-11 16:40:23','1','COMMON_IS_EXIST_ERROR','【%s】已存在','通用对象已存在exceptionCode');

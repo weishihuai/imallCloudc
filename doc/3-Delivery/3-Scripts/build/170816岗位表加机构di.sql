@@ -1,0 +1,1 @@
+ALTER TABLE `imall_cloudc`.`t_pt_sys_job` ADD COLUMN `ORG_ID` BIGINT(20) NOT NULL COMMENT '机构id' AFTER `ORDERBY`;

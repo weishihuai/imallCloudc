@@ -1,0 +1,194 @@
+/*登录*/
+html,body{height: 100%; background-color: #fff;}
+.pos-login{width: 1170px; height:625px; background:#fff url("../img/login546-438.png") no-repeat 95px 45px; border-radius: 12px; box-shadow: 0 0 10px 3px rgba(0,0,0,0.15); position: fixed; left: 50%; top:50%; margin:  -310px 0 0 -585px;}
+.pos-login .cont{width: 425px; float: right; padding-top: 170px; background: url("../img/pic64-57.png") no-repeat 157px 93px; }
+.pos-login .item{width: 350px; height: 45px; margin-bottom: 15px; border-bottom: 2px solid #eeeeee;}
+.pos-login .item input{display: block; width: 290px; padding-left: 60px; font-size: 18px; color: #333; height: 45px; border: none;}
+.pos-login .login-btn{display: block; width: 350px; text-align: center; border-radius: 3px; height: 56px; line-height: 56px; color: #fff; font-size: 20px; background-color: #2bcd73;}
+.pos-login .login-btn:hover{background-color: #2daf67;}
+.pos-login .account input{background: url("../img/icon-account.png") no-repeat 27px 12px;}
+.pos-login .name input{background: url("../img/icon-name.png") no-repeat 27px 12px;}
+.pos-login .psw input{background: url("../img/icon-psw.png") no-repeat 28px 13px;}
+.pos-login .forget{width: 350px; height: 50px; margin-top: 24px; overflow: hidden;}
+.pos-login .forget label{float: left; display: inline-block; height: 24px; line-height: 24px; padding-left:28px; color: #aaaaaa; font-size: 18px; cursor: pointer; margin-left: 20px; background: url("../img/checkbox18x18.png") no-repeat 0 center;}
+.pos-login .forget label.selected{background: url("../img/checkbox18x18-2.png") no-repeat 0 center;}
+.pos-login .forget label:hover{color: #333;}
+.pos-login .fg-btn{float: right; display: inline-block; line-height: 24px; color: #aaaaaa; font-size: 18px;}
+.pos-login .fg-btn:hover{color: #333;}
+.pos-login .ct-bot{margin-top: 70px;}
+.pos-login .ct-bot p{width: 350px; color: #666666; text-align: center; font-size: 18px; line-height: 23px; padding-bottom: 8px;}
+.pos-login .ct-bot a{color: #aaaaaa; font-size: 16px;}
+.pos-login .ct-bot a:hover{color: #333; text-decoration: underline;}
+.pos-login .ct-bot span{color: #aaaaaa; font-size: 16px; padding: 0 10px;}
+    /*表格*/
+.main .mc .pos-table-box{width: 100%; background-color: #fff;  overflow: hidden; overflow-x: auto; }
+.main .mc .pos-table-box table {border-left: 1px solid #ddd;border-top: 1px solid #ddd;}
+.main .mc .pos-table-box th {border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; font-weight: 400; line-height: 20px; padding: 20px 0; font-size: 15px; color: #9a98b8; overflow: hidden;}
+.main .mc .pos-table-box .operating{min-width: 120px; text-align: right; padding-right: 35px;}
+.main .mc .pos-table-box tr{background-color: #fff;}
+.main .mc .pos-table-box td{padding: 15px 0; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.main .mc .pos-table-box .td-cont{padding: 0 5px 0 20px; color: #333333; font-size: 15px;}
+.main .mc .pos-table-box .td-cont input{text-align: center;}
+.main .mc .pos-table-box .return-num{padding: 0 10px;}
+.main .mc .pos-table-box .return-num input{display: block; width: 80px; height: 23px; line-height: 23px; margin: 0 auto;}
+
+.main .mc .pos-table-box .th-number{width: 50px; text-align: center;}
+.main .mc .pos-table-box .th-coding{width: 100px; padding-left: 20px;}
+.main .mc .pos-table-box .time{width: 140px; padding-left: 20px;}
+.main .mc .pos-table-box .th-title{width: 120px; padding-left: 20px;}
+.main .mc .pos-table-box .common-name{width: 150px; padding-left: 20px;}
+.main .mc .pos-table-box .manufacturer{width: 125px; padding-left: 20px;}
+.main .mc .pos-table-box .standard{width: 85px; padding-left: 20px;}
+.main .mc .pos-table-box .units{width: 65px; padding-left: 20px;}
+.main .mc .pos-table-box .batch-number{width: 95px; padding-left: 20px;}
+.main .mc .pos-table-box .return-number{width: 75px; padding-left: 20px;}
+.main .mc .pos-table-box .inventory{width: 75px; padding-left: 20px;}
+.main .mc .pos-table-box .retail-price{width: 120px; padding-left: 20px;}
+.main .mc .pos-table-box .member-price{width: 100px; padding-left: 20px;}
+.main .mc .pos-table-box .statutory{width: 105px; padding-left: 20px;}
+.main .mc .pos-table-box .subtotal{width: 100px; padding-left: 20px;}
+.main .mc .pos-table-box .td-number{padding: 0 5px; text-align: center;}
+.main .mc .pos-table-box .card-num{width: 140px; text-align: center;}
+
+/*弹窗底部*/
+.layer-footer .confirm{display: inline-block; width: 106px; height: 36px; margin-right: 23px; border-radius: 3px; text-align: center; line-height: 36px; color: #fff; font-size: 16px; background-color: #2bcd73;}
+.layer-footer .cancel{line-height: 36px; color: #2bcd73; font-size: 16px;}
+
+
+
+/*审核弹窗*/
+.layer-start{width:430px;}
+.layer-start .layer-body{padding-top: 50px;}
+.layer-start .layer-body .item{height: 50px;}
+.layer-start .layer-body .item .mlt{width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-start .layer-body .item .mlt span{color: #ff0000;}
+.layer-start .layer-body .item .mrt{width: 270px; float: left;}
+.layer-start .layer-body .item .mrt span{line-height: 36px; color: #333; font-size: 15px;}
+.layer-start .layer-body .item .mrt label{display: inline-block; font-size: 15px; line-height: 36px; color: #333; margin-right: 25px;}
+.layer-start .layer-body .item .mrt label input[type="radio"]{display: inline-block; margin-right: 3px;}
+.layer-start .layer-body .item .mrt input[type="text"]{border: 1px solid #e5e5e5; color: #666666; display: block; font-size: 15px; height: 34px; line-height: 34px; padding-left: 13px; width: 165px;}
+.layer-start .layer-body .item .mrt input[type="password"]{border: 1px solid #e5e5e5; color: #666666; display: block; font-size: 15px; height: 34px; line-height: 34px; padding-left: 13px; width: 165px;}
+
+.layer-start .layer-footer{padding: 12px 0 50px 150px;}
+
+/*7-12*/
+.layer-reminder .layer-body{padding: 50px 0; text-align: center; background: url("../img/tips-icon32x32.png") no-repeat 110px 45px; color: #333; font-size: 15px;}
+.layer-reminder .layer-body span{padding-left: 40px;}
+.layer-reminder .layer-footer{padding: 20px 0 30px; text-align: center;}
+
+/*交班*/
+.layer-team .layer-body{padding: 15px 0 0 40px;}
+.layer-team .md-box{padding-top: 10px;}
+.layer-team .box-mt{color: #000; font-size: 15px; font-weight: bold;}
+.layer-team .box-mc{padding:10px 0 1px;}
+.layer-team .box-mc .item{width: 225px; min-height: 70px; padding-bottom: 10px; float: left;}
+.layer-team .box-mc .item p{clear: both; height: 30px; line-height: 30px; font-size: 13px; color: #666;}
+.layer-team .box-mc .item p i{color: #ff0000; padding-right: 2px;}
+.layer-team .box-mc .item > span{float: left; line-height: 24px; font-size: 13px; padding: 3px 30px 3px 0; color: #333;}
+.layer-team .box-mc .item > input[type="text"]{display: block; font-size: 13px; width: 170px; height: 28px; padding-left: 10px; color: #333; line-height: 28px; border: 1px solid #e5e5e5; float: left;}
+.layer-team .layer-footer{padding: 30px 45px 30px 0; text-align: center;}
+
+/*审核弹窗*/
+.layer-member{width:430px;}
+.layer-member .layer-body{padding-top: 30px; cursor: pointer;}
+.layer-member .layer-body .item{height: 50px;}
+.layer-member .layer-body .item .mlt{width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-member .layer-body .item .mlt span{color: #ff0000;}
+.layer-member .layer-body .item .mrt{width: 270px; float: left;}
+.layer-member .layer-body .item .mrt .j_select{width: 180px !important;}
+.layer-member .layer-body .item .mrt label{display: inline-block; font-size: 15px; line-height: 36px; color: #333; margin-right: 25px;}
+.layer-member .layer-body .item .mrt label input[type="radio"]{display: inline-block; margin-right: 3px;}
+.layer-member .layer-body .item .mrt > input[type="text"]{display: block; font-size: 13px; width: 170px; height: 36px; padding-left: 10px; color: #333; line-height: 36px; border: 1px solid #e5e5e5; float: left;}
+.layer-member .layer-body .item .mrt .fixation{cursor: default; background-color: #ddd;}
+.layer-member .layer-footer{padding: 12px 0 50px 150px;}
+
+/*结算*/
+.layer-result{width:430px;}
+.layer-result .layer-body{padding-top: 30px; cursor: pointer;}
+.layer-result .layer-body .mc-top{padding-bottom: 20px; border-bottom: 1px solid #ddd;}
+.layer-result .layer-body .mc-bot{padding-top: 30px;}
+.layer-result .layer-body .item{height: 50px;}
+.layer-result .layer-body .item .mlt{width: 130px; height: 36px; text-align: right; padding-right: 20px; color: #999999; font-size: 15px; line-height: 36px; float: left; overflow: hidden;}
+.layer-result .layer-body .item .mlt span{color: #ff0000;}
+.layer-result .layer-body .item .mrt{width: 270px; float: left;}
+.layer-result .layer-body .item .mrt .j_select{width: 180px !important;}
+.layer-result .layer-body .item label{display: inline-block; font-size: 15px; line-height: 36px; color: #333; margin-right: 25px;}
+.layer-result .layer-body .item label input[type="radio"]{display: inline-block; margin-right: 3px;}
+.layer-result .layer-body .item .mrt > input[type="text"]{display: block; font-size: 13px; width: 170px; height: 36px; padding-left: 10px; color: #333; line-height: 36px; border: 1px solid #e5e5e5; float: left;}
+.layer-result .layer-body .item .mrt > input[disabled="disabled"]{text-align: right; padding-right: 10px; padding-left: 0;}
+.layer-result .layer-body .item .mrt .fixation{cursor: default; background-color: #ddd;}
+.layer-result .layer-footer{padding: 12px 0 50px 150px;}
+
+/*商品选择*/
+.layer-choice{position: relative;}
+.layer-choice .search{padding: 20px 0 0 20px;}
+.layer-choice .search input{display: inline-block; width: 280px; height: 28px; line-height: 28px; color: #222; font-size: 14px; border: 1px solid #ddd; padding-left: 10px;}
+.layer-choice .search a{display: inline-block; padding: 0 20px; height: 30px; line-height: 30px; background-color: #ddd; text-align: center; font-size: 14px; color: #333; margin-left: 10px;}
+.layer-choice .layer-body{padding: 20px 22px 0; height: 268px; overflow: hidden; overflow-y: auto;}
+.layer-choice .layer-body .pos-table-box{width: 100%; max-height: 630px; background-color: #fff;  overflow: hidden; overflow-x: auto; }
+.layer-choice .layer-body .pos-table-box table {width: 100%; border-left: 1px solid #ccc; border-top: 1px solid #ccc; }
+.layer-choice .layer-body .pos-table-box th {border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; font-weight: 400; line-height: 20px; padding: 10px 0; font-size: 15px; color: #9a98b8; overflow: hidden;}
+.layer-choice .layer-body .pos-table-box .th-number{width: 40px; text-align: center;}
+.layer-choice .layer-body .pos-table-box .th-coding{width: 65px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .common-name{width: 125px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .manufacturer{width: 120px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .standard{width: 50px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .units{width: 50px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .retail-price{width: 80px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .inventory{width: 70px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .prescription{width: 50px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box .ephedrine{width: 50px; padding-left: 5px;}
+.layer-choice .layer-body .pos-table-box tr{background-color: #fff;}
+.layer-choice .layer-body .pos-table-box td{padding: 8px 0; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; }
+.layer-choice .layer-body .pos-table-box .td-cont{padding: 0 5px 0 5px; color: #333333; font-size: 14px; max-height: 40px; overflow: hidden }
+.layer-choice .layer-body .pos-table-box .td-number{text-align: center; padding: 0;}
+.layer-choice .layer-footer{height: 30px;}
+
+.batch-choice{position: absolute; left: 50%; top:50%; margin: -160px 0 0 -280px; border-radius: 0; border: 1px solid #ddd; box-shadow: 0 0 0 5px rgba(0,0,0,0.2);}
+.batch-choice .layer-body .pos-table-box .batch-number{width: 110px; padding-left: 20px;}
+.batch-choice .layer-body .pos-table-box .time{width: 100px; padding-left: 20px;}
+.batch-choice .layer-body .pos-table-box .inventory{width: 80px; padding-left: 20px;}
+.batch-choice .layer-body .pos-table-box .cargo-location{padding-left: 20px;}
+
+/*订单选择*/
+.od-choice{position: relative;}
+.od-choice .search{padding: 20px 0 0 20px;}
+.od-choice .search input{display: inline-block; float: left; width: 280px; height: 28px; line-height: 28px; color: #222; font-size: 14px; border: 1px solid #ddd; padding-left: 10px; margin-right: 10px;}
+.od-choice .search a{display: inline-block; padding: 0 25px; height: 30px; line-height: 30px; background-color: #ddd; text-align: center; font-size: 14px; color: #333; border-radius: 2px;}
+.od-choice .search span{float: left; line-height: 30px; padding-right: 5px; color: #333; font-size: 14px;}
+.od-choice .layer-body{padding: 20px 22px 0;overflow: hidden; overflow-y: auto;}
+.od-choice .layer-body .pos-table-box{width: 100%; max-height: 630px; background-color: #fff;  overflow: hidden; overflow-x: auto; }
+.od-choice .layer-body .pos-table-box table {width: 100%; border-left: 1px solid #ccc; border-top: 1px solid #ccc; }
+.od-choice .layer-body .pos-table-box th {border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; font-weight: 400; line-height: 20px; padding: 20px 0; font-size: 15px; color: #9a98b8; overflow: hidden;}
+.od-choice .layer-body .pos-table-box .th-number{width: 58px; text-align: center; }
+.od-choice .layer-body .pos-table-box .th-coding{width: 130px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .common-name{width: 110px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .operating{width: 100px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .reason{width: 135px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .operator{width: 95px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .member-price{width: 95px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .time{width: 145px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .th-title{width: 110px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .manufacturer{width: 120px; padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .standard{width: 95px; text-align: center;}
+.od-choice .layer-body .pos-table-box .retail-price{width: 75px;padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .batch-number{width: 85px;padding-left: 20px;}
+.od-choice .layer-body .pos-table-box .inventory{width: 75px;text-align: center;}
+.od-choice .layer-body .pos-table-box tr{background-color: #fff;}
+.od-choice .layer-body .pos-table-box td{padding: 15px 0; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;}
+.od-choice .layer-body .pos-table-box .td-cont{padding: 0 5px 0 20px; color: #333333; font-size: 15px; }
+.od-choice .layer-body .pos-table-box .td-number{text-align: center; padding: 0;}
+.od-choice .layer-footer{height: 30px;}
+.od-choice .layer-body p{margin: 50px 0 20px; font-size: 14px; color: #333;}
+.od-choice .layer-body .pos-table-box th{padding: 10px 0;}
+.od-choice .layer-body .pos-table-box td{padding: 10px 0;}
+
+.main .mc p{color: #000; font-size: 15px; margin: 50px 0 20px;}
+
+.statement .main .mt{padding-top: 0; height: auto;}
+.statement .main .mc .pos-table-box th{padding: 10px 0 10px 20px;}
+.statement .main .mc .pos-table-box .card-num{text-align: left;}
+.statement .main .mc .pos-table-box .th-number{text-align: left;}
+.statement .main .mc .pos-table-box .time{width: 200px;}
+
+

@@ -1,0 +1,16 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #f5f5f5; position: relative;}
+
+/*搜索页*/
+.search-main {padding: 0 1.5rem; position: relative; background: #fff; min-height: 50rem;}
+.search-main .top-search {width: 29.2rem; height: 9rem; border-bottom: 0.1rem solid #eee;}
+.search-main .top-search input {width: 100%; height: 100%; padding-left: 0.6rem; font: 3.1rem PingFang-SC-Medium; color: #333;}
+.search-main .top-search input::input-placeholder {color: #DBDBDB;}
+.search-main .top-search input::-webkit-input-placeholder {color: #DBDBDB;}
+.search-main .top-search input:-moz-placeholder {color: #DBDBDB;}
+.search-main .top-search input::-moz-placeholder {color: #DBDBDB;}
+.search-main .top-search input:-ms-input-placeholder {color: #DBDBDB;}
+.search-main .historical-record .dt {height: 4rem; line-height: 4rem; margin-top: 2rem; position: relative; font-size: 1.5rem; font-family: PingFangSC-Light;}
+.search-main .historical-record .dt span {color: #666666;}
+.search-main .historical-record .dt a {display: block; height: 100%; padding: 0 1rem; color: #333; position: absolute; right: 0; top: 0;}
+.search-main .historical-record .dd li {display: inline-block; height: 3.5rem; margin-right: 1rem; margin-bottom: 1rem; line-height: 3.5rem; background: #FFFFFF; border: 1px solid #979797; border-radius: 5rem;font-family: PingFangSC-Light; font-size: 1.4rem; color: #333333;}
+.search-main .historical-record .dd li a {display: block; padding: 0 1.3rem; color: #333;}

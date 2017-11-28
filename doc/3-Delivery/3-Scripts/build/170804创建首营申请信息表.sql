@@ -1,0 +1,21 @@
+/*==============================================================*/
+/* Table: T_SHP_FIRST_MANAGE_SUPPLIER_QUALITY_APPROVE_INF       */
+/*==============================================================*/
+CREATE TABLE T_SHP_FIRST_MANAGE_SUPPLIER_QUALITY_APPROVE_INF
+(
+   ID                   BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键',
+   FIRST_SUPPLIER_DRUG_QUALITY_APPROVE_ID BIGINT NOT NULL COMMENT '首营 供应商 质量 审核 ID',
+   SHOP_ID              BIGINT NOT NULL COMMENT '门店 ID',
+   SUPPLIER_ID          BIGINT NOT NULL COMMENT '供应商 ID',
+   APPROVE_TYPE_CODE    VARCHAR(32) NOT NULL COMMENT '审核 类型 代码',
+   APPROVE_MAN_ID       BIGINT NOT NULL COMMENT '审核 人 ID',
+   APPROVE_STATE_CODE   VARCHAR(32) NOT NULL COMMENT '审核 状态 代码',
+   APPROVE_REMARK       VARCHAR(128) COMMENT '审核 备注',
+   APPROVE_TIME         DATETIME COMMENT '审核 时间',
+   CREATE_DATE          TIMESTAMP NOT NULL COMMENT '创建时间',
+   CREATE_BY            VARCHAR(32) NOT NULL COMMENT '创建人',
+   LAST_MODIFIED_DATE   TIMESTAMP COMMENT '更新时间',
+   LAST_MODIFIED_BY     VARCHAR(32) COMMENT '更新用户',
+   VERSION              BIGINT NOT NULL COMMENT '版本',
+   PRIMARY KEY (ID)
+);

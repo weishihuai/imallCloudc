@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<script src="js/base.js" type="text/javascript"> </script>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>智慧药店首页</title>
+    <link type="text/css" rel="stylesheet" href="style/base.css" />
+    <link type="text/css" rel="stylesheet" href="style/header.css" />
+    <link type="text/css" rel="stylesheet" href="style/swiper-3.3.1.min.css">
+    <link type="text/css" rel="stylesheet" href="style/index.css" />
+</head>
+
+<body style="padding-bottom: 3rem;">
+    <div class="shop-header shop-header-no-list">
+        <div class="address"><a href="##" class="elli">送至：广东软件园</a></div>
+    </div>
+    <div class="main">
+        <div class="choice choice-no-list">
+            <div class="ch-mt">
+                <div class="mt-top">支持配送城市<div class="mt-top-city">广州市<span>/28</span></div></div>
+                <div class="mt-bot">
+                    <div class="tab-tit swiper-container">
+                        <ul class="tab-nav swiper-wrapper clearfix">
+                            <li class="swiper-slide">
+                                <a href="javascript:;">北京市</a>
+                            </li>
+                            <li class="swiper-slide cur">
+                                <a href="javascript:;">广州市</a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;">深圳市</a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;">郑州市</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-mc">
+                <div class="mc-box clearfix">
+                    <div class="item">
+                        <div class="pic"><a href="##"><img src="case/pic160x160.jpg" alt=""></a></div>
+                        <a href="##" class="title elli">大森林(德兴路店)</a>
+                        <p>配送范围:2km | 免费配送</p>
+                        <p>地址: 荔湾区芳村大道西281号荔湾区芳村大道西281号</p>
+                    </div>
+                    <div class="item">
+                        <div class="pic"><a href="##"><img src="case/pic160x160.jpg" alt=""></a></div>
+                        <a href="##" class="title elli">大森林(德兴路店)</a>
+                        <p>配送范围:2km | 免费配送</p>
+                        <p>地址: 荔湾区芳村大道西281号</p>
+                    </div>
+                    <div class="item">
+                        <div class="pic"><a href="##"><img src="case/pic160x160.jpg" alt=""></a></div>
+                        <a href="##" class="title elli">大森林(德兴路店)</a>
+                        <p>配送范围:2km | 免费配送</p>
+                        <p>地址: 荔湾区芳村大道西281号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="##" class="back-top"></a>
+    </div>
+
+    <div class="list-or-map">列表&nbsp;&nbsp;|&nbsp;&nbsp;<a href="##">地图</a></div>
+
+    <div class="bottom-bar">
+        <div class="bar-idx"><a href="##" class="cur">
+            <div class="pic"></div>
+            <span>首页</span>
+        </a></div>
+        <div class="bar-demand"><a href="##">
+            <div class="pic"></div>
+            <span>进货单</span>
+        </a></div>
+        <div class="bar-rec"><a href="##">
+            <div class="pic"></div>
+            <span>我的</span>
+        </a></div>
+    </div>
+
+    <script src="js/jquery-1.6.1.min.js"></script>
+    <script src="js/swiper-3.3.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            /*咨询标题拖动*/
+            var titSwiper = new Swiper('.tab-tit',{
+                freeMode : true,
+                slidesPerView : 'auto'
+            });
+            $('.tab-tit li a').click(function () {
+                $('.tab-tit li').removeClass('cur');
+                $(this).parent().addClass('cur');
+            });
+        })
+
+    </script>
+
+</body>
+
+</html>

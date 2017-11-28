@@ -1,0 +1,1 @@
+INSERT INTO `t_pt_sys_exception_code` (`create_by`,`create_date`,`last_modified_by`,`last_modified_date`,`version`,`CODE`,`EXCEPTION_MSG`,`REMARK`)VALUES('portalUser','2015-11-11 16:40:23','2015-11-11 16:40:23','2015-11-11 16:40:23','1','ORDER_STATE_ERROR','订单状态已改变，请刷新页面','订单状态已改变，请刷新页面');

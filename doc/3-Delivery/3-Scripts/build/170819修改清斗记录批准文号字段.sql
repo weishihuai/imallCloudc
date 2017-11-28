@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_chinese_medicine_pieces_cleaning_bucket_record` CHANGE `APPROVAL_NUMBER` `APPROVAL_NUMBER` VARCHAR(64) NULL COMMENT '批准 文号'; 

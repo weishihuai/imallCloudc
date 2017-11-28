@@ -1,0 +1,1 @@
+alter table `t_shp_order_item` drop column `PRODUCT_ID`;

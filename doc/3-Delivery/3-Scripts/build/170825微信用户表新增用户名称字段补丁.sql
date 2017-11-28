@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_we_chat_user` ADD COLUMN `USER_NAME` VARCHAR(32) NOT NULL;

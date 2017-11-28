@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_purchase_acceptance_record_item` ADD COLUMN  GOODS_BATCH_SKU_ID  BIGINT NOT NULL COMMENT '商品 批次 SKU ID';

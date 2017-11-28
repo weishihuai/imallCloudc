@@ -1,0 +1,60 @@
+/* CSS Document */
+
+/*商店页头*/
+.shop-header{height:17.5rem; background: url("../images/bg640x350.png") no-repeat 0 0 / 100% 100%; position: relative;}
+.shop-header-no-list {height: 33.4rem; background: url("../images/bgno640x610.png")  no-repeat 0 0 / 32rem 30.5rem;}
+.shop-header .address{position: absolute; height: 3rem; top:1rem; left: 2rem; padding-right: 1.3rem; overflow: hidden; background: url("../images/arrows12-20.png") no-repeat 100% center / 0.6rem 1rem;}
+.shop-header .address a{display: inline-block; max-width: 16.5rem; height: 3rem; line-height: 3rem; color: #fff; font-size: 1.8rem;}
+.shop-header .nearby{display: inline-block; line-height: 2.1rem; color: #fff; font-size: 1.5rem; position: absolute; right:2rem; top:1.5rem; z-index: 12;}
+.shop-header .search{width: 100%; padding: 5.7rem 1.5rem 0 1.5rem;  position: relative; background: none;}
+.shop-header .search-fixed{ position: fixed; top: 0; left: 0; z-index: 11;padding: 0.8rem 1.5rem; background: url("../images/bg640x350.png") no-repeat 0 0 / 100% 100%;}
+.shop-header .search a{display: block; height: 4.5rem; line-height: 4.5rem; padding-left: 1rem; color: #73777C; font-size: 1.4rem; text-align: center; background: #fff url("../images/search30-29.png") no-repeat 9rem center / 1.5rem auto; ; border-radius: 2.2rem;}
+.shop-header-no-map{height: 10rem;}
+
+
+
+
+
+
+
+/*页脚*/
+
+.bottom-bar{width: 100%; height: 5rem; background-color: #fff; border-top: 1px solid #ddd; position: fixed; left: 0; bottom: 0; z-index: 11;}
+.bottom-bar .bar-idx{width: 33.3%; height: 5rem; text-align: center; padding-top: 0.5rem; float: left;}
+.bottom-bar .bar-idx .pic{width: 3.2rem; height: 2.5rem; margin: 0 auto; background: url("../images/shouye.png") no-repeat center / 1.8rem auto;}
+.bottom-bar .bar-idx span{line-height: 1.5rem; font-size: 1rem; color: #435B67;}
+.bottom-bar .bar-idx .cur .pic{background: url("../images/shouye_s2.png") no-repeat center / 3.2rem auto;}
+.bottom-bar .bar-idx .cur span{color: #238EE5;}
+
+.bottom-bar .bar-demand{width: 33.3%; height: 5rem; text-align: center; padding-top: 0.5rem; float: left;}
+.bottom-bar .bar-demand .pic{width: 3.2rem; height: 2.5rem; margin: 0 auto; background: url("../images/xuqiudan.png") no-repeat center / 1.5rem auto;}
+.bottom-bar .bar-demand span{line-height: 1.5rem; font-size: 1rem; color: #435B67;}
+.bottom-bar .bar-demand .cur .pic{background: url("../images/shouye_s2.png") no-repeat center / 3.2rem auto;}
+.bottom-bar .bar-demand .cur span{color: #238EE5;}
+
+.bottom-bar .bar-rec{width: 33.3%; height: 5rem; text-align: center; padding-top: 0.5rem; float: left;}
+.bottom-bar .bar-rec .pic{width: 3.2rem; height: 2.5rem; margin: 0 auto; background: url("../images/wode.png") no-repeat center / 1.8rem auto;}
+.bottom-bar .bar-rec span{line-height: 1.5rem; font-size: 1rem; color: #435B67;}
+.bottom-bar .bar-rec .cur .pic{background: url("../images/wode_s2.png") no-repeat center / 3.2rem auto;}
+.bottom-bar .bar-rec .cur span{color: #238EE5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

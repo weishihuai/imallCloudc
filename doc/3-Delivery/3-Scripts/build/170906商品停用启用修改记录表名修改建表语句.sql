@@ -1,0 +1,1 @@
+RENAME TABLE `t_shp_goodsdas_enable_record` TO `t_shp_goods_enable_record`;

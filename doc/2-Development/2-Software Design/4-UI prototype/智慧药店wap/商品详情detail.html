@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<script src="js/base.js" type="text/javascript"> </script>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商品详情</title>
+    <link href="style/base.css" type="text/css" rel="stylesheet" />
+    <link href="style/header.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style/swiper-3.3.1.min.css">
+    <link href="style/detail.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="swiper-container scroll-imgs">
+            <div class="swiper-wrapper" style="height: auto;">
+                <div class="swiper-slide"><a href=""><img src="case/pic640x640.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="case/pic640x640.jpg" alt=""></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="mc">
+            <div class="mc-box">
+                <div class="name">氯芬黄敏薄膜片</div>
+                <div class="spec">规格: 50片</div>
+                <div class="price">
+                    <i>¥13.00</i>
+                    <del>¥14.50</del>
+                    <span class="rx">处方药</span>
+                </div>
+            </div>
+            <div class="shop">
+                <span>大森林(芳村大道西店)</span>
+                <a href="##">门店详情</a>
+            </div>
+            <div class="phone"><a href="##" class="elli">020-81806152</a></div>
+            <div class="address"><a href="##" >芳村大道西与逸彩路交叉</a></div>
+            <div class="specification">
+                <div class="sp-mt">药品说明书</div>
+                <div class="sp-mc">
+                    <p>药品名称：氯芬黄敏片；生产厂家：广东华南药业集团有限公司；性状：本品为糖衣片，除去包衣后显浅黄色。药理毒理：本品中双氯芬酸钠是一种衍生于苯乙酸类的非甾体消炎镇痛药,其作用机理为抑制环氧</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quick-nav">
+        <div class="nav-box" style="display: none;">
+            <a href="##" class="nb-home">首页</a>
+            <a href="##" class="nb-src">搜索</a>
+            <a href="##" class="nb-my">我的</a>
+        </div>
+        <span>快速<br>导航</span>
+    </div>
+    <div class="dt-bar">
+        <div class="demand">需求单<span>8</span></div>
+        <a href="##" class="add">加入需求单</a>
+    </div>
+    <div class="suspend" style="bottom: 6rem;">本店暂停营业</div>
+</body>
+<script src="js/jquery-1.6.1.min.js"></script>
+<script src="js/swiper.min.js" ></script>
+<script>
+    //轮播图
+    var swiper01 = new Swiper('.scroll-imgs', {
+        pagination: '.swiper-pagination',/*分页器*/
+        slidesPerView: 1,
+        paginationClickable: true,/*点击那几个小点*/
+        autoplay : 2000,
+        loop : true
+    });
+</script>
+
+</html>

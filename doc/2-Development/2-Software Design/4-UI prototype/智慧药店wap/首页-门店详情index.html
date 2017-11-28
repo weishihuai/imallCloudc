@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<script src="js/base.js" type="text/javascript"> </script>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>智慧药店首页</title>
+    <link type="text/css" rel="stylesheet" href="style/base.css" />
+    <link type="text/css" rel="stylesheet" href="style/header.css" />
+    <link type="text/css" rel="stylesheet" href="style/swiper-3.3.1.min.css">
+    <link type="text/css" rel="stylesheet" href="style/index.css" />
+</head>
+
+<body style="padding-bottom: 3rem;">
+    <div class="shop-header shop-header-sd">
+    </div>
+    <div class="main stores-details-main">
+        <div class="mt">
+            <div class="mt-pic"><img src="case/pic120x120.jpg" alt=""></div>
+            <div class="name"><a href="##">大森林(德兴路店)</a></div>
+            <div class="distribution">配送费&nbsp;5元&nbsp;&nbsp;|&nbsp;&nbsp;配送范围 2km</div>
+            <div class="sd-info">
+                <p>"大参林医药集团股份有限公司源于1993年，成立于1999年，是集药品生产、销售为一体的集团化企业。公司以发展药店连锁为立业之本，经过多年的发展，截止2016年8月旗下门店已达到2200多家，总员工数达17000多名，遍布广东、广西、福建、江西、浙江、河南六省，并战略性投资贵州、内蒙古等省份。"</p>
+            </div>
+        </div>
+        <div class="choice">
+            <div class="ch-mt">
+                <div class="mt-bot">
+                    <div class="tab-tit swiper-container">
+                        <ul class="tab-nav swiper-wrapper clearfix">
+                            <li class="swiper-slide cur">
+                                <a href="javascript:;"><img src="case/pic170x170.jpg" alt=""></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;"><img src="case/pic170x170.jpg" alt=""></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;"><img src="case/pic170x170.jpg" alt=""></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:;"><img src="case/pic170x170.jpg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-mc">
+                <div class="mc-box clearfix">
+                    <div class="item"><a href="#">门店公告</a></div>
+                    <div class="item"><a href="#">门店位置</a></div>
+                    <div class="item"><p class="dt">经营时间</p><p class="dd">09:00-22:00</p></div>
+                </div>
+            </div>
+        </div>
+        <a href="##" class="back-top"></a>
+    </div>
+
+    <div class="bottom-bar bar-wechat-phone">
+        <div class="bar-wechat"><a href="##">店长微信</a></div>
+        <div class="bar-phone"><a href="##">门店电话</a></div>
+    </div>
+
+    <script src="js/jquery-1.6.1.min.js"></script>
+    <script src="js/swiper-3.3.1.min.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            var titSwiper = new Swiper('.tab-tit',{
+                freeMode : true,
+                slidesPerView : 'auto'
+            });
+            $('.tab-tit li a').click(function () {
+                $('.tab-tit li').removeClass('cur');
+                $(this).parent().addClass('cur');
+            });
+        })
+
+    </script>
+
+</body>
+
+</html>

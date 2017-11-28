@@ -1,0 +1,1 @@
+UPDATE `t_pt_sys_resource` t SET t.`PARENT_ID` = 909 WHERE t.`id` = 910;

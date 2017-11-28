@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_order_send_out_batch` CHANGE `WE_SHOP_ID` `WE_SHOP_ID` BIGINT(20) NULL COMMENT '微门店 ID'; 

@@ -1,0 +1,2 @@
+ALTER TABLE `t_shp_shopping_cart_store` CHANGE GOODS_BATCH_ID GOODS_BATCH_ID BIGINT NULL;
+ALTER TABLE `t_shp_sell_returned_purchase_order_item` ADD COLUMN GOODS_BATCH_ID BIGINT NOT NULL;

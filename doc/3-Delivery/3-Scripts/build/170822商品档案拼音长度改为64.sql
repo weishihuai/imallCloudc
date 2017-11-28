@@ -1,0 +1,1 @@
+ ALTER TABLE `t_ptfm_goods_doc` CHANGE `PINYIN` `PINYIN` VARCHAR(64) CHARSET utf8 COLLATE utf8_general_ci NULL COMMENT '拼音'; 

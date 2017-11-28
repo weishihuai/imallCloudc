@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_storage_space` ADD COLUMN IS_BUILT_IN  VARCHAR(1) NOT NULL COMMENT '是否 内置';

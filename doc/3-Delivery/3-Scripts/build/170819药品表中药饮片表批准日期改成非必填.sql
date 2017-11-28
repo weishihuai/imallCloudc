@@ -1,0 +1,2 @@
+ALTER TABLE `t_ptfm_goods_doc_chinese_medicine_pieces` CHANGE `APPROVE_DATE` `APPROVE_DATE` TIMESTAMP NULL COMMENT '批准 日期';
+ALTER TABLE `t_ptfm_goods_doc_drug` CHANGE `APPROVE_DATE` `APPROVE_DATE` TIMESTAMP NULL COMMENT '批准 日期';

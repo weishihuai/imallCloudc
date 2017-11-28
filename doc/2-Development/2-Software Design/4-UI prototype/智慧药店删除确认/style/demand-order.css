@@ -1,0 +1,47 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; padding-bottom: 16rem;}
+.main .mt{height: 4.5rem; line-height: 4.5rem; color: #333; font-size: 1.6rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 6px 6px 0 rgba(0,0,0,0.04); }
+.main .mt .select{float: left;}
+.main .mt .compile{float: right;}
+
+.main .mc{padding-top: 1rem;}
+.main .sr-top{height: 5.5rem; padding:1.5rem 1rem 0 5rem; position: relative; overflow: hidden;}
+.main .sr-top .select{width: 2rem; height: 2rem; background: url("../images/gouxuan.png") no-repeat 0 0 / 100% 100%; position: absolute; left: 2rem; top:50%; margin-top: -1rem;}
+.main .sr-top .selected{border: none; background: url("../images/gouxuan_s.png") no-repeat 0 0 / 100% 100%;}
+.main .sr-top .addr{display: inline-block; max-width: 100%; height: 2.4rem; padding-right: 1.5rem; background: url("../images/jiantougray.png") no-repeat 100% center / 0.7rem auto; overflow: hidden;}
+.main .sr-top .addr a{display: inline-block; max-width: 100%; line-height: 2.4rem; height: 2.4rem; color: #444444; font-size: 1.7rem;}
+
+.main .sr-bot{padding: 0 2rem;}
+.main .sr-item{padding: 2rem 0 2rem 3.5rem; min-height: 10rem; border-top: 1px solid #E5E5E5; position: relative; overflow: hidden;}
+.main .sr-item .select{width: 2rem; height: 2rem; background: url("../images/gouxuan.png") no-repeat 0 0 / 100% 100%; position: absolute; left: 0; top:50%; margin-top: -1rem;}
+.main .sr-item .selected{border: none; background: url("../images/gouxuan_s.png") no-repeat 0 0 / 100% 100%;}
+.main .sr-item .pic{width: 10rem; height: 10rem; float: left; overflow: hidden;}
+.main .sr-item .pic img{width: 10rem; height: 10rem;}
+.main .sr-rt{width: 13.5rem; float: right;}
+.main .sr-rt .title{display: block; height: 1.8rem; line-height: 1.8rem; color: #333; font-size: 1.4rem;}
+.main .sr-rt p{height: 1.5rem; line-height: 1.5rem; color: #91959B; font-size: 1.2rem; margin: 0.5rem 0;}
+.main .sr-rt .quantity-wrapper{height: 3rem; margin-top: 1rem; overflow: hidden;}
+.main .sr-rt .quantity-wrapper input{display: inline-block; width: 4rem; height: 3rem; text-align: center; line-height: 2.9rem; color: #333; font-size: 1.5rem; border: none; border-top: 1px solid #999999; border-bottom: 1px solid #999; float: left; }
+.main .sr-rt .quantity-decrease{display: block; width: 3rem; height: 3rem; border: 1px solid #999999; border-radius: 0.2rem 0 0 0.2rem; float: left; background: url("../images/decrease-2.png") no-repeat center center / 1.2rem auto;}
+.main .sr-rt .quantity-decrease.limited{background: url("../images/decrease.png") no-repeat center center / 1.2rem auto; cursor: default;}
+.main .sr-rt .quantity-increase{display: block; width: 3rem; height: 3rem; border: 1px solid #999999; border-radius: 0 0.2rem 0.2rem 0; float: left; background: url("../images/increase.png") no-repeat center center / 1.25rem auto;}
+
+.main .rt-box{height: 1.9rem; overflow: hidden;}
+.main .rt-box i{float: left; line-height: 1.9rem; color: #FF6D57; font-size: 1.3rem;}
+.main .rt-box .rx{display: inline-block; text-align: center; background-color: #EDF3F8; color: #59606C; font-size: 1rem; width: 4.2rem; height: 1.8rem; line-height: 1.7rem; border-radius: 0.9rem; border: 1px solid #59606C; float: right;}
+
+.demand-bar{position: fixed; background-color: #fff; padding:1px 0 1.8rem; box-shadow: 0 -1px 6px rgba(0,0,0,0.1); z-index: 11; left: 0; right: 0; bottom: 5rem;}
+.demand-bar p{color: #333; text-align: center; font-size: 1.5rem; height: 3.8rem; line-height: 3.8rem;}
+.demand-bar p span{color: #FF6D57; font-size: 1.6rem; }
+.demand-bar .sub-btn{display: block; width: 29rem; height: 5rem; line-height: 4.9rem; text-align: center; color: #fff; font-size: 1.6rem; margin: 0 auto; border-radius: 2.4rem; background-color: #238EE5; box-shadow: 1px 8px 14px 0 rgba(35,142,229,0.50);  background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+.demand-bar .del-btn{display: block; width: 29rem; height: 5rem; line-height: 4.9rem; text-align: center; color: #237DE4; font-size: 1.6rem; margin: 1.8rem auto 0; border-radius: 2.4rem; border: 1px solid #237DE4; box-shadow: 0 6px 14px 0 rgba(35,125,228,0.20); }
+
+/*删除弹窗 新增2017-8-31*/
+.del-demand {width: 28rem; height: 14.5rem; position: absolute; left: 50%; top: 50%; margin-left: -14rem; margin-top: -7.25rem; text-align: center; background: #fff; border-radius: 0.4rem;}
+.del-demand .del-demand-title {padding-top: 2.6rem; padding-bottom: 1.6rem; font-size: 1.8rem; color: #000000;}
+.del-demand .del-demand-txt {height: 4rem; font-size: 1.5rem; color: #888888;}
+.del-demand .del-demand-btn {border-top: 1px solid #ededed; }
+.del-demand .del-demand-btn1, .del-demand .del-demand-btn2 {display: inline-block; width: 49%; height: 3.8rem; color: #000000; font-size: 1.8rem; line-height: 3.8rem; border-right: 1px solid #ededed;}
+.del-demand .del-demand-btn2 {color: #237DE4; border-right: none;}
+
+
+

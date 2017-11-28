@@ -1,0 +1,1 @@
+ALTER TABLE `t_shp_stock_check` DROP COLUMN `UNIT_PRICE`;
