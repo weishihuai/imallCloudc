@@ -1,0 +1,56 @@
+.main-goods-detail-body { min-width: 320px; max-width: 640px; margin: 0 auto; padding-bottom: 6rem;}
+.main-goods-detail .scroll-imgs{width: 100%; background-color: #f18a46; position: relative; overflow: hidden; z-index: 10;}
+.main-goods-detail .scroll-imgs img{width: 100%; height: auto;}
+.main-goods-detail .swiper-pagination-bullet{width: 0.5rem; height: 0.5rem; background-color: #fff; border: 1px solid #237de4;}
+.main-goods-detail .swiper-pagination-bullet-active{background: #237de4;}
+
+.main-goods-detail .mc{padding: 0 2rem;}
+.main-goods-detail .mc-box{padding: 1rem 0 2.5rem;}
+.main-goods-detail .mc-box .name{display: block; color: #0C1828; line-height: 3rem; font-size: 2.1rem; }
+.main-goods-detail .mc-box .spec{color: #757D86; font-size: 1.5rem; padding: 1rem 0;}
+.main-goods-detail .mc-box .price{height: 2.3rem; overflow: hidden;}
+.main-goods-detail .mc-box .price i{float: left; line-height: 2.3rem; color: #FF6D57; font-size: 2rem;}
+.main-goods-detail .mc-box .price del{display: inline-block; margin-left: 0.8rem; float: left; color: #B0BEC5; line-height: 2.3rem;}
+.main-goods-detail .mc-box .price .rx{display: inline-block; text-align: center; background-color: #EDF3F8; color: #59606C; font-size: 1rem; width: 4.2rem; height: 2rem; line-height: 1.9rem; border-radius: 1rem; border: 1px solid #59606C; float: right;}
+
+
+.main-goods-detail .shop{padding: 2rem 0 1rem; height: 6.2rem; line-height: 3.2rem; border-top: 1px solid #E5E5E5; overflow: hidden;}
+.main-goods-detail .shop span{display: block; width: 19rem; height: 3.2rem; line-height: 3.2rem; float: left; color: #333333; font-size: 1.9rem;}
+.main-goods-detail .shop a{display: block; width: 7.5rem; height: 2.4rem; line-height: 2.4rem; color: #fff; padding-left: 1rem; float: right; margin-top: 0.5rem; position: relative; border-radius: 0.2rem 1.1rem 0.2rem 0.2rem;background-color: #238EE5; background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+.main-goods-detail .shop a:before{display: block; width: 0.5rem; height: 1rem; content: ''; background: url("../../img/wechat/arrows10-20.png") no-repeat 0 0 / 0.5rem auto; position: absolute; left: 6rem; top:0.7rem;}
+.main-goods-detail .phone{height: 6.5rem; padding-right:2.4rem; background: url("../../img/wechat/jiantougray.png") no-repeat 100% center / 0.7rem auto;}
+.main-goods-detail .phone a{display: block; padding-left: 3.5rem; height: 6.5rem; line-height: 6.5rem; color: #444A50; font-size: 1.9rem; background: url("../../img/wechat/dianhua3.png") no-repeat 0 center / auto 2.2rem;}
+
+.main-goods-detail .address{min-height: 6.5rem; padding-right:2.4rem; background: url("../../img/wechat/jiantougray.png") no-repeat 100% center / 0.7rem auto;}
+.main-goods-detail .address a{display: block; padding:2rem 0 2rem 3.5rem;  line-height: 2.5rem; color: #444A50; font-size: 1.9rem; background: url("../../img/wechat/weizhi.png") no-repeat 0 center / auto 2.2rem;}
+.main-goods-detail .specification{padding-top: 2.8rem; border-top: 1px solid #E5E5E5;}
+.main-goods-detail .specification .sp-mt{height: 3.5rem; line-height: 3.5rem; padding-left: 4rem; color: #444A50; font-size: 1.9rem; background: url("../../img/wechat/shuomingshu.png") no-repeat 0 center / 1.8rem auto;}
+.main-goods-detail .specification .sp-mc{color: #444A50; padding-top: 1rem; font-size: 1.4rem; line-height: 2.3rem;}
+
+.quick-nav{display: block; width: 4.4rem; height: 4.4rem; cursor: pointer; border-radius: 50%; background-color: #fff; box-shadow: 0 5px 14px 0 rgba(0,0,0,0.18); position: fixed; right: 2rem; bottom: 7.8rem; z-index: 11;}
+.quick-nav span{display: block; width: 4.4rem; height: 4.4rem; padding-top: 0.8rem; line-height: 1.4rem; color: #2A2A2F; font-size: 1.1rem; text-align: center; border-radius: 50%;}
+.quick-nav .nav-box{width: 14.5rem; padding: 0 1rem; min-height: 5rem; background-color: #fff; box-shadow: 2px 6px 16px 0 rgba(0,0,0,0.20); position: absolute; top:-16.5rem; right:0rem;}
+.quick-nav .nav-box:before{display: block; width: 0; height: 0; border-left: 1rem solid transparent; content: ''; border-right: 1rem solid transparent; border-top: 0.8rem solid #fff; position: absolute; right:1.9rem; bottom: -0.8rem; }
+.quick-nav .nav-box a{display: block; line-height: 5rem; height: 5rem; border-bottom: 1px solid #E5E5E5; padding-left: 4.2rem; color: #333; font-size: 1.5rem;}
+.quick-nav .nav-box .nb-home{background: url("../../img/wechat/shouye2.png") no-repeat 1.1rem center / 1.8rem auto;}
+.quick-nav .nav-box .nb-src{background: url("../../img/wechat/sousuo2.png") no-repeat 1.1rem center / 1.7rem auto;}
+.quick-nav .nav-box .nb-my{border-bottom: none;background: url("../../img/wechat/wode2.png") no-repeat 1.1rem center / 1.6rem auto;}
+
+.dt-bar{height: 5rem; padding-left: 7rem; box-shadow: 0 0 4px rgba(0,0,0,0.15); position: fixed; left: 0; right:0; bottom: 0; background-color: #fff;  z-index: 11;}
+.dt-bar .demand{width: 7rem; height: 5rem; padding-top: 3rem; text-align: center; color: #435B67; font-size: 1rem; position: absolute; left: 0; top:0; background: url("../../img/wechat/xuqiudan2.png") no-repeat center 0.8rem / 1.6rem auto;}
+.dt-bar .demand span{display: inline-block; width: 1.8rem; height: 1.8rem; line-height: 1.8rem; background-color: #FF6D57; color: #fff; font-size: 1.1rem; text-align: center; border-radius: 50%; overflow: hidden; position: absolute; left: 4.5rem; top:0.5rem;}
+.dt-bar .add{display: block; width: 100%; height: 5rem; line-height: 5rem; text-align: center; color: #fff; font-size: 1.7rem; background-color: #238EE5; background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+
+
+.suspend{position: fixed; left: 0; right: 0; height: 5rem; color: #fff; font-size: 1.7rem; line-height: 5rem; text-align: center; background-color: #00050F; z-index: 11;}
+
+
+
+
+
+
+
+
+
+
+

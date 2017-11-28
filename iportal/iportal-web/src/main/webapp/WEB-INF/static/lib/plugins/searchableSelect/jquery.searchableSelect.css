@@ -1,0 +1,109 @@
+/*
+Author: David Qin
+E-mail: david@hereapp.cn
+Date: 2014-11-05
+*/
+
+.searchable-select-hide {
+  display: none;
+}
+
+.searchable-select {
+  min-width: 200px;
+  font-size: 15px;
+  line-height: 40px;
+  position: relative;
+}
+
+.searchable-select-holder{
+  background-color: #fff;
+  padding-left: 15px
+}
+
+.searchable-select-caret {
+  margin:0;padding:0;position:absolute;right:12px;top:17px;
+  display: block; width: 13px; height: 7px;
+  background: url("../../../img/arrows13x7.png") no-repeat;
+}
+
+.searchable-select-dropdown {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 4px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.searchable-select-input {
+  margin-top: 5px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.searchable-scroll {
+  margin-top: 4px;
+  position: relative;
+}
+
+.searchable-scroll.has-privious {
+  padding-top: 16px;
+}
+
+.searchable-scroll.has-next {
+  padding-bottom: 16px;
+}
+
+.searchable-has-privious {
+  top: 0;
+}
+
+.searchable-has-next {
+  bottom: 0;
+}
+
+.searchable-has-privious, .searchable-has-next {
+  height: 16px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+  background-color: white;
+  line-height: 8px;
+  cursor: pointer;
+}
+
+.searchable-select-items {
+  max-height: 400px;
+  overflow-y: scroll;
+  position: relative;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.searchable-select-items::-webkit-scrollbar {
+  display: none;
+}
+
+.searchable-select-item {
+  padding: 5px 5px;
+  cursor: pointer;
+  color: #9a98b8;
+  height: 30px;
+}
+
+.searchable-select-item.hover {
+  background: #e2e2e2;
+  color: white;
+}
+
+.searchable-select-item.selected {
+  background: #e2e2e2;
+  color: white;
+}

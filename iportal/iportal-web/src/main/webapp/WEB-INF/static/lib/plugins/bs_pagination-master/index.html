@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+  <meta charset="utf-8">
+  <title>jQuery翻页插件</title>
+
+  <!--  It is a good idea to bundle all CSS in one file. The same with JS -->
+
+  <!--  JQUERY -->
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+
+  <!--  BOOTSTRAP -->
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+  <!--  PAGINATION plugin -->
+  <link rel="stylesheet" type="text/css" href="jquery.bs_pagination.min.css">
+  <script type="text/javascript" src="jquery.bs_pagination.min.js"></script>
+  <script type="text/javascript" src="localization/cn.js"></script>
+
+  <script type="text/javascript">
+    $(function() {
+
+      $("#demo_pag1").bs_pagination({
+        totalPages: 100,
+        rowsPerPage:30,
+        showRowsPerPage: false,
+        onChangePage: function(event, data) {
+          console.log('Current page is: ' + data.currentPage + '. ' + data.rowsPerPage + ' are displayed per page.');
+        }
+      });
+
+    });
+  </script>
+
+
+</head>
+
+<body>
+
+<div id="demo_pag1"></div>
+</body>
+</html>

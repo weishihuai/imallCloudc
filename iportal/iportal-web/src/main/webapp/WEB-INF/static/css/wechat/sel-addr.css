@@ -1,0 +1,21 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #fff; }
+.main{padding-top:24.5rem; }
+.main .addr-sc{height: 4.4rem; padding-left: 4.5rem; background: #fff url("../../img/wechat/sousuo.png") no-repeat 2rem center / 1.5rem auto; position: fixed; left: 0; right:0; top:0; z-index: 2; box-shadow: 0 6px 6px 0 rgba(0,0,0,0.04);}
+.main .addr-sc input{display: block; height: 4.4rem; line-height: 4.4rem; color: #333; font-size: 1.6rem;}
+.main .mt{width: 32rem; height: 20rem; position: fixed; left: 50%; top:4.5rem; margin-left: -16rem; overflow: hidden;}
+
+.main .mc{padding:0 1.8rem}
+.main .mc .item{padding: 1.2rem 0; border-bottom: 1px solid #E5E5E5;}
+.main .mc .item h5{height: 2.3rem; line-height: 2.3rem; color: #333; font-size: 1.6rem;}
+.main .mc .item p{line-height: 2rem; color: #A1B0B8; font-size: 1.4rem;}
+.main .mc .item span{color: #237DE4;}
+
+
+
+
+
+
+
+
+
+

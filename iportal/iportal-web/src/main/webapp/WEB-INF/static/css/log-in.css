@@ -1,0 +1,35 @@
+html,body{height: 100%; background-color: #f7fafc;}
+body{text-align: center; background: #F7FAFC; overflow: hidden;}
+
+.main{width: 600px; padding-top: 150px; position: absolute; left: 50%; top:0; margin-left: -300px;}
+.main .mt{text-align: center;}
+.main .mt h5{color: #0b48ab; font-size: 43px; font-weight: 100;}
+.main .mt span{font-size: 20px; color: #666; font-weight: 100; font-family: 'Lato','PingFang SC';}
+.main .mc{width: 410px; margin: 0 auto;}
+.main .mc .login{display: block; width: 410px; height: 50px; border-radius: 3px; text-align: center; line-height: 50px; background-color: #326ed1; font-size: 18px; color: #fff; margin-top: 55px;}
+.main .mc .login:hover{background-color: #3876dc;}
+.main .mc .cont{width: 410px; height: 210px; border: 1px solid #d5d5d5; margin-top: 50px; border-radius: 3px; background-color: #fff; /*box-shadow: 0 0 15px rgba(0,51,131,0.2);*/}
+.main .mc .cont .item{width: 385px; height: 30px; padding: 20px 0 20px 25px; border-top: 1px solid #e8e8e8; }
+.main .mc .cont .item .pic{width: 30px; height: 30px; float: left; margin-right: 10px;}
+.main .mc .cont .item input{display: block; width: 325px; height: 30px; border: none; border-left: 1px solid #cccccc; padding-left: 15px; font-size: 16px; color: #000; float: left;}
+.main .mc .cont .item:first-child{border-top: none;}
+.main .mc .cont .code-pic{width: 60px; height: 26px; float: left; margin: 2px 10px 0 0;}
+.main .mc .cont .code-pic img{width: 60px; height: 26px;}
+.main .mc .cont .change{float: left; color: #316ed1; line-height: 30px;}
+.main .mc .cont .change:hover{text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

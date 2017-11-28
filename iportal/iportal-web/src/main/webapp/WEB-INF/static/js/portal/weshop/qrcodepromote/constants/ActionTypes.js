@@ -1,0 +1,1 @@
+export const QR_CODE_TICKET = "QR_CODE_TICKET";

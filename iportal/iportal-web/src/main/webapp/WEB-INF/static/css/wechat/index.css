@@ -1,0 +1,370 @@
+body {background-color: #f5f5f5; position: relative;}
+
+.main-index{position: relative; top:-0.59375rem; border-radius: 0.53125rem 0.53125rem 0 0; background-color: #fff;}
+.main-index .mt, .layer .dt{ min-height: 0.9375rem; position: relative; top:-0.65625rem; padding-bottom: 0.3125rem;}
+.main-index .mt .mt-pic, .layer .dt .dt-pic{width: 2.03125rem; height: 2.03125rem; border: 0.078125rem solid #fff; border-radius: 50%; overflow: hidden; margin: 0 auto;}
+.main-index .mt .mt-pic img, .layer .dt .dt-pic img{width: 1.875rem; height: 1.875rem;}
+.main-index .mt .name{margin-top: 0.15625rem; text-align: center; height: 0.71875rem; line-height: 0.71875rem;}
+.main-index .mt .name a{display: inline-block; height: 0.71875rem; line-height: 0.71875rem; color: #333; font-size: 17px; background: url("../../img/wechat/jiantougray.png") no-repeat 100% center / 0.21875rem auto; padding-right: 0.5rem;}
+[data-dpr="2"] .main-index .mt .name a{font-size: 34px;}
+[data-dpr="3"] .main-index .mt .name a{font-size: 51px;}
+
+.main-index .mt .contact{text-align: center; margin-top: 0.3125rem;}
+.main-index .mt .wechat{display: inline-block; height: 0.65625rem; line-height: 0.65625rem; color: #333; font-size: 13px; padding-left: 0.875rem; background: url("../../img/wechat/weixin.png") no-repeat 0 0 / 0.65625rem auto; margin: 0 0.40625rem;}
+[data-dpr="2"] .main-index .mt .wechat{font-size: 26px;}
+[data-dpr="3"] .main-index .mt .wechat{font-size: 39px;}
+.main-index .mt .phone{display: inline-block; height: 0.65625rem; line-height: 0.65625rem; color: #333; font-size: 13px; padding-left: 0.875rem; background: url("../../img/wechat/dianhua.png") no-repeat 0 0 / 0.65625rem auto; margin: 0 0.40625rem;}
+[data-dpr="2"] .main-index .mt .phone{font-size: 26px;}
+[data-dpr="3"] .main-index .mt .phone{font-size: 39px;}
+
+.main-index .entry-nav{width: 100%; padding: 0 0.375rem 0.375rem 0.375rem; margin-bottom: 0.625rem; background-color: #fff; position: relative; overflow: hidden; z-index: 10;}
+.main-index .entry-nav .swiper-slide a{display: block; text-align: center; height: 2.1875rem;}
+.main-index .entry-nav .swiper-slide .item-img{display: block; width: 1.03125rem; height:1.03125rem; border-radius: 50%; margin: 0 auto; overflow: hidden;}
+.main-index .entry-nav .swiper-slide .item-img img{width: 100%; height: 100%;}
+.main-index .entry-nav .item-tit{display: inline-block; color: #000; font-size: 11px; height: 0.71875rem; line-height: 0.5625rem; padding-top: 0.15625rem;}
+[data-dpr="2"] .main-index .entry-nav .item-tit{font-size: 22px;}
+[data-dpr="3"] .main-index .entry-nav .item-tit{font-size: 33px;}
+
+.main-index .entry-nav .swiper-pagination-bullet{width: 0.15625rem; height: 0.15625rem;}
+.main-index .entry-nav .swiper-pagination-bullet-active{background: #237DE4 ;}
+.main-index .entry-nav .swiper-pagination{text-align: center; padding-right: 0.375rem;}
+
+.main-index .choice{border-top: 1px solid #E5E5E5; background-color: #fff;}
+.main-index .choice .ch-mt{}
+.main-index .choice .mt-top{height: 1.71875rem; padding: 0.625rem 0 0 0.625rem; line-height: 0.65625rem; color: #000; font-size: 16px; background: url("../../img/wechat/pic236x10.png") no-repeat center 0.90625rem / auto 0.15625rem;}
+[data-dpr="2"] .main-index .choice .mt-top{font-size: 32px;}
+[data-dpr="3"] .main-index .choice .mt-top{font-size: 48px;}
+
+.main-index .choice .mt-top-city{position: absolute; right: 0.625rem; top: 40px; font-size: 14px; color: #0C1828;}
+[data-dpr="2"] .main-index .choice .mt-top-city{font-size: 28px;}
+[data-dpr="3"] .main-index .choice .mt-top-city{font-size: 42px;}
+
+.main-index .choice .mt-top-city span{font-size: 12px; color: #94999E; padding-left: 0.0625rem;}
+[data-dpr="2"] .main-index .choice .mt-top-city span{font-size: 24px;}
+[data-dpr="3"] .main-index .choice .mt-top-city span{font-size: 36px;}
+
+.main-index .choice .mt-bot{ overflow: hidden; height:1.875rem;  background-color: #fff; }
+.main-index .choice .mt-bot .tab {width: 100%;}
+.main-index .choice .mt-bot .tab-nav {width: 100%;}
+.main-index .choice .mt-bot li {width: auto ; margin: 0 0.09375rem;}
+.main-index .choice .mt-bot li:first-child {margin-left: 0.46875rem;}
+.main-index .choice .mt-bot li a {display: block; font-size: 14px; border-radius: 0.625rem; height: 1.09375rem; line-height: 1.09375rem; color: #333; padding:0 0.609375rem;}
+[data-dpr="2"] .main-index .choice .mt-bot li a{font-size: 28px;}
+[data-dpr="3"] .main-index .choice .mt-bot li a{font-size: 42px;}
+
+.main-index .choice .mt-bot .cur a { color: #fff; background-color: #238EE5; box-shadow: 0 0 0.15625rem rgba(52,69,125,0.3); background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+.main-index .choice .mt-bot .swiper-container{overflow: inherit; padding-top: 0.15625rem;}
+
+.main-index .choice .ch-mc{padding-bottom:1.5625rem; }
+.main-index .choice .ch-mc .item{border-top: 1px solid #e5e5e5; height: 3.875rem; padding: 0.375rem 0 0 0.625rem; position: relative; overflow: hidden;}
+.main-index .choice .ch-mc .item .pic{width: 3.125rem; height: 3.125rem; margin-right: 0.46875rem; float: left;}
+.main-index .choice .ch-mc .item .pic a{width: 3.125rem; height: 3.125rem; display: block;}
+.main-index .choice .ch-mc .item .pic img{width: 3.125rem; height: 3.125rem; border-radius: 0.09375rem;}
+.main-index .choice .ch-mc .item .title{display: block; width: 5.625rem; height: 0.6875rem; line-height: 0.6875rem; color: #0C1828; font-size: 16px;}
+[data-dpr="2"] .main-index .choice .ch-mc .item .title{font-size: 32px;}
+[data-dpr="3"] .main-index .choice .ch-mc .item .title{font-size: 48px;}
+
+.main-index .choice .ch-mc .item p{width: 5.625rem; height: 0.625rem; line-height: 0.625rem; color: #757D86; font-size: 11px; margin-top: 0.125rem; float: left;}
+[data-dpr="2"] .main-index .choice .ch-mc .item p{font-size: 22px;}
+[data-dpr="3"] .main-index .choice .ch-mc .item p{font-size: 33px;}
+
+.main-index .choice .ch-mc .item .rx-box{float: left; width: 5.625rem;margin-top: 0.15625rem;height: 0.78125rem;}
+.main-index .choice .ch-mc .item .rx{display: inline-block; text-align: center; background-color: #EDF3F8; color: #59606C; font-size: 10px; width: 1.3125rem; height: 0.5625rem; line-height: 0.53125rem; border-radius: 0.28125rem; border: 1px solid #59606C;}
+[data-dpr="2"] .main-index .choice .ch-mc .item .rx{font-size: 20px;}
+[data-dpr="3"] .main-index .choice .ch-mc .item .rx{font-size: 30px;}
+
+.main-index .choice .ch-mc .item .price{float: left; width: 5.625rem; color: #FF6D57; line-height: 0.625rem; font-size: 17px;}
+[data-dpr="2"] .main-index .choice .ch-mc .item .price{font-size: 34px;}
+[data-dpr="3"] .main-index .choice .ch-mc .item .price{font-size: 51px;}
+
+.main-index .choice .ch-mc .item .dw-btn{display: block; width: 1.375rem; height: 1.375rem; position: absolute; right:0.46875rem; bottom:0.3125rem;}
+.main-index .choice .ch-mc .item .dw-btn a{display: block; width: 1.375rem; height: 1.375rem; }
+.main-index .choice .ch-mc .item .dw-btn img {width: 1.375rem; height: 1.375rem;}
+.main-index .choice .ch-mc .item .quantity{width: 2.8125rem; /*height: 2.3rem;*/ position: absolute; right:0; bottom: 0.6875rem; overflow: hidden;}
+.main-index .choice .ch-mc .item .quantity input{border: none; text-align: center; width: 0.875rem; height: 0.6875rem; line-height: 0.6875rem; color: #333; font-size: 13px; float: left;}
+[data-dpr="2"] .main-index .choice .ch-mc .item .quantity input{font-size: 26px;}
+[data-dpr="3"] .main-index .choice .ch-mc .item .quantity input{font-size: 39px;}
+
+.main-index .choice .ch-mc .item .btn-reduce{display: block; width: 0.6875rem; height: 0.6875rem; background: url("../../img/wechat/jianhao.png") no-repeat 0 0 / 0.6875rem 0.6875rem; float: left;}
+.main-index .choice .ch-mc .item .btn-add{display: block; width: 0.6875rem; height: 0.6875rem; background: url("../../img/wechat/jiahao.png") no-repeat 0 0 / 0.6875rem 0.6875rem; float: left;}
+.main-index .choice-no .ch-mc .item{height: 3.4375rem;}
+.main-index .choice-no .ch-mc .item .pic{width: 2.5rem; height: 2.5rem; border-radius: 0.09375rem;}
+.main-index .choice-no .ch-mc .item .pic img{width: 2.5rem; height:2.5rem;}
+.main-index .choice-no .ch-mc .item .title{margin-top: 0.125rem; color: #333;}
+.main-index .choice-no .ch-mc .item p{color: #757D86 ; font-size: 13px; float: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+[data-dpr="2"] .main-index .choice-no .ch-mc .item p{font-size: 26px;}
+[data-dpr="3"] .main-index .choice-no .ch-mc .item p{font-size: 39px;}
+
+
+.main-index .loading{height: 1.875rem; padding-top: 0.375rem; text-align: center;}
+.main-index .loading img{width: 0.8125rem; height: 0.8125rem;}
+
+/*暂停营业*/
+.stop-business-box {position: relative;}
+.stop-business {width: 4.0625rem; height: 1.25rem; background: rgba(0,5,15,0.90); border-radius: 1.5625rem; color: #fff; line-height: 1.25rem; text-align: center; position: absolute; bottom: -0.625rem; left: 50%; margin-left: -2.03125rem; z-index: 10; font-size: 16px;}
+[data-dpr="2"] .stop-business {font-size: 32px;}
+[data-dpr="3"] .stop-business {font-size: 48px;}
+
+/*列表 | 地图*/
+.list-or-map {width: 4.0625rem; height: 1.25rem; line-height: 1.25rem; text-align: center; color: #333; background: #fff; font-size: 13px; position: fixed; bottom: 2.09375rem; left: 50%; margin-left: -2.03125rem; z-index: 12; box-shadow: 0 0.09375rem 0.3125rem 0 rgba(0,0,0,0.10); border-radius: 1.5625rem;}
+[data-dpr="2"] .list-or-map {font-size: 26px;}
+[data-dpr="3"] .list-or-map {font-size: 39px;}
+
+.list-or-map a {color: #909090;}
+.shop-header-no-map .mt-bot{ overflow: hidden; height: 2.8125rem; padding-top: 1.5625rem;}
+.shop-header-no-map .mt-bot .tab {width: 100%;}
+.shop-header-no-map .mt-bot .tab-nav {width: 100%;}
+.shop-header-no-map .mt-bot li {width: auto ; margin: 0 0.1875rem;}
+.shop-header-no-map .mt-bot li:first-child {margin-left: 0.609375rem;}
+.shop-header-no-map .mt-bot li a {display: block; font-size: 14px; border: 0.03125rem solid #fff; border-radius: 0.625rem; height: 1.09375rem; line-height:0.9375rem; color: #fff; padding:0 0.609375rem;}
+[data-dpr="2"] .shop-header-no-map .mt-bot li a{font-size: 28px;}
+[data-dpr="3"] .shop-header-no-map .mt-bot li a{font-size: 42px;}
+
+.shop-header-no-map .mt-bot .cur a { color: #1BAAD9; background-color: #fff;}
+.shop-header-no-map .mt-bot .swiper-container{overflow: inherit; padding-top: 0.15625rem;}
+.choice-no-map .main-map {width: 10rem; height: 11.3125rem; overflow: hidden; position: relative;}
+.choice-no-map .main-map .map-pic {display: block; width: 100%; height: 100%;}
+.choice-no-map .main-map .map-icon {display: block; width: 0.96875rem; height: 1.1875rem; position: absolute; background: url("../../img/wechat/map-icon.png") no-repeat; background-size: 100% 100%; top: 0.78125rem; left: 2.5rem;}
+.main-index .choice-no-map .ch-mc{height: 13.5rem; padding-top: 1.6rem;}
+.main-index .choice-no-map .ch-mc .item{width: 8.28rem; height: 3.125rem; padding: 0.4375rem 0 0 0.3125rem; border: 0.03125rem solid #237DE4; margin: 0 auto; border-radius: 0.09375rem; box-shadow: 0 0.125rem 0.25rem 0 rgba(35,125,228,0.14);margin-bottom: 0.15625rem;}
+.main-index .choice-no-map .ch-mc .item .title {width: 5rem; margin-top: 0;}
+.main-index .choice-no-map .ch-mc .item .pic {width: 2.1875rem; height: 2.1875rem; margin-right: 0.3125rem;}
+.main-index .choice-no-map .ch-mc .item .pic img {width: 2.1875rem; height: 2.1875rem;}
+.main-index .choice-no-map .ch-mc .item p {width: 5rem; font-size: 12px;}
+[data-dpr="2"] .main-index .choice-no-map .ch-mc .item p{font-size:24px;}
+[data-dpr="3"] .main-index .choice-no-map .ch-mc .item p{font-size: 36px;}
+.list-or-map2 {bottom: 4.4375rem;}
+
+/*门店详情*/
+.shop-header-sd {height: 3.40625rem;}
+.shop-header-sd .stop-business {width: 3.4375rem; height: 0.9375rem; font: 13px/0.9375rem PingFangSC-Regular; bottom: -2.34375rem; margin-left: -1.75rem; opacity: 0.8; background: rgba(0,5,15,0.90); border-radius: 1.5625rem;}
+[data-dpr="2"] .shop-header-sd .stop-business{font-size: 26px;}
+[data-dpr="3"] .shop-header-sd .stop-business{font-size: 39px;}
+
+.stores-details-main {border-radius: 0;}
+.stores-details-main .mt {padding-bottom: 0;}
+.stores-details-main .mt .name a {background: none; padding-right: 0;}
+.stores-details-main .mt .distribution {text-align: center; margin-top: 0.3125rem; color: #515151; font-size: 13px;}
+[data-dpr="2"] .stores-details-main .mt .distribution{font-size: 26px;}
+[data-dpr="3"] .stores-details-main .mt .distribution{font-size: 39px;}
+
+.stores-details-main .mt .sd-info {width: 8.75rem; height: 5.5rem; margin: 0.625rem auto 0; font-family: PingFangSC-Light; font-size: 14px; line-height: 0.6875rem; color: #546E7A; overflow: hidden;}
+[data-dpr="2"] .stores-details-main .mt .sd-info{font-size: 28px;}
+[data-dpr="3"] .stores-details-main .mt .sd-info{font-size: 42px;}
+
+.stores-details-main .choice {border: none;}
+.stores-details-main .choice .mt-bot {height: 3.625rem;}
+.stores-details-main .choice .mt-bot .swiper-container {padding: 0;}
+.stores-details-main .choice .mt-bot li {margin: 0 0.21875rem;}
+.stores-details-main .choice .mt-bot li a {width: 2.65625rem; height: 2.65625rem; border: none; background: none; padding: 0; border-radius: 2%;}
+.stores-details-main .choice .mt-bot li img {width: 2.65625rem; height: 2.65625rem;}
+
+.stores-details-main .choice .ch-mc .item {width: 8.78125rem; height: 1.5rem; line-height: 1.5rem; font-size: 18px/7.5rem PingFangSC-Light; color: #444A50; padding: 0; border-top: 1px solid #e5e5e5; margin: 0 auto;}
+[data-dpr="2"] .stores-details-main .choice .ch-mc .item{font-size: 36px}
+[data-dpr="3"] .stores-details-main .choice .ch-mc .item{font-size: 54px}
+
+
+.stores-details-main .choice .ch-mc .item a {display: block; width: 100%; height: 100%; color: #444A50; background: url("../../img/wechat/jiantougray.png") no-repeat  7.8125rem center / 0.21875rem 0.375rem;}
+.stores-details-main .choice .ch-mc .item p {width: auto; color: #333; padding: 0; line-height: 1.5rem; font-size: 18px;}
+[data-dpr="2"] .stores-details-main .choice .ch-mc .item p {font-size: 36px;}
+[data-dpr="3"] .stores-details-main .choice .ch-mc .item p {font-size: 54px;}
+
+.stores-details-main .choice .ch-mc .item .dt{float: left; }
+.stores-details-main .choice .ch-mc .item .dd {float: right;}
+
+.bar-wechat-phone {border-top: none; overflow: hidden;}
+.bar-wechat-phone .bar-wechat, .bar-wechat-phone .bar-phone {width: 50%; height:1.5625rem; float: left; line-height: 1.5625rem; text-align: center; font-size: 17px; color: #FFFFFF;}
+[data-dpr="2"] .bar-wechat-phone .bar-wechat{font-size: 34px;}
+[data-dpr="3"] .bar-wechat-phone .bar-wechat{font-size: 51px;}
+
+[data-dpr="2"] .bar-wechat-phone .bar-phone{font-size: 34px;}
+[data-dpr="3"] .bar-wechat-phone .bar-phone{font-size: 51px;}
+
+.bar-wechat-phone .bar-wechat a, .bar-wechat-phone .bar-phone a {display: block; color: #fff;}
+.bar-wechat-phone .bar-wechat {background: #1AAD19;}
+.bar-wechat-phone .bar-phone {background: #FF9D00;}
+
+/*弹窗 门店公告*/
+.layer { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 100; background: rgba(0,5,15,0.60);}
+.layer .dt {padding-bottom: 0;}
+.stores-announcement {width: 8.4375rem; height: 10.625rem; position: absolute; top: 50%; left: 50%; margin-top: -5.3125rem; margin-left: -4.21875rem; background: #fff; border-radius: 0.3125rem 0.3125rem 0.25rem 0.25rem;}
+.stores-announcement .icon-l {display: block; width: 0.984375rem; height: 0.953125rem; position: absolute; left: -0.5rem; top: -0.78125rem;  background: url("../../img/wechat/xingxing1.png") no-repeat 0 0 / 0.984375rem 0.953125rem;}
+.stores-announcement .icon-r {display: block; width: 0.984375rem; height: 0.953125rem; position: absolute; right: -0.625rem; top: -0.78125rem;  background: url("../../img/wechat/xingxing2.png") no-repeat 0 0 / 0.984375rem 0.953125rem;}
+.stores-announcement .dt-title {color: #238EE5; font-size: 17px; font-weight: 700;text-align: center; padding-top:0.3125rem;}
+[data-dpr="2"] .stores-announcement .dt-title{font-size: 34px;}
+[data-dpr="3"] .stores-announcement .dt-title{font-size: 51px;}
+
+.stores-announcement .dd {width: 7.1875rem; text-align: left; margin: 0 auto; font-size: 14px/0.59375rem PingFangSC-Regular; color: #333333;}
+[data-dpr="2"] .stores-announcement .dd{font-size: 28px;}
+[data-dpr="3"] .stores-announcement .dd{font-size: 42px;}
+
+.stores-announcement .layer-btn {display: block; width: 4.0625rem; height: 1.25rem; position: absolute; bottom: 0.78125rem; left: 50%; margin-left: -2.03125rem; text-align: center; cursor: pointer; background-image: linear-gradient(90deg, #238EE5 0%, #13C0CF 100%); box-shadow: 0.03125rem 0.125rem 0.21875rem 0 rgba(35,142,229,0.50); border-radius: 1.5625rem; font: 16px/1.25rem PingFang-SC-Medium; color: #FFFFFF;}
+[data-dpr="2"] .stores-announcement .layer-btn{font-size: 32px;}
+[data-dpr="3"] .stores-announcement .layer-btn{font-size: 48px;}
+
+/*附近门店*/
+.nearby-stores-main {top: 0;}
+
+/*弹窗 查看店长微信*/
+.check-wechat {width: 7.8125rem; height: 9.6875rem; position: absolute; left: 50%; top: 50%; margin-left: -4.0625rem; margin-top: -4.84375rem;}
+.check-wechat img {width: 7.8125rem; height: 7.8125rem; border-radius: 0.078125rem;}
+.check-wechat .icon-close {display: block; width: 1.25rem; height: 1.25rem; background: url("../../img/wechat/guanbi2.png") no-repeat 0 0 / 1.25rem 1.25rem; position: absolute; bottom: 0; left: 50%; margin-left: -0.625rem;}
+
+/*弹窗 门店电话*/
+.layer{background-color: rgba(0, 0, 0, 0.5); bottom: 0; left: 0; overflow-x: hidden; overflow-y: auto; position: fixed; right: 0; text-align: center; top: 0; vertical-align: middle; z-index: 100;}
+.index-layer-box{width: 8.75rem; background-color: #fff; border-radius: 0.125rem; position: absolute; left: 50%; top:50%; margin: -2.5rem 0 0 -4.375rem;}
+.index-layer-box .mc{padding: 1.09375rem 0; text-align: center;}
+.index-layer-box .mc span{color: #333; font-size: 18px;}
+[data-dpr="2"] .index-layer-box .mc span{ font-size: 36px;}
+[data-dpr="3"] .index-layer-box .mc span{ font-size: 54px;}
+
+.index-layer-box .md{height: 1.5rem;  overflow: hidden;}
+.index-layer-box .md a{display: block; width: 50%; text-align: center; height: 1.5rem; border-top: 1px solid #E5E5E5; line-height: 1.5rem; float: left;}
+.index-layer-box .md a.cancel{color: #000; font-size: 18px; border-right: 1px solid #E5E5E5;}
+[data-dpr="2"] .index-layer-box .md a.cancel{font-size: 36px;}
+[data-dpr="3"] .index-layer-box .md a.cancel{font-size: 54px;}
+
+.index-layer-box .md a.confirm{color: #1AAD19; font-size: 18px;}
+[data-dpr="2"] .index-layer-box .md a.confirm{font-size: 36px;}
+[data-dpr="3"] .index-layer-box .md a.confirm{font-size: 54px;}
+
+/*选择地址*/
+.select-address {background: #fff; top: 0; border-radius: 0;padding-bottom:2.03rem; }
+.select-address .dt {height: 1.875rem; padding: 0.625rem 0.5625rem;}
+.select-address .dd {padding: 0 0.5625rem;}
+.select-address .current-position {width: 8.75rem; height: 1.25rem; margin: 0 auto; box-shadow: 0 0.09375rem 0.3125rem 0 rgba(0,0,0,0.10); cursor: pointer; text-align: center; text-indent: 1em; border-radius: 1.5625rem; color: #238EE5; font: 15px/1.25rem PingFangSC-Regular; background: url("../../img/wechat/dingwei.png") no-repeat 1.875rem center / 0.53125rem 0.53125rem #fff;}
+[data-dpr="2"] .select-address .current-position{font-size: 30px;}
+[data-dpr="3"] .select-address .current-position{font-size: 45px;}
+
+.select-address .dd li {border-bottom: 1px solid #e2e2e2; padding: 0.625rem 0;}
+.select-address .address-text {font: 15px/0.5625rem PingFang-SC-Medium; color: #37474F;}
+[data-dpr="2"] .select-address .address-text{font-size: 30px;}
+[data-dpr="3"] .select-address .address-text{font-size: 45px;}
+
+.select-address .contact-number{padding-top: 0.8rem; font: 14px/0.46875rem PingFangSC-Light; color: #455A64;}
+[data-dpr="2"] .select-address .contact-number{font-size: 28px;}
+[data-dpr="3"] .select-address .contact-number{font-size: 42px;}
+
+.select-address .contact-number p {display: inline-block;}
+.select-address .contact-number p:nth-of-type(1) {padding-right: 0.1875rem;}
+.select-address .add-select-address{display: block; width: 4.0625rem; height:1.25rem; text-align: center; position: fixed; bottom: 0.9375rem; left: 50%; margin-left: -2.03125rem; background-image: linear-gradient(90deg, #238EE5 0%, #13C0CF 100%); box-shadow: 0.03125rem 0.15625rem 0.21875rem 0 rgba(35,142,229,0.50) ;border-radius: 1.5625rem;font: 14px/1.25rem PingFang-SC-Medium; color: #FFFFFF;}
+[data-dpr="2"] .select-address .add-select-address{font-size: 28px;}
+[data-dpr="3"] .select-address .add-select-address{font-size: 42px;}
+
+/*新增地址*/
+.add-address {padding: 0 0.53125rem; min-height: 15.625rem; background: #fff; top: 0; border-radius: 0;}
+.add-address form>div {height: 2.34375rem; border-bottom: 1px solid #e2e2e2; font: 19px/2.34375rem PingFangSC-Light; color: #444A50;}
+[data-dpr="2"] .add-address form>div{font-size: 38px;}
+[data-dpr="3"] .add-address form>div{font-size: 57px;}
+
+.add-address input {width: 6.25rem; font-size: 18px; color: #444A50; border: none;}
+[data-dpr="2"] .add-address input{font-size: 36px;}
+[data-dpr="3"] .add-address input{font-size: 54px;}
+
+.add-address input::input-placeholder {color: #B0BEC5;}
+.add-address input::-webkit-input-placeholder {color: #B0BEC5;}
+.add-address input:-moz-placeholder {color: #B0BEC5;}
+.add-address input::-moz-placeholder {color: #B0BEC5;}
+.add-address input:-ms-input-placeholder {color: #B0BEC5;}
+.add-address span {display: inline-block; width: 2.34375rem;}
+.add-address .region {position: relative; overflow: hidden}
+.add-address .region em{display: block; width: 0.21875rem; height: 0.40625rem; background: url("../../img/wechat/jiantougray.png") no-repeat 0 0 / 0.21875rem 0.40625rem; position: absolute; right: 0.1875rem; top: 50%; margin-top: -0.203125rem;}
+.add-address .region a{color: #444a50;}
+.add-address .detailed-address input {width: 28rem;}
+.add-address .submit {height: auto; border-bottom: none;}
+.add-address .submit input {width: 8.75rem; height:1.5625rem; font-size:16px; line-height: 1.5625rem; background-image: linear-gradient(90deg, #238EE5 0%, #13C0CF 100%); box-shadow: 0.03125rem 0.15625rem 0.21875rem 0 rgba(35,142,229,0.50); border-radius: 1.5625rem; color: #fff;}
+[data-dpr="2"] .add-address .submit input{font-size: 32px;}
+[data-dpr="3"] .add-address .submit input{font-size: 48px;}
+
+.add-address textarea{width: 100%; min-height: 0.6875rem; color: #444A50; font-size: 18px; margin: 0.625rem 0 0.15625rem; padding: 0; line-height: 0.6875rem; border: none;}
+[data-dpr="2"] .add-address textarea{font-size: 36px;}
+[data-dpr="3"] .add-address textarea{font-size: 54px;}
+
+/*选择区域*/
+.select-area {min-height: 15.625rem; padding-top: 1.375rem; top: 0; border-radius: 0;}
+.select-area .top-search {width: 0.15625rem; height: 1.375rem; background: #FFFFFF; box-shadow: 0 0.09375rem 0.09375rem 0 rgba(0,0,0,0.04); position: fixed; top: 0;}
+.select-area .top-search input {width: 8.4375rem; height: 100%; padding-left: 1.40625rem; font: 16px PingFangSC-Regular; color: #2A2A2F;}
+[data-dpr="2"] .select-area .top-search input{font-size: 32px;}
+[data-dpr="3"] .select-area .top-search input{font-size: 48px;}
+
+.select-area .top-search input::input-placeholder {color: #9BA9B6;}
+.select-area .top-search input::-webkit-input-placeholder {color: #9BA9B6;}
+.select-area .top-search input:-moz-placeholder {color: #9BA9B6;}
+.select-area .top-search input::-moz-placeholder {color: #9BA9B6;}
+.select-area .top-search input:-ms-input-placeholder {color: #9BA9B6;}
+.select-area .top-search .icon-search {display: block; width: 1.25rem; height: 1.375rem; background: url("../../img/wechat/search30-29.png") no-repeat 0.625rem 0.46875rem / 0.46875rem 0.453125rem; cursor: pointer; position: absolute; left: 0; top: 0;}
+.select-area .top-search .text-close {display: block; height: 1.375rem; font-size: 16px; line-height: 1.375rem; color: #2A2A2F; cursor: pointer; position: absolute; right: 0.53125rem;top: 0;}
+[data-dpr="2"] .select-area .top-search .text-close{font-size: 32px;}
+[data-dpr="3"] .select-area .top-search .text-close{font-size: 48px;}
+
+.select-area .map-pic {width: 10rem; height: 6.375rem;}
+.select-area-list {padding: 0 0.53125rem; background: #fff;}
+.select-area-list li {border-bottom: 1px solid #e2e2e2; padding: 0.625rem 0 0.3125rem;}
+.select-area-list .area-name {height: 0.6875rem; overflow: hidden; font: 16px PingFangSC-Regular; color: #333333;}
+[data-dpr="2"] .select-area-list .area-name{font-size: 32px;}
+[data-dpr="3"] .select-area-list .area-name{font-size: 48px;}
+
+.select-area-list .area-name span {color: #237DE4;}
+.select-area-list .detailed-address {line-height: 0.6875rem; padding-top: 0.09375rem; overflow: hidden; font-size: 14px; color: #A1B0B8;}
+[data-dpr="2"] .select-area-list .detailed-address{font-size: 28px;}
+[data-dpr="3"] .select-area-list .detailed-address{font-size: 42px;}
+
+/*搜索区域*/
+.search-area-list {padding: 0 0.53125rem; background: #fff;}
+.search-area-list li {border-bottom: 1px solid #e2e2e2; padding: 0.625rem 0 0.3125rem;}
+.search-area-list .area-name {height: 0.6875rem; overflow: hidden; font: 16px PingFangSC-Regular; color: #A1B0B8;}
+[data-dpr="2"] .search-area-list .area-name{font-size: 32px;}
+[data-dpr="3"] .search-area-list .area-name{font-size: 48px;}
+
+.search-area-list .area-name span {color: #333;}
+.search-area-list .detailed-address {line-height: 0.6875rem; padding-top: 0.09375rem; overflow: hidden; font-size: 14px; color: #A1B0B8;}
+[data-dpr="2"] .search-area-list .detailed-address{font-size: 28px;}
+[data-dpr="3"] .search-area-list .detailed-address{font-size: 42px;}
+
+/*iframe 新增2017-8-21*/
+.main .choice-mask {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 10; background: rgba(0,0,0,.3);  border: 1px dashed #fc0034;}
+.main .choice-mask .choice-mask-bj {width: 0.8125rem; height: 0.46875rem; font-size: 16px;  line-height: 0.46875rem; cursor: default; background: #333; color: #fff; text-align: center;}
+[data-dpr="2"] .main .choice-mask .choice-mask-bj{font-size: 32px;}
+[data-dpr="3"] .main .choice-mask .choice-mask-bj{font-size: 48px;}
+
+.main .ch-packet-edit {width: 5.890625rem; font-size: 12px; border: 1px solid #d7d7d7; background: #fff; padding-left: 0.203125rem; position: absolute; right: -6.5625rem; top: 0.625rem;}
+[data-dpr="2"] .main .ch-packet-edit{font-size: 24px;}
+[data-dpr="3"] .main .ch-packet-edit{font-size: 36px;}
+
+.main .ch-packet-edit .ch-pa-dt {height: 0.875rem; font-size: 13px; line-height: 0.875rem; font-weight: bold; color: #666;}
+[data-dpr="2"] .main .ch-packet-edit .ch-pa-dt{font-size: 26px;}
+[data-dpr="3"] .main .ch-packet-edit .ch-pa-dt{font-size: 39px;}
+
+.main .ch-packet-edit .ch-pa-dd li {width: 5.15625rem; height: 0.71875rem; border: 1px solid #d7d7d7; background: #fff; padding-left: 0.203125rem; position: relative; font-size: 14px; line-height: 0.71875rem; margin-bottom:0.3125rem; color: #333;}
+[data-dpr="2"] .main .ch-packet-edit .ch-pa-dd li{font-size: 28px;}
+[data-dpr="3"] .main .ch-packet-edit .ch-pa-dd li{font-size: 42px;}
+
+.main .ch-packet-edit .ch-pa-dd li em {display: none; width: 0.3125rem; height: 0.3125rem; background: url("../../img/wechat/guanbi.png") no-repeat 0 0 / 0.3125rem 0.3125rem; cursor: pointer; position: absolute;  top: -0.15625rem; right: -0.15625rem;}
+.main .ch-packet-edit .ch-pa-dd .current {box-shadow: 0.03125rem 0.03125rem 0.28125rem #eee;}
+.main .ch-packet-edit .ch-pa-dd .current em {display: block;}
+.main .ch-packet-edit .ch-pa-dd .ch-pa-new {display: inline-block; height: 0.5625rem; padding: 0 0.21875rem; margin-bottom: 0.3125rem; margin-right: 0.359375rem; border-radius: 0.046875rem; text-align: center; line-height: 0.5625rem; color: #fff; font-size: 16px; background-color: #2bcd73;}
+[data-dpr="2"] .main .ch-packet-edit .ch-pa-dd .ch-pa-new{font-size: 32px;}
+[data-dpr="3"] .main .ch-packet-edit .ch-pa-dd .ch-pa-new{font-size: 48px;}
+
+.main .ch-packet-edit .ch-pa-dd .ch-pa-b {margin-bottom: 0.390625rem;}
+.main .ch-packet-edit .ch-pa-dd .ch-pa-b input {display: inline-block; width: 2.8125rem; height: 0.5625rem; padding-left: 0.125rem; border: 1px solid #666; line-height: 0.5625rem;}
+.main .ch-packet-edit .ch-pa-dd .ch-pa-b a {display: inline-block; height: 0.5625rem; line-height: 0.5625rem; padding: 0 0.34375rem; margin-left:0.046875rem; border-radius: 0.046875rem; color: #fff; background: #2bcd73; border: 1px solid #2bcd73;}
+.main .ch-packet-edit .ch-pa-dd .ch-pa-b .ch-cancel {color: #333; background: #fff; border: 1px solid #d7d7d7;}
+.main .ch-packet-edit .ch-pa-icon {display: block; width: 0.15625rem; height: 0.25rem; position: absolute; left: -10px; top: 0.734375rem; z-index: 1; background: url("../../img/wechat/jiantou01.png") no-repeat;}
+
+/*警告弹窗*/
+.layer-warning {width: 5.625rem; padding-top: 2.5rem; padding-bottom: 0.625rem;text-align: center; font-size: 15px; color: #fff; background: url("../../img/wechat/tips-icon.png") no-repeat center 0.78125rem / 1.25rem 1.25rem ; background-color: rgba(18, 20, 24, 0.6); position: fixed; z-index: 10; top: 50%; left: 50%; margin-top: -1.875rem; margin-left: -2.8125rem; border-radius: 3%;}
+[data-dpr="2"] .layer-warning{font-size: 30px;}
+[data-dpr="3"] .layer-warning{font-size: 45px;}
+
+/* item-暂停营业 新增2017-9-7*/
+.main-index .choice .ch-mc .item .stop-busine-t {height: 0.5rem; padding-left:0.0625rem; padding-right: 0.0625rem; font-size: 10px; line-height: 0.5rem; color: #fdf3cb; background: #ffaa12; position: absolute; top: 0.375rem; left: 0.625rem;}
+[data-dpr="2"] .main-index .choice .ch-mc .item .stop-busine-t{font-size: 20px;}
+[data-dpr="3"] .main-index .choice .ch-mc .item .stop-busine-t{font-size: 30px;}
+
+.main-index .choice-no-map .ch-mc .item .stop-busine-t {height: 0.5rem; padding-left: 0.0625rem; padding-right: 0.0625rem; font-size: 10px; line-height:0.5rem; color: #fdf3cb; background: #ffaa12; position: absolute; top: 0.4375rem; left: 0.3125rem;}
+[data-dpr="2"] .main-index .choice-no-map .ch-mc .item .stop-busine-t{font-size: 20px;}
+[data-dpr="3"] .main-index .choice-no-map .ch-mc .item .stop-busine-t{font-size: 30px;}
+/* 附近门店 修改2017-9-13 */
+.main .choice .ch-mc .item {height: auto; padding-bottom: 0.375rem;}
+.main .choice .ch-mc .item p{height: auto;}

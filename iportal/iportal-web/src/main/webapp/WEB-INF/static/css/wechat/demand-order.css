@@ -1,0 +1,52 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; padding-bottom: 16rem;}
+.demand-order-main .mt{height: 4.5rem; line-height: 4.5rem; color: #333; font-size: 1.6rem; padding: 0 2rem; background-color: #fff; box-shadow: 0 6px 6px 0 rgba(0,0,0,0.04); }
+.demand-order-main .mt .select{float: left;}
+/*.demand-order-main .mt .compile{float: right;}*/
+
+.demand-order-main .mc{padding-top: 1rem;}
+.demand-order-main .sr-top{height: 5.5rem; padding:1.5rem 7rem 0 5rem; position: relative; overflow: hidden;}
+.demand-order-main .sr-top .select{width: 2rem; height: 2rem; background: url("../../img/wechat/gouxuan.png") no-repeat 0 0 / 100% 100%; position: absolute; left: 2rem; top:50%; margin-top: -1rem;}
+.demand-order-main .sr-top .selected{border: none; background: url("../../img/wechat/gouxuan_s.png") no-repeat 0 0 / 100% 100%;}
+.demand-order-main .sr-top .addr{display: inline-block; max-width: 100%; height: 2.4rem; padding-right: 1.5rem; background: url("../../img/wechat/jiantougray.png") no-repeat 100% center / 0.7rem auto; overflow: hidden;}
+.demand-order-main .sr-top .addr a{display: inline-block; max-width: 100%; line-height: 2.4rem; height: 2.4rem; color: #444444; font-size: 1.7rem;}
+.demand-order-main .sr-top .compile{font-size: 1.6rem; color: #333; position: absolute; right: 1.6rem; top:1.6rem;}
+
+
+.demand-order-main .sr-bot{padding: 0 2rem;}
+.demand-order-main .sr-item{padding: 2rem 0 2rem 3.5rem; min-height: 10rem; border-top: 1px solid #E5E5E5; position: relative; overflow: hidden;}
+.demand-order-main .sr-item .select{width: 2rem; height: 2rem; background: url("../../img/wechat/gouxuan.png") no-repeat 0 0 / 100% 100%; position: absolute; left: 0; top:50%; margin-top: -1rem;}
+.demand-order-main .sr-item .selected{border: none; background: url("../../img/wechat/gouxuan_s.png") no-repeat 0 0 / 100% 100%;}
+.demand-order-main .sr-item .pic{width: 10rem; height: 10rem; float: left; overflow: hidden;}
+.demand-order-main .sr-item .pic img{width: 10rem; height: 10rem;}
+.demand-order-main .sr-rt{width: 13.5rem; float: right;}
+.demand-order-main .sr-rt .title{display: block; height: 1.8rem; line-height: 1.8rem; color: #333; font-size: 1.4rem;}
+.demand-order-main .sr-rt p{height: 1.5rem; line-height: 1.5rem; color: #91959B; font-size: 1.2rem; margin: 0.5rem 0;}
+.demand-order-main .sr-rt .quantity-wrapper{height: 3rem; margin-top: 1rem; overflow: hidden;}
+.demand-order-main .sr-rt .quantity-wrapper input{display: inline-block; width: 4rem; height: 3rem; text-align: center; line-height: 2.9rem; color: #333; font-size: 1.5rem; border: none; border-top: 1px solid #999999; border-bottom: 1px solid #999; float: left; margin: 0 2px;}
+.demand-order-main .sr-rt .quantity-decrease{display: block; width: 3rem; height: 3rem; border: 1px solid #999999; border-radius: 0.2rem 0 0 0.2rem; float: left; background: url("../../img/wechat/decrease-2.png") no-repeat center center / 1.2rem auto;}
+.demand-order-main .sr-rt .quantity-decrease.limited{background: url("../../img/wechat/decrease.png") no-repeat center center / 1.2rem auto; cursor: default;}
+.demand-order-main .sr-rt .quantity-increase{display: block; width: 3rem; height: 3rem; border: 1px solid #999999; border-radius: 0 0.2rem 0.2rem 0; float: left; background: url("../../img/wechat/increase.png") no-repeat center center / 1.25rem auto;}
+
+.demand-order-main .rt-box{height: 1.9rem; overflow: hidden;}
+.demand-order-main .rt-box i{float: left; line-height: 1.9rem; color: #FF6D57; font-size: 1.3rem;}
+.demand-order-main .rt-box .rx{display: inline-block; text-align: center; background-color: #EDF3F8; color: #59606C; font-size: 1rem; width: 4.2rem; height: 1.8rem; line-height: 1.7rem; border-radius: 0.9rem; border: 1px solid #59606C; float: right;}
+
+
+.demand-bar{position: fixed; background-color: #fff; height: 5rem; z-index: 11; left: 0; right: 0; bottom: 5rem;}
+.demand-bar p{width: 50%;border-top: 1px solid #ddd; height: 5rem; color: #333; text-align: center; font-size: 1.5rem; line-height: 5rem; float: left;}
+.demand-bar p span{color: #FF6D57; font-size: 1.6rem; }
+.demand-bar .sub-btn{display: block; width: 50%; height: 5rem; line-height: 4.9rem; text-align: center; color: #fff; font-size: 1.6rem; float: left;  background-color: #238EE5; background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+.demand-bar .del-btn{display: block; width: 100%; height: 5rem; line-height: 4.9rem; text-align: center; color: #333; font-size: 1.6rem;  border-top: 1px solid #ddd;  }
+
+.demand-bar a.disabled{background-color: rgba(45, 41, 41, 0.05)}
+
+/* 提交成功 */
+.main-tjsucceed {width: 32rem; background: #fff;}
+.main-tjsucceed .tjsucceed-txt {height: 5.02rem; padding-top: 2rem; font-size: 1.4rem; color: #455A64; line-height: 2.1rem; text-align: center;}
+.main-tjsucceed .btn-box {width: 19rem; height: 5.07rem; margin: 0 auto;}
+.main-tjsucceed .btn-box a {display: inline-block; width: 8.5rem; height: 3rem; font-size: 1.3rem; line-height: 3rem; background: #fff; text-align: center; border-radius: 5rem;}
+.main-tjsucceed .btn-box .return-index {color: #237DE4; border: 1px solid #237DE4; box-shadow: 0 0.4rem 0.8rem 0 rgba(35,125,228,0.20); margin-right: 1.5rem;}
+.main-tjsucceed .btn-box .order-par {color: #455A64; border: 1px solid #455A64; box-shadow: 0 0.4rem 0.8rem 0 rgba(69,90,100,0.18);}
+
+
+

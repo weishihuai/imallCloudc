@@ -1,0 +1,71 @@
+
+/*商店页头*/
+.shop-header{height:5.0rem; background: url("../../img/wechat/bg640x350.png") no-repeat 0 0 / 100% 100%; position: relative;}
+.shop-header-no-list {height: 10.4375rem; background: url("../../img/wechat/bgno640x610.png")  no-repeat 0 0 / 100% auto;}
+.shop-header .address{position: absolute; height: 0.9375rem; top:0.3125rem; left: 0.625rem; padding-right: 0.40625rem; overflow: hidden; background: url("../../img/wechat/arrows12-20.png") no-repeat 100% center / 0.1875rem 0.3125rem;}
+.shop-header .address a{display: inline-block; max-width: 5.15625rem; height: 0.9375rem; line-height: 0.9375rem; color: #fff; font-size: 15px;}
+[data-dpr="2"] .shop-header .address a{font-size: 30px;}
+[data-dpr="3"] .shop-header .address a{font-size: 45px;}
+
+.shop-header .nearby{display: inline-block; line-height: 0.65625rem; color: #fff; font-size: 15px; position: absolute; right:0.625rem; top:0.46875rem; z-index: 12;}
+[data-dpr="2"] .shop-header .nearby{font-size: 30px;}
+[data-dpr="3"] .shop-header .nearby{font-size: 45px;}
+.shop-header .search{width: 100%; padding: 1.78125rem 0.46875rem 0 0.46875rem;  position: relative; background: none;}
+.shop-header .search-fixed{ position: fixed; top: 0; left: 0; z-index: 11;padding: 0.25rem 0.46875rem; background: url("../../img/wechat/bg640x350.png") no-repeat 0 0 / 100% 100%;}
+.shop-header .search a{display: block; height: 1.25rem; line-height: 1.25rem; padding-left: 0.3125rem; color: #73777C; font-size: 14px; text-align: center; background: #fff url("../../img/wechat/search30-29.png") no-repeat 2.8125rem center / 0.46875rem auto; ; border-radius: 0.6875rem;}
+[data-dpr="2"] .shop-header .search a{font-size: 28px;}
+[data-dpr="3"] .shop-header .search a{font-size: 42px;}
+.shop-header-no-map{height: 3.125rem;}
+
+/*页脚*/
+
+.bottom-bar{width: 100%; height: 1.5625rem; background-color: #fff; border-top: 1px solid #ddd; position: fixed; left: 0; bottom: 0; z-index: 11;}
+.bottom-bar .bar-idx{width: 33.3%; height: 1.5625rem; text-align: center; padding-top: 0.15625rem; float: left;}
+.bottom-bar .bar-idx .pic{width: 1.0rem; height: 0.78125rem; margin: 0 auto; background: url("../../img/wechat/shouye.png") no-repeat center / 0.5625rem auto;}
+.bottom-bar .bar-idx span{line-height: 0.46875rem; font-size: 10px; color: #435B67;}
+[data-dpr="2"] .bottom-bar .bar-idx span{font-size: 20px;}
+[data-dpr="3"] .bottom-bar .bar-idx span{font-size: 30px;}
+.bottom-bar .bar-idx .cur .pic{background: url("../../img/wechat/shouye_s2.png") no-repeat center / 1rem auto;}
+.bottom-bar .bar-idx .cur span{color: #238EE5;}
+
+.bottom-bar .bar-demand{width: 33.3%; height: 1.5625rem; text-align: center; padding-top: 0.15625rem; float: left;}
+.bottom-bar .bar-demand .pic{width: 1rem; height: 0.78125rem; margin: 0 auto; background: url("../../img/wechat/xuqiudan.png") no-repeat center / 0.46875rem auto;}
+.bottom-bar .bar-demand span{line-height: 0.46875rem; font-size: 10px; color: #435B67;}
+[data-dpr="2"] .bottom-bar .bar-demand span{font-size: 20px;}
+[data-dpr="3"] .bottom-bar .bar-demand span{font-size: 30px;}
+
+.bottom-bar .bar-demand .cur .pic{background: url("../../img/wechat/shouye_s2.png") no-repeat center / 1rem auto;}
+.bottom-bar .bar-demand .cur span{color: #238EE5;}
+.bottom-bar .bar-demand span.cart-num{color: #fff;width: 0.5625rem;background-color: #FF6D57;height: 0.5625rem;display: block;font-size: 11px; border-radius: 50%;line-height: 0.46875rem;border: 0.03125rem solid #fff;float: right;right: -0.0625rem;position: relative;top: -0.0625rem;  }
+[data-dpr="2"] .bottom-bar .bar-demand span.cart-num{font-size: 22px;}
+[data-dpr="3"] .bottom-bar .bar-demand span.cart-num{font-size: 33px;}
+
+.bottom-bar .bar-rec{width: 33.3%; height: 1.5625rem; text-align: center; padding-top: 0.15625rem; float: left;}
+.bottom-bar .bar-rec .pic{width: 1rem; height: 0.78125rem; margin: 0 auto; background: url("../../img/wechat/wode.png") no-repeat center / 0.5625rem auto;}
+.bottom-bar .bar-rec span{line-height: 0.46875rem; font-size: 10px; color: #435B67;}
+[data-dpr="2"] .bottom-bar .bar-rec span{ font-size: 20px;}
+[data-dpr="3"] .bottom-bar .bar-rec span{ font-size: 30px;}
+
+.bottom-bar .bar-rec .cur .pic{background: url("../../img/wechat/wode_s2.png") no-repeat center / 1rem auto;}
+.bottom-bar .bar-rec .cur span{color: #238EE5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+body.decoration { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #f5f5f5; position: relative;}
+
+.decoration .main{position: relative; top:0; border-radius: 1.7rem 1.7rem 0 0; background-color: #fff;padding-top: 32px;}
+.decoration .main .mt, .layer .dt{ min-height: 3rem; position: relative; top:-2.1rem; padding-bottom: 1rem;}
+.decoration .main .mt .mt-pic, .layer .dt .dt-pic{width: 6.5rem; height: 6.5rem; border: 0.25rem solid #fff; border-radius: 50%; overflow: hidden; margin: 0 auto;}
+.decoration .main .mt .mt-pic img, .layer .dt .dt-pic img{width: 6rem; height: 6rem;}
+.decoration .main .mt .name{margin-top: 0.5rem; text-align: center; height: 2.3rem; line-height: 2.3rem;}
+.decoration .main .mt .name a{display: inline-block; height: 2.3rem; line-height: 2.3rem; color: #333; font-size: 1.7rem; background: url("../img/wechat/jiantougray.png") no-repeat 100% center / 0.7rem auto; padding-right: 1.6rem;}
+.decoration .main .mt .contact{text-align: center; margin-top: 1rem;}
+.decoration .main .mt .wechat{display: inline-block; height: 2.1rem; line-height: 2.1rem; color: #333; font-size: 1.3rem; padding-left: 2.8rem; background: url("../img/wechat/weixin.png") no-repeat 0 0 / 2.1rem auto; margin: 0 1.3rem;}
+.decoration .main .mt .phone{display: inline-block; height: 2.1rem; line-height: 2.1rem; color: #333; font-size: 1.3rem; padding-left: 2.8rem; background: url("../img/wechat/dianhua.png") no-repeat 0 0 / 2.1rem auto; margin: 0 1.3rem;}
+
+.decoration .main .entry-nav{width: 100%; padding: 0 1.2rem 1.2rem 1.2rem; margin-bottom: 2rem; background-color: #fff; position: relative; overflow: hidden; z-index: 10;}
+.decoration .main .entry-nav .swiper-slide a{display: block; text-align: center; height: 7rem;}
+.decoration .main .entry-nav .swiper-slide .item-img{display: block; width: 3.3rem; height: 3.3rem; border-radius: 50%; margin: 0 auto; overflow: hidden;}
+.decoration .main .entry-nav .swiper-slide .item-img img{width: 100%; height: 100%;}
+.decoration .main .entry-nav .item-tit{display: inline-block; color: #000; font-size: 1.1rem; height: 2.3rem; line-height: 1.8rem; padding-top: 0.5rem;}
+.decoration .main .entry-nav .swiper-pagination-bullet{width: 0.5rem; height: 0.5rem;}
+.decoration .main .entry-nav .swiper-pagination-bullet-active{background: #237DE4 ;}
+.decoration .main .entry-nav .swiper-pagination{text-align: center; padding-right: 1.2rem;}
+
+.decoration .main .choice{border-top: 1px solid #E5E5E5; background-color: #fff;}
+.decoration .main .choice .ch-mt{}
+.decoration .main .choice .mt-top{height: 5.5rem; padding: 2rem 0 0 2rem; line-height: 2.1rem; color: #000; font-size: 1.6rem; background: url("../img/wechat/pic236x10.png") no-repeat center 2.9rem / auto 0.5rem;}
+.decoration .main .choice .mt-top-city{position: absolute; right: 2rem; top: 2rem; font-size: 1.4rem; color: #0C1828;}
+.decoration .main .choice .mt-top-city span{font-size: 1.2rem; color: #94999E; padding-left: 0.2rem;}
+.decoration .main .choice .mt-bot{ overflow: hidden; height: 6rem;  background-color: #fff; }
+.decoration .main .choice .mt-bot .tab {width: 100%;}
+.decoration .main .choice .mt-bot .tab-nav {width: 100%;}
+.decoration .main .choice .mt-bot li {width: auto ; margin: 0 0.3rem;}
+.decoration .main .choice .mt-bot li:first-child {margin-left: 1.5rem;}
+.decoration .main .choice .mt-bot li a {display: block; font-size: 1.4rem; border-radius: 2rem; height: 3.5rem; line-height: 3.5rem; color: #333; padding:0 1.8rem;}
+.decoration .main .choice .mt-bot .cur a { color: #fff; background-color: #238EE5; box-shadow: 0 0 10px rgba(52,69,125,0.3); background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+.decoration .main .choice .mt-bot .swiper-container{overflow: inherit; padding-top: 0.5rem;}
+
+.decoration .main .choice .ch-mc{}
+.decoration .main .choice .ch-mc .item{border-top: 1px solid #e5e5e5; height: 12.4rem; padding: 1.2rem 0 0 2rem; position: relative; overflow: hidden;}
+.decoration .main .choice .ch-mc .item .pic{width: 10rem; height: 10rem; margin-right: 1.5rem; float: left;}
+.decoration .main .choice .ch-mc .item .pic img{width: 10rem; height: 10rem; border-radius: 0.3rem;}
+.decoration .main .choice .ch-mc .item .title{display: block; width: 18rem; height: 2.2rem; line-height: 2.2rem; color: #0C1828; font-size: 1.6rem;}
+.decoration .main .choice .ch-mc .item p{width: 18rem; height: 2rem; line-height: 2rem; color: #757D86; font-size: 1.4rem; margin-top: 0.4rem; float: left;}
+.decoration .main .choice .ch-mc .item .price{color: #FF6D57; font-size: 1.7rem; margin-top: 4.5rem;}
+.decoration .main .choice .ch-mc .item .dw-btn{display: block; width: 4.4rem; height: 4.4rem; position: absolute; right:1.5rem; bottom:1rem;}
+.decoration .main .choice .ch-mc .item .dw-btn a{display: block; width: 4.4rem; height: 4.4rem; }
+.decoration .main .choice .ch-mc .item .dw-btn img {width: 4.4rem; height: 4.4rem;}
+.decoration .main .choice .ch-mc .item .quantity{width: 9rem; /*height: 2.3rem;*/ position: absolute; right:0; bottom: 2.2rem; overflow: hidden;}
+.decoration .main .choice .ch-mc .item .quantity input{border: none; text-align: center; width: 2.8rem; height: 2.2rem; line-height: 2.2rem; color: #333; font-size: 1.3rem; float: left;}
+.decoration .main .choice .ch-mc .item .btn-reduce{display: block; width: 2.2rem; height: 2.2rem; background: url("../img/wechat/jianhao.png") no-repeat 0 0 / 2.2rem 2.2rem; float: left;}
+.decoration .main .choice .ch-mc .item .btn-add{display: block; width: 2.2rem; height: 2.2rem; background: url("../img/wechat/jiahao.png") no-repeat 0 0 / 2.2rem 2.2rem; float: left;}
+.decoration .main .choice-no .ch-mc .item{height: 11rem;}
+.decoration .main .choice-no .ch-mc .item .pic{width: 8rem; height: 8rem; border-radius: 0.3rem;}
+.decoration .main .choice-no .ch-mc .item .pic img{width: 8rem; height: 8rem;}
+.decoration .main .choice-no .ch-mc .item .title{margin-top: 0.4rem; color: #333;}
+.decoration .main .choice-no .ch-mc .item p{color: #757D86 ; font-size: 1.3rem; float: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.decoration .main .loading{height: 6rem; padding-top: 1.2rem; text-align: center;}
+.decoration .main .loading img{width: 2.6rem; height: 2.6rem;}
+
+/*附近门店*/
+.decoration .nearby-stores-main {top: 0;}
+ /*iframe 新增2017-8-21*/
+.decoration .main .choice-mask {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 10; background: rgba(0,0,0,.3);  border: 1px dashed #fc0034;}
+.decoration .main .choice-mask .choice-mask-bj {width: 52px; height: 30px; font-size: 16px; ; line-height: 30px; cursor: default; background: #333; color: #fff; text-align: center;}
+.decoration .main .ch-packet-edit {width: 377px; font-size: 12px; border: 1px solid #d7d7d7; background: #fff; padding-left: 13px; position: absolute; right: -420px; top: 40px;}
+.decoration .main .ch-packet-edit .ch-pa-dt {height: 56px; font-size: 13px; line-height: 56px; font-weight: bold; color: #666;}
+.decoration .main .ch-packet-edit .ch-pa-dd li {width: 330px; height: 46px; border: 1px solid #d7d7d7; background: #fff; padding-left: 13px; position: relative; font-size: 14px; line-height: 46px; margin-bottom: 20px; color: #333;}
+.decoration .main .ch-packet-edit .ch-pa-dd li em {display: none; width: 20px; height: 20px; background: url("../img/wechat/guanbi3.png") no-repeat 0 0 / 20px 20px; cursor: pointer; position: absolute;  top: -10px; right: -10px;}
+.decoration .main .ch-packet-edit .ch-pa-dd .current {box-shadow: 2px 2px 18px #eee;}
+.decoration .main .ch-packet-edit .ch-pa-dd .current em {display: block;}
+.decoration .main .ch-packet-edit .ch-pa-dd .ch-pa-new {display: inline-block; height: 36px; padding: 0 14px; margin-bottom: 20px; margin-right: 23px; border-radius: 3px; text-align: center; line-height: 36px; color: #fff; font-size: 16px; background-color: #2bcd73;}
+.decoration .main .ch-packet-edit .ch-pa-dd .ch-pa-b {margin-bottom: 25px;}
+.decoration .main .ch-packet-edit .ch-pa-dd .ch-pa-b input {display: inline-block; width: 180px; height: 36px; padding-left: 8px; border: 1px solid #666; line-height: 36px;}
+.decoration .main .ch-packet-edit .ch-pa-dd .ch-pa-b a {display: inline-block; height: 36px; line-height: 36px; padding: 0 22px; margin-left: 3px; border-radius: 3px; color: #fff; background: #2bcd73; border: 1px solid #2bcd73;}
+.decoration .main .ch-packet-edit .ch-pa-dd .ch-pa-b .ch-cancel {color: #333; background: #fff; border: 1px solid #d7d7d7;}
+.decoration .main .ch-packet-edit .ch-pa-icon {display: block; width: 10px; height: 16px; position: absolute; left: -10px; top: 47px; z-index: 1; background: url("../img/wechat/jiantou01.png") no-repeat;}
+
+/*iframe 修改2017-9-29*/
+.main .ch-packet-edit .ch-pa-dd .arrow-t, .main .ch-packet-edit .ch-pa-dd .arrow-b {display: block; width: 16px; height: 16px; background: url("../img/icon-arrow3.png") no-repeat; cursor: pointer; position: absolute; right: 30px; top: 15px;}
+.main .ch-packet-edit .ch-pa-dd .arrow-t {background-image: url("../img/icon-arrow4.png"); right: 14px;}
+.main .ch-packet-edit .ch-pa-dd li:first-child .arrow-t, .main .ch-packet-edit .ch-pa-dd li:last-child .arrow-b {display: none;}

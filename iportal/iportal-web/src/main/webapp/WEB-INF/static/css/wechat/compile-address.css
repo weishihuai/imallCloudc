@@ -1,0 +1,14 @@
+body { min-width: 320px; max-width: 640px; margin: 0 auto; background-color: #fff; padding-bottom: 6rem;}
+.main{text-align: center;}
+.main .mc{padding: 0 1.8rem 1px 1.8rem; text-align: left;}
+.main .mc .item{display: block; min-height: 7.5rem; color: #444A50; font-size: 1.9rem; padding: 2.6rem 2.6rem 2.6rem 0; border-bottom:1px solid #E5E5E5; overflow: hidden; }
+.main .mc .item span{display: inline-block; float: left; width: 7.2rem;}
+.main .mc .item input{display: inline-block; color: #333; width: 17.5rem; float: left;}
+.main .mc .item i{display: inline-block; width: 17.5rem; float: left;}
+.main .mc .sattr-add{cursor: pointer; background: url("../../img/wechat/jiantougray.png") no-repeat 97% center / 0.7rem auto;}
+.main .mc .item .change-wid{width: 100%;}
+.main .mc textarea{width: 100%; min-height: 2.2rem; color: #444A50; font-size: 1.8rem; margin: 2rem 0 0.5rem; padding: 0; line-height: 2.2rem; border: none;}
+
+
+.main .confirm{display: block; width: 28rem; height: 5rem; line-height: 5rem; text-align: center; color: #fff; font-size: 1.6rem; margin: 0 auto; border-radius: 2.4rem; background-color: #238EE5; box-shadow: 2px 10px 14px 0 rgba(35,142,229,0.50);  background: -webkit-linear-gradient(left, #238EE5 , #13C0CF); background: -o-linear-gradient(right, #238EE5, #13C0CF); background: -moz-linear-gradient(right, #238EE5, #13C0CF); background: linear-gradient(to right, #238EE5 , #13C0CF);}
+.main .del-btn{display: inline-block; height: 2.3rem; line-height: 2.3rem; margin: 0 auto; color: #4E6A78; font-size: 1.6rem;}
